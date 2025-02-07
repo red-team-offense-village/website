@@ -1,6 +1,6 @@
-baseURL = "https://redteamvillage.io"
+baseURL = "https://red-team-offense-village.github.io/website/"
 title = "Red Team Village"
-author = "MikeHacksThings"
+author = "Red Team Village"
 languageCode = "en"
 DefaultContentLanguage = "en"
 enableInlineShortcodes = true
