@@ -88,7 +88,7 @@ darkmode = "dark"
     name = ""  # Empty name since we're using an image
     url = "/"
     weight = 0
-    pre = "<img src='https://redteamvillage.io/assets/images/2024-rtv-final-1-129x131.png' alt='RTV Logo' style='height: 40px; width: auto;'>"
+    pre = "<img src='assets/images/2024-rtv-final-1-129x131.png' alt='RTV Logo' style='height: 40px; width: auto;'>"
 
   [[menu.main]]
     identifier = "discord"
