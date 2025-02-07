@@ -1,0 +1,184 @@
+baseURL = "https://redteamvillage.io"
+title = "Red Team Village"
+author = "MikeHacksThings"
+languageCode = "en"
+DefaultContentLanguage = "en"
+enableInlineShortcodes = true
+theme = "Blonde"
+enableRobotsTXT = true
+
+# Please enable this feature if the site is available in Japanese, Chinese or Korean.
+#hasCJKLanguage = true
+
+# If you're using Google Analytics, you can enable this feature.
+#googleAnalytics = "G-1234567890"
+
+# Disqus Comment System
+#disqusShortname = ""
+
+[params]
+# Base color of the website.
+# https://tailwindcss.com/docs/background-color
+base_color = "bg-neutral-800"
+
+  customHeadHTML = '''
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  '''
+  
+#Site description
+description = "Red Team Village"
+
+# The number of articles to be displayed on a single page.
+paginator_pages = "5"
+
+# Enable this if you want the archive list to be in a drop-down format.
+archive_dropdown = "false"
+
+# Number of tags to be displayed.
+tagsLimit = 20
+
+# Always use dark mode
+darkmode = "dark"
+
+  [params.ad]
+    # Google AdSense
+    # ex. ca-pub-0000000000000000
+    googleAdSense = ""
+
+    # ex. 000000000
+    adslot = ""
+
+    # Placement of ads
+    postTop = false
+    postBottom = false
+
+  [params.post]
+    # Show thumbnails
+    thumbnail = true
+
+    # Disable the "NO IMAGE" image.
+    noimage = true
+
+    # See the Tailwind CSS documentation to set it up.
+    # Recommended settings are h-32 to h-48.
+    # https://tailwindcss.com/docs/height
+    thumbnail_height = "lg:h-44"
+
+    # https://tailwindcss.com/docs/width
+    thumbnail_width = "lg:w-auto"
+
+    # Number of characters in description
+    description = "130"
+  [params.widgets]
+    # Display widgets
+    display = true
+
+    # Order of widgets to display
+    widgets = ["search", "archive", "category", "tags", "recent"]
+
+# If you're using Yandex.Metrica, you can enable this feature.
+#[params.analytics.yandexmetrica]
+#    enabled = true
+#    tagNumber = ''
+
+[menu]
+
+  [[menu.main]]
+    identifier = "logo"
+    name = ""  # Empty name since we're using an image
+    url = "/"
+    weight = 0
+    pre = "<img src='https://redteamvillage.io/assets/images/2024-rtv-final-1-129x131.png' alt='RTV Logo' style='height: 40px; width: auto;'>"
+
+  [[menu.main]]
+    identifier = "discord"
+    name = "<i class='fab fa-discord'></i> DISCORD"
+    url = "#"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "twitter"
+    name = "<i class='fab fa-twitter'></i> TWITTER"
+    url = "#"
+    weight = 2
+
+  [[menu.main]]
+    identifier = "youtube"
+    name = "<i class='fab fa-youtube'></i> YOUTUBE"
+    url = "#"
+    weight = 3
+
+  [[menu.main]]
+    identifier = "rtv-team"
+    name = "<i class='fas fa-users'></i> TEAM"
+    url = "/team/"
+    weight = 4
+
+  [[menu.main]]
+    identifier = "volunteer"
+    name = "<i class='fas fa-external-link-alt'></i> VOLUNTEER PORTAL"
+    url = "/volunteer/"
+    weight = 5
+
+  [[menu.main]]
+    identifier = "venue"
+    name = "<i class='fas fa-map-marker-alt'></i> VENUE"
+    url = "/venue/"
+    weight = 6
+
+  [[menu.main]]
+    identifier = "schedule"
+    name = "<i class='far fa-calendar'></i> SCHEDULE"
+    url = "/schedule/"
+    weight = 7
+
+  # Footer Social Icons
+  [[menu.footer]]
+    identifier = "discord"
+    name = "<i class='fab fa-discord fa-lg'></i>"
+    url = "#"
+    weight = 1
+
+  [[menu.footer]]
+    identifier = "twitter"
+    name = "<i class='fab fa-twitter fa-lg'></i>"
+    url = "#"
+    weight = 2
+
+  [[menu.footer]]
+    identifier = "youtube"
+    name = "<i class='fab fa-youtube fa-lg'></i>"
+    url = "#"
+    weight = 3
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+archive = "archives"
+
+[privacy]
+
+  [privacy.vimeo]
+    disabled = false
+    simple = true
+
+  [privacy.twitter]
+    disabled = false
+    enableDNT = true
+    simple = true
+
+  [privacy.instagram]
+    disabled = false
+    simple = true
+
+  [privacy.youtube]
+    disabled = false
+    privacyEnhanced = true
+
+[services]
+
+  [services.instagram]
+    disableInlineCSS = true
+
+  [services.twitter]
+    disableInlineCSS = true

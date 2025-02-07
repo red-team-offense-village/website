@@ -1,0 +1,50 @@
+<div class="{{ .Site.Params.base_color }}">
+    <div class="container max-w-screen-xl mr-auto ml-auto">
+        <nav class="flex items-center justify-between flex-wrap {{ .Site.Params.base_color }} p-6">
+            <div class="flex items-center flex-no-shrink {{ .Site.Params.base_color }} text-white mr-6">
+                <a href="{{ .Site.BaseURL }}" class="flex items-center">
+                    <img src="/assets/images/2024-rtv-final-1-129x131.png" alt="RTV Logo" class="h-12 w-auto mr-3">
+                    <span class="font-semibold text-2xl tracking-tight">{{ .Site.Title }}</span>
+                </a>
+            </div>
+            <div class="flex md:hidden">
+                <div class="py-2">
+                    <button onclick="toggleDarkMode()" class="focus:outline-none mr-1" aria-label="Darkmode Toggle Button"><i id="icon"
+                            class="icon-moon inline-flex align-middle leading-normal text-lg text-white"></i></button>
+                    <span class="text-white">|</span>
+                </div>
+                <button id="hamburgerbtn" class="flex items-center px-3 py-1 text-white hover:opacity-50" aria-label="Hamburger Button">
+                    <span class="icon-menu text-2xl"></span>
+                </button>
+            </div>
+            <div class="hidden w-full md:flex md:flex-row sm:items-center md:w-auto" id="mobileMenu">
+                <div class="text-sm lg:flex-grow">
+                </div>
+                <div class="navmenu">
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+                    {{ range .Site.Menus.main }}
+                    <a href="{{ .URL }}"
+                        class="no-underline duration-200 block mt-4 sm:inline-block sm:mt-0 text-white hover:opacity-50 mr-4">
+                        {{ .Name | safeHTML }}
+                    </a>
+                    {{ end }}
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<style>
+    .active {
+        display: block;
+    }
+</style>
+
+<script>
+    let hamburger = document.getElementById('hamburgerbtn');
+
+    let mobileMenu = document.getElementById('mobileMenu');
+
+    hamburger.addEventListener('click', function () {
+        mobileMenu.classList.toggle('active');
+    });
+</script>

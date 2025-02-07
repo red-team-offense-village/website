@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+
+<html lang="en" class="dark">
+<head>
+	<meta name="generator" content="Hugo 0.124.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><title>Red Team Village</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <link rel="apple-touch-icon" sizes="180x180" href='/favicon/apple-touch-icon.png'>
+    <link rel="icon" type="image/png" sizes="32x32" href='/favicon/favicon-32x32.png'>
+    <link rel="icon" type="image/png" sizes="16x16" href='/favicon/favicon-16x16.png'>
+    <link rel="manifest" href='/favicon/site.webmanifest' />
+    <link rel="mask-icon" href=' /favicon/safari-pinned-tab.svg' color="#5bbad5" />
+    <link rel="shortcut icon" href='/favicon/favicon.ico' />
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:title" content="Red Team Village" />
+    
+    
+    <link rel="stylesheet" href="/css/style.css" />
+    
+    <link href=' /css/blonde.min.css' rel="stylesheet" type="text/css" media="print"
+        onload="this.media=' all'">
+    
+
+
+	
+
+<meta name="description" content="Red Team Village">
+<meta property="og:site_name" content="Red Team Village">
+<meta property="og:description" content="Red Team Village">
+<meta property="og:url" content="http://localhost:1313/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="">
+
+<link rel="canonical" href="http://localhost:1313/">
+
+<meta name="twitter:description" content="Red Team Village">
+<meta property="article:published_time" content="">
+
+
+
+
+
+<meta property="og:image" content="http://localhost:1313/">
+<meta property="og:image:url" content="http://localhost:1313/">
+
+    
+    <link rel="stylesheet" href='/css/custom.css'>
+    <i class="dark hidden"></i>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body class="font-sans">
+    <div class="min-h-screen flex flex-col bg-gray-100 dark:bg-warmgray-800"><div class="bg-neutral-800">
+    <div class="container max-w-screen-xl mr-auto ml-auto">
+        <nav class="flex items-center justify-between flex-wrap bg-neutral-800 p-6">
+            <div class="flex items-center flex-no-shrink bg-neutral-800 text-white mr-6">
+                <a href="http://localhost:1313/" class="flex items-center">
+                    <img src="/assets/images/2024-rtv-final-1-129x131.png" alt="RTV Logo" class="h-12 w-auto mr-3">
+                    <span class="font-semibold text-2xl tracking-tight">Red Team Village</span>
+                </a>
+            </div>
+            <div class="flex md:hidden">
+                <div class="py-2">
+                    <button onclick="toggleDarkMode()" class="focus:outline-none mr-1" aria-label="Darkmode Toggle Button"><i id="icon"
+                            class="icon-moon inline-flex align-middle leading-normal text-lg text-white"></i></button>
+                    <span class="text-white">|</span>
+                </div>
+                <button id="hamburgerbtn" class="flex items-center px-3 py-1 text-white hover:opacity-50" aria-label="Hamburger Button">
+                    <span class="icon-menu text-2xl"></span>
+                </button>
+            </div>
+            <div class="hidden w-full md:flex md:flex-row sm:items-center md:w-auto" id="mobileMenu">
+                <div class="text-sm lg:flex-grow">
+                </div>
+                <div class="navmenu">
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+                    
+                    <a href="#"
+                        class="no-underline duration-200 block mt-4 sm:inline-block sm:mt-0 text-white hover:opacity-50 mr-4">
+                        <i class='fab fa-discord'></i> DISCORD
+                    </a>
+                    
+                    <a href="#"
+                        class="no-underline duration-200 block mt-4 sm:inline-block sm:mt-0 text-white hover:opacity-50 mr-4">
+                        <i class='fab fa-twitter'></i> TWITTER
+                    </a>
+                    
+                    <a href="#"
+                        class="no-underline duration-200 block mt-4 sm:inline-block sm:mt-0 text-white hover:opacity-50 mr-4">
+                        <i class='fab fa-youtube'></i> YOUTUBE
+                    </a>
+                    
+                    <a href="/team/"
+                        class="no-underline duration-200 block mt-4 sm:inline-block sm:mt-0 text-white hover:opacity-50 mr-4">
+                        <i class='fas fa-users'></i> TEAM
+                    </a>
+                    
+                    <a href="/volunteer/"
+                        class="no-underline duration-200 block mt-4 sm:inline-block sm:mt-0 text-white hover:opacity-50 mr-4">
+                        <i class='fas fa-external-link-alt'></i> VOLUNTEER PORTAL
+                    </a>
+                    
+                    <a href="/venue/"
+                        class="no-underline duration-200 block mt-4 sm:inline-block sm:mt-0 text-white hover:opacity-50 mr-4">
+                        <i class='fas fa-map-marker-alt'></i> VENUE
+                    </a>
+                    
+                    <a href="/schedule/"
+                        class="no-underline duration-200 block mt-4 sm:inline-block sm:mt-0 text-white hover:opacity-50 mr-4">
+                        <i class='far fa-calendar'></i> SCHEDULE
+                    </a>
+                    
+                    <a href="/"
+                        class="no-underline duration-200 block mt-4 sm:inline-block sm:mt-0 text-white hover:opacity-50 mr-4">
+                        
+                    </a>
+                    
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<style>
+    .active {
+        display: block;
+    }
+</style>
+
+<script>
+    let hamburger = document.getElementById('hamburgerbtn');
+
+    let mobileMenu = document.getElementById('mobileMenu');
+
+    hamburger.addEventListener('click', function () {
+        mobileMenu.classList.toggle('active');
+    });
+</script>
+<div class="container max-w-screen-xl mx-auto mt-4 flex-grow px-5 lg:px-0" id="content">
+            <div class="lg:mx-5">
+<div class="container max-w-screen-xl mx-auto px-6 py-12">
+    
+</div>
+
+            </div>
+        </div><footer class="bg-neutral-800 text-white p-6 text-center">
+  
+  <div class="flex justify-center mb-6">
+    
+    <a href="#" class="text-white hover:opacity-50 transition-opacity duration-200 px-12 text-3xl" aria-label="discord">
+      <i class='fab fa-discord fa-lg'></i>
+    </a>
+    
+    <a href="#" class="text-white hover:opacity-50 transition-opacity duration-200 px-12 text-3xl" aria-label="twitter">
+      <i class='fab fa-twitter fa-lg'></i>
+    </a>
+    
+    <a href="#" class="text-white hover:opacity-50 transition-opacity duration-200 px-12 text-3xl" aria-label="youtube">
+      <i class='fab fa-youtube fa-lg'></i>
+    </a>
+    
+  </div>
+
+  
+  <div class="container max-w-screen-xl mr-auto ml-auto">
+    <p>&copy; 2025 <a href="http://localhost:1313/" class="duration-200 hover:opacity-50">Red Team Village</a>
+    </p>
+    <p>Powered by <a href="https://gohugo.io/" class="duration-200 hover:opacity-50">Hugo</a>, Theme <a
+        href="https://github.com/opera7133/Blonde" class="duration-200 hover:opacity-50">Blonde</a>.</p>
+  </div>
+  
+  <script>
+    var icon = document.getElementById("icon");
+    var icon2 = document.getElementById("icon2");
+    
+    if (document.documentElement.classList.contains("dark") || localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      icon.classList.remove("icon-moon");
+      icon.classList.add("icon-sun");
+      icon2.classList.remove("icon-moon");
+      icon2.classList.add("icon-sun");
+      document.documentElement.classList.add('dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
+    function toggleDarkMode() {
+      if (document.documentElement.classList.contains('dark')) {
+        icon.classList.remove("icon-sun");
+        icon.classList.add("icon-moon");
+        icon2.classList.remove("icon-sun");
+        icon2.classList.add("icon-moon");
+        document.documentElement.classList.remove('dark')
+        localStorage.theme = 'light'
+      } else {
+        icon.classList.remove("icon-moon");
+        icon.classList.add("icon-sun");
+        icon2.classList.remove("icon-moon");
+        icon2.classList.add("icon-sun");
+        document.documentElement.classList.add('dark')
+        localStorage.theme = 'dark'
+      }
+    }
+  </script>
+</footer></div>
+</body>
+
+</html>
