@@ -1,4 +1,4 @@
-baseURL = "http://localhost:1313"
+baseURL = "https://red-team-offense-village.github.io/website/"
 title = "Red Team Village"
 author = "Red Team Village"
 languageCode = "en"
@@ -39,6 +39,9 @@ tagsLimit = 20
 
 # Always use dark mode
 darkmode = "dark"
+
+# BaseURL Fix
+canonifyurls = "true"
 
   [params.ad]
     # Google AdSense
@@ -88,7 +91,7 @@ darkmode = "dark"
     name = ""  # Empty name since we're using an image
     url = "/"
     weight = 0
-    pre = "<img src='assets/images/2024-rtv-final-1-129x131.png' alt='RTV Logo' style='height: 40px; width: auto;'>"
+    pre = "<img src='/assets/images/2024-rtv-final-1-129x131.png' alt='RTV Logo' style='height: 40px; width: auto;'>"
 
   [[menu.main]]
     identifier = "discord"
