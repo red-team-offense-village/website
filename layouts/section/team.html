@@ -1,0 +1,138 @@
+{{ define "main" }}
+<article class="post">
+    <header>
+        <h1 style="font-size: 3rem; text-align: center; margin: 2rem 0; color: #fff; font-weight: bold;">{{ .Title }}</h1>
+    </header>
+    <div class="team-grid">
+        <div class="team-card">
+            <div class="card-image">
+                <img src="../assets/images/barret-240x240.jpg" alt="Barrett Darnell">
+            </div>
+            <div class="card-content">
+                <h3>Barrett Darnell</h3>
+                <h4>Village Advisor</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="team-card">
+            <div class="card-image">
+                <img src="../assets/images/savannah-240x240.jpg" alt="Savannah Lazzarra">
+            </div>
+            <div class="card-content">
+                <h3>Savannah Lazzarra</h3>
+                <h4>Village Advisor</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="team-card">
+            <div class="card-image">
+                <img src="../assets/images/wes-240x240.png" alt="Wes Thurner">
+            </div>
+            <div class="card-content">
+                <h3>Wes Thurner</h3>
+                <h4>Village Advisor</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+    .team-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        padding: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .team-card {
+        background: #690d0d;
+        border: 1px solid #e5e5e5;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        transition: transform 0.2s;
+    }
+
+    .team-card:hover {
+        transform: translateY(-4px);
+    }
+
+    .card-image {
+        padding: 1.5rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .card-image img {
+        width: 192px;
+        height: 192px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    .card-content {
+        padding: 1.5rem;
+    }
+
+    .card-content h3 {
+        margin: 0;
+        font-size: 1.5rem;
+        color: #ffffff;
+    }
+
+    .card-content h4 {
+        margin: 0.5rem 0;
+        color: #ffffff;
+        font-size: 1.1rem;
+    }
+
+    .card-content p {
+        margin: 1rem 0;
+        color: #ffffff;
+        line-height: 1.5;
+    }
+
+    .social-links {
+        margin-top: 1rem;
+        display: flex;
+        gap: 1rem;
+    }
+
+    .social-links a {
+        color: #4b5563;
+        font-size: 1.25rem;
+        transition: color 0.2s;
+    }
+
+    .social-links a:hover {
+        color: #2563eb;
+    }
+
+    @media (max-width: 1024px) {
+        .team-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width: 640px) {
+        .team-grid {
+            grid-template-columns: 1fr;
+            padding: 1rem;
+        }
+    }
+    </style>
+</article>
+{{ end }} 
