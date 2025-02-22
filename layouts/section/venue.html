@@ -1,8 +1,6 @@
 {{ define "main" }}
+{{ partial "hero" . }}
 <article class="post" style="background: #ffffff; padding: 2rem; border-radius: 8px; margin: 2rem auto; max-width: 1600px;">
-    <header>
-        <h1 style="font-size: 3rem; text-align: center; margin: 2rem 0; color: #333333; font-weight: bold;">{{ .Title }}</h1>
-    </header>
     <div class="venue-container">
         <div class="venue-layout">
             <div class="layout-grid">
@@ -59,13 +57,6 @@
         margin-bottom: 2rem;
     }
 
-    .venue-layout h2 {
-        color: #333333;
-        font-size: 2rem;
-        margin-bottom: 1.5rem;
-        text-align: center;
-    }
-
     .layout-grid {
         display: grid;
         grid-template-columns: 1fr;
@@ -88,15 +79,28 @@
         padding: 2rem;
     }
 
-    .layout-image span {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
+    .layout-content {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .layout-callout {
+        padding: 2rem;
+    }
+
+    .layout-callout h2 {
         color: #333333;
-        padding: 0.75rem;
-        margin-top: 2rem;
-        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        font-weight: bold;
+    }
+
+    .layout-callout p {
+        color: #666666;
+        font-size: 1.2rem;
+        line-height: 1.6;
     }
 
     .location-card {
@@ -148,43 +152,19 @@
         color: #ffffff;
     }
 
-    @media (max-width: 768px) {
-        .layout-grid {
-            grid-template-columns: 1fr;
-        }
-    }
-
-    .layout-content {
-        display: grid;
-        grid-template-columns: 2fr 1fr;  /* 2/3 for image, 1/3 for callout */
-        gap: 2rem;
-        align-items: center;
-    }
-
-    .layout-callout {
-        padding: 2rem;
-    }
-
-    .layout-callout h2 {
-        color: #333333;
-        font-size: 2.5rem;
-        margin-bottom: 1rem;
-        font-weight: bold;
-    }
-
-    .layout-callout p {
-        color: #666666;
-        font-size: 1.2rem;
-        line-height: 1.6;
-    }
-
     @media (max-width: 1024px) {
         .layout-content {
-            grid-template-columns: 1fr;  /* Stack on smaller screens */
+            grid-template-columns: 1fr;
         }
         
         .layout-callout {
             text-align: center;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .layout-grid {
+            grid-template-columns: 1fr;
         }
     }
     </style>
