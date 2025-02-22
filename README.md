@@ -2,7 +2,7 @@
 
 [![Deploy Hugo site to Pages](https://github.com/red-team-offense-village/website/actions/workflows/hugo.yml/badge.svg)](https://github.com/red-team-offense-village/website/actions/workflows/hugo.yml) [![Website](https://img.shields.io/website?url=https%3A%2F%2Fredteamvillage.io&label=redteamvillage.io&link=https%3A%2F%2Fredteamvillage.io)](https://redteamvillage.io/)
 
-This git repository contains the [website](http://redteamvillage.io) for the Austin Hackers Anonymous group. Someone should really update it to make it suck less.
+This git repository contains the [website](http://redteamvillage.io) for the Red Team Village organization. Someone should really update it to make it suck less.
 
 ## Local Dev
 
