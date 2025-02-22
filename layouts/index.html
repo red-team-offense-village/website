@@ -1,0 +1,326 @@
+{{ define "main" }}
+
+{{ partial "hero" . }}
+<article class="post" style="background: #ffffff; padding: 2rem; border-radius: 8px; margin: 2rem auto; max-width: 1600px;">
+    <div class="home-container">
+        <section class="mission-section">
+            <div class="mission-content">
+                <div class="mission-header">
+                    <i class="fas fa-flag"></i>
+                    <h2>Our Mission</h2>
+                    <i class="fas fa-flag"></i>
+                </div>
+                <div class="mission-text">
+                    <p>The Red Team Village is focused on training the art of critical thinking, collaboration, and strategy in offensive security. The RTV brings together information security professionals to share new tactics and techniques in offensive security. Attendees may spend time in introductory workshops or challenge themselves in an immersive Capture the Flag competition to put their newly obtained skills to the test.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="updates-section">
+            <div class="update-header">
+                <i class="fas fa-bullhorn"></i>
+                <h3>Latest Updates</h3>
+            </div>
+            <div class="update-content">
+                <div class="update-item">
+                    <span class="update-date">August 10-13, 2024</span>
+                    <p>Join us at DEFCON 32 in Las Vegas! We'll be hosting workshops, CTF competitions, and more.</p>
+                    <span class="tag">Conference</span>
+                </div>
+                <div class="update-item">
+                    <span class="update-date">Registration Open</span>
+                    <p>Registration for our DEFCON 32 CTF is now open. Sign up early to secure your spot!</p>
+                    <span class="tag">CTF</span>
+                </div>
+                <div class="update-item">
+                    <span class="update-date">Call for Papers</span>
+                    <p>Submit your workshop proposals for DEFCON 32. Deadline approaching soon!</p>
+                    <span class="tag">CFP</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-sections">
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Community</h3>
+                    <p>Join our growing community of security professionals, researchers, and enthusiasts.</p>
+                    <a href="https://discord.gg/redteamvillage" class="feature-link">Join Discord</a>
+                </div>
+
+                <div class="feature-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Events</h3>
+                    <p>Find out where we'll be next, both online and in person.</p>
+                    <a href="/schedule" class="feature-link">View Events</a>
+                </div>
+
+                <div class="feature-card">
+                    <i class="fas fa-comment-dots"></i>
+                    <h3>Connect</h3>
+                    <p>Want to get in touch? Send us a message on X.</p>
+                    <a href="https://x.com/redteamvillage_" class="feature-link">Follow on X</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <style>
+    .home-container {
+        max-width: 1600px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .welcome-section {
+        text-align: center;
+        padding: 3rem 0;
+    }
+
+    .welcome-content {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .welcome-content h2 {
+        color: #333333;
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+        font-weight: bold;
+    }
+
+    .welcome-content p {
+        color: #666666;
+        font-size: 1.2rem;
+        line-height: 1.6;
+    }
+
+    .feature-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        padding: 2rem 0;
+    }
+
+    .feature-card {
+        background: #690d0d;
+        border-radius: 8px;
+        padding: 2rem;
+        text-align: center;
+        color: #ffffff;
+        transition: transform 0.2s;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .feature-card:hover {
+        transform: translateY(-4px);
+    }
+
+    .feature-card i {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .feature-card h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .feature-card p {
+        margin-bottom: 1.5rem;
+        line-height: 1.6;
+        text-align: center;
+    }
+
+    .feature-link {
+        display: inline-block;
+        padding: 0.75rem 1.5rem;
+        background: #ffffff;
+        color: #690d0d;
+        text-decoration: none;
+        border-radius: 4px;
+        font-weight: bold;
+        transition: all 0.2s;
+    }
+
+    .feature-link:hover {
+        background: #2563eb;
+        color: #ffffff;
+    }
+
+    @media (max-width: 1024px) {
+        .feature-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width: 640px) {
+        .feature-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .welcome-content h2 {
+            font-size: 2rem;
+        }
+    }
+
+    .mission-section {
+        background: #690d0d;
+        border-radius: 8px;
+        padding: 3rem;
+        margin-bottom: 3rem;
+        color: #ffffff;
+    }
+
+    .mission-content {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .mission-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+
+    .mission-header h2 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin: 0;
+        text-align: center;
+        flex: 1;
+    }
+
+    .mission-header i {
+        font-size: 2.5rem;
+        padding: 0 2rem;
+    }
+
+    .mission-text {
+        font-size: 1.2rem;
+        line-height: 1.8;
+    }
+
+    .mission-text p {
+        margin-bottom: 1.5rem;
+    }
+
+    .mission-text p:last-child {
+        margin-bottom: 0;
+    }
+
+    @media (max-width: 768px) {
+        .mission-section {
+            padding: 2rem;
+        }
+
+        .mission-header {
+            flex-direction: row;
+            text-align: center;
+        }
+
+        .mission-header i {
+            padding: 0 1rem;
+        }
+
+        .mission-header h2 {
+            font-size: 2rem;
+        }
+
+        .mission-text {
+            font-size: 1.1rem;
+            text-align: center;
+        }
+    }
+
+    .update-container {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .update-card {
+        background: #ffffff;
+        border: 2px solid #690d0d;
+        border-radius: 8px;
+        padding: 2rem;
+    }
+
+    .update-header {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 2rem;
+        color: #690d0d;
+    }
+
+    .update-header i {
+        font-size: 2rem;
+    }
+
+    .update-header h3 {
+        font-size: 1.8rem;
+        font-weight: bold;
+        margin: 0;
+        color: #333333;
+    }
+
+    .update-content {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .update-item {
+        padding: 1rem 0;
+        border-bottom: 1px solid #eee;
+    }
+
+    .update-item:last-child {
+        border-bottom: none;
+    }
+
+    .update-date {
+        display: block;
+        color: #690d0d;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+    }
+
+    .update-item p {
+        color: #666666;
+        margin: 0.5rem 0;
+        line-height: 1.6;
+    }
+
+    .tag {
+        display: inline-block;
+        background: #690d0d;
+        color: #ffffff;
+        padding: 0.25rem 0.75rem;
+        border-radius: 999px;
+        font-size: 0.875rem;
+        margin-top: 0.5rem;
+    }
+
+    @media (max-width: 768px) {
+        .update-card {
+            padding: 1.5rem;
+        }
+
+        .update-header h3 {
+            font-size: 1.5rem;
+        }
+    }
+
+    .updates-section {
+        padding: 0 2rem 2rem 2rem;
+    }
+    </style>
+</article>
+{{ end }} 

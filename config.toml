@@ -93,7 +93,7 @@ darkmode = "dark"
   [[menu.main]]
     identifier = "discord"
     name = "<i class='fab fa-discord'></i> DISCORD"
-    url = "https://discord.gg/6kVXr4XApd"
+    url = "https://discord.gg/redteamvillage"
     weight = 1
 
   [[menu.main]]
