@@ -40,9 +40,6 @@ tagsLimit = 20
 # Always use dark mode
 darkmode = "dark"
 
-# BaseURL Fix
-canonifyurls = "true"
-
   [params.ad]
     # Google AdSense
     # ex. ca-pub-0000000000000000
@@ -91,24 +88,24 @@ canonifyurls = "true"
     name = ""  # Empty name since we're using an image
     url = "/"
     weight = 0
-    pre = "<img src='/assets/images/2024-rtv-final-1-129x131.png' alt='RTV Logo' style='height: 40px; width: auto;'>"
+    pre = "<img src='/website/assets/images/2024-rtv-final-1-129x131.png' alt='RTV Logo' style='height: 40px; width: auto;'>"
 
   [[menu.main]]
     identifier = "discord"
     name = "<i class='fab fa-discord'></i> DISCORD"
-    url = "#"
+    url = "https://discord.gg/6kVXr4XApd"
     weight = 1
 
   [[menu.main]]
     identifier = "twitter"
     name = "<i class='fab fa-twitter'></i> TWITTER"
-    url = "#"
+    url = "https://x.com/redteamvillage_"
     weight = 2
 
   [[menu.main]]
     identifier = "youtube"
     name = "<i class='fab fa-youtube'></i> YOUTUBE"
-    url = "#"
+    url = "https://www.youtube.com/redteamvillage"
     weight = 3
 
   [[menu.main]]
@@ -120,38 +117,38 @@ canonifyurls = "true"
   [[menu.main]]
     identifier = "volunteer"
     name = "<i class='fas fa-external-link-alt'></i> VOLUNTEER PORTAL"
-    url = "/volunteer/"
-    weight = 5
+    url = "https://volunteer.redteamvillage.io"
+    weight = 7
 
   [[menu.main]]
     identifier = "venue"
     name = "<i class='fas fa-map-marker-alt'></i> VENUE"
     url = "/venue/"
-    weight = 6
+    weight = 5
 
   [[menu.main]]
     identifier = "schedule"
     name = "<i class='far fa-calendar'></i> SCHEDULE"
     url = "/schedule/"
-    weight = 7
+    weight = 6
 
   # Footer Social Icons
   [[menu.footer]]
     identifier = "discord"
     name = "<i class='fab fa-discord fa-lg'></i>"
-    url = "#"
+    url = "https://discord.gg/6kVXr4XApd"
     weight = 1
 
   [[menu.footer]]
     identifier = "twitter"
     name = "<i class='fab fa-twitter fa-lg'></i>"
-    url = "#"
+    url = "https://x.com/redteamvillage_"
     weight = 2
 
   [[menu.footer]]
     identifier = "youtube"
     name = "<i class='fab fa-youtube fa-lg'></i>"
-    url = "#"
+    url = "https://www.youtube.com/redteamvillage"
     weight = 3
 
 [taxonomies]
