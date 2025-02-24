@@ -88,7 +88,7 @@ darkmode = "dark"
     name = ""  # Empty name since we're using an image
     url = "/"
     weight = 0
-    pre = "<img src='/assets/images/rtv-logo.png' alt='RTV Logo' style='height: 40px; width: auto;'>"
+    pre = "<img src='website/assets/images/rtv-logo.png' alt='RTV Logo' style='height: 40px; width: auto;'>"
 
   [[menu.main]]
     identifier = "discord"
