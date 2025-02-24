@@ -3,7 +3,7 @@
         <nav class="flex items-center justify-between flex-wrap {{ .Site.Params.base_color }} p-6">
             <div class="flex items-center flex-no-shrink {{ .Site.Params.base_color }} text-white mr-6">
                 <a href="{{ .Site.BaseURL }}" class="flex items-center">
-                    <img src="../assets/images/rtv-logo.png" alt="RTV Logo" class="mr-3" style="height: 100px; width: auto;">
+                    <img src="{{ .Site.BaseURL }}assets/images/rtv-logo.png" alt="RTV Logo" class="mr-3" style="height: 100px; width: auto;">
                     <span class="font-semibold text-2xl tracking-tight">{{ .Site.Title }}</span>
                 </a>
             </div>
@@ -23,7 +23,7 @@
                 <div class="navmenu">
                     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
                     {{ range .Site.Data.navigation.main }}
-                    <a href="{{ .url }}"
+                    <a href="{{ if hasPrefix .url `http` }}{{ .url }}{{ else }}{{ .Site.BaseURL }}{{ trim .url `/` }}/{{ end }}"
                         class="no-underline duration-200 block mt-4 sm:inline-block sm:mt-0 text-white hover:opacity-50 mr-4"
                         {{ with .target }}target="{{ . }}"{{ end }}>
                         {{ if .pre }}{{ .pre | safeHTML }}{{ end }}

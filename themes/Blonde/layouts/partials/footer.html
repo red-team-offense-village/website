@@ -3,9 +3,9 @@
         <!-- Social Icons -->
         <div class="flex justify-center space-x-16 mb-6">
             {{ range .Site.Data.navigation.footer }}
-            <a href="{{ .url }}" 
-               class="text-white hover:text-gray-400 transition duration-200 text-3xl"
-               {{ with .target }}target="{{ . }}"{{ end }}>
+            <a href="{{ if hasPrefix .url `http` }}{{ .url }}{{ else }}{{ .Site.BaseURL }}{{ trim .url `/` }}/{{ end }}"
+                class="text-white hover:text-gray-400 transition duration-200 text-3xl"
+                {{ with .target }}target="{{ . }}"{{ end }}>
                 {{ .name | safeHTML }}
             </a>
             {{ end }}

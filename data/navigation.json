@@ -5,7 +5,7 @@
       "name": "",
       "url": "/",
       "weight": 0,
-      "pre": "<img src='assets/images/rtv-logo.png' alt='RTV Logo' style='height: 40px; width: auto;'>"
+      "pre": "<img src='/assets/images/rtv-logo.png' alt='RTV Logo' style='height: 40px; width: auto;'>"
     },
     {
       "identifier": "rtv-team",
