@@ -1,0 +1,147 @@
+{
+  "members": [
+    {
+      "name": "Mike Lisi",
+      "handle": "@mikehacksthings",
+      "role": "President",
+      "image": "mike-240x240.png",
+      "linkedin": "https://www.linkedin.com/in/mikelisi/",
+      "twitter": "https://x.com/mikehacksthings"
+    },
+    {
+      "name": "Danielle Sink",
+      "handle": "@ds1nk",
+      "role": "Vice President",
+      "image": "dsink-240x240.jpg",
+      "linkedin": "https://www.linkedin.com/in/dssink/",
+      "twitter": "https://x.com/ds1nk"
+    },
+    {
+      "name": "Billy Giles",
+      "handle": "@forktheplanet",
+      "role": "Treasurer",
+      "image": "billy-240x240.jpg",
+      "linkedin": "https://www.linkedin.com/in/wrgiles/",
+      "twitter": "https://x.com/forktheplanet"
+    },
+    {
+      "name": "Bryce Zuccharo",
+      "handle": "@c4ch3c4d3",
+      "role": "Secretary",
+      "image": "bryce-240x240.jpg",
+      "linkedin": "https://www.linkedin.com/in/brycezuccaro/",
+      "twitter": "https://x.com/c4ch3c4d3"
+    },
+    {
+      "name": "Cory Wolff",
+      "handle": "@cwolff411",
+      "role": "Director of Workshops",
+      "image": "cory-240x240.jpg",
+      "linkedin": "https://www.linkedin.com/in/corywolff/",
+      "twitter": "https://x.com/cwolff411"
+    },
+    {
+      "name": "Krista Theodore",
+      "handle": "@InfoSecOprah",
+      "role": "Director of Marketing",
+      "image": "krista-240x240.jpg",
+      "linkedin": "https://www.linkedin.com/in/kristamtheodore/",
+      "twitter": "https://x.com/@InfoSecOprah"
+    },
+    {
+      "name": "Brian Sak",
+      "handle": "@briansak",
+      "role": "Director of Logistics",
+      "image": "brian-240x240.jpg",
+      "linkedin": "https://www.linkedin.com/in/briansak/",
+      "twitter": "https://x.com/@briansak"
+    },
+    {
+      "name": "Filipi Peres",
+      "handle": "@FilipiPires",
+      "role": "Director of Sponsors",
+      "image": "filipi-240x240.jpg",
+      "linkedin": "https://www.linkedin.com/in/filipipires/",
+      "twitter": "https://x.com/@FilipiPires"
+    },
+    {
+      "name": "Michael Donley",
+      "handle": "@th3d00rman",
+      "role": "Director of Volunteers",
+      "image": "michael-240x240.jpg",
+      "linkedin": "https://www.linkedin.com/in/michael-donley-red-team-pentester-educator/",
+      "twitter": "https://x.com/@th3d00rman"
+    },
+    {
+      "name": "Troy Fridley",
+      "handle": "",
+      "role": "Core Staff",
+      "image": "troy-240x240.jpg",
+      "linkedin": "https://www.linkedin.com/in/troy-fridley-54a9252/",
+      "twitter": "https://x.com/@th3d00rman"
+    },
+    {
+      "name": "Nate Sanders",
+      "handle": "@mauvehead",
+      "role": "Core Staff",
+      "image": "nate-240x240.jpg",
+      "linkedin": "https://www.linkedin.com/in/sandersn/"
+    },
+    {
+      "name": "Greg Oldham",
+      "handle": "@Hax4Coffee",
+      "role": "Core Staff",
+      "image": "greg-240x240.jpg",
+      "linkedin": "https://www.linkedin.com/in/greg-oldham-cfis/",
+      "twitter": "https://x.com/@hax4coffee"
+    },
+    {
+      "name": "Austin Cundiff",
+      "handle": "@sysdum",
+      "role": "Core Staff",
+      "image": "austin-240x240.jpg",
+      "linkedin": "https://www.linkedin.com/in/austin-cundiff-7b015811a/",
+      "twitter": "https://x.com/@sysdum"
+    },
+    {
+      "name": "Jon Kim",
+      "handle": "@j0nk1m",
+      "role": "Core Staff",
+      "image": "jon-240x240.jpg",
+      "linkedin": "https://www.linkedin.com/in/jonathanskim/",
+      "twitter": "https://x.com/@j0nk1m"
+    },
+    {
+      "name": "Omar Santos",
+      "handle": "@Ωr",
+      "role": "Village Advisor",
+      "image": "omar-240x240.jpg",
+      "linkedin": "https://www.linkedin.com/in/santosomar/",
+      "twitter": "https://x.com/santosomar"
+    },
+    {
+      "name": "Barrett Darnell",
+      "handle": "@pwneip",
+      "role": "Village Advisor",
+      "image": "barret-240x240.jpg",
+      "linkedin": "https://www.linkedin.com/in/barrettdarnell/",
+      "twitter": "https://x.com/pwneip"
+    },
+    {
+      "name": "Savannah Lazzara",
+      "handle": "@lazzslayer",
+      "role": "Village Advisor",
+      "image": "savannah-240x240.jpg",
+      "linkedin": "https://www.linkedin.com/in/savannahlazzara/",
+      "twitter": "https://x.com/lazzslayer"
+    },
+    {
+      "name": "Wes Thurner",
+      "handle": "@nopresearcher",
+      "role": "Village Advisor",
+      "image": "wes-240x240.jpg",
+      "linkedin": "https://www.linkedin.com/in/wesleythurner/",
+      "twitter": "https://x.com/nopresearcher"
+    }
+  ]
+} 

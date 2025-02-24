@@ -1,13 +1,19 @@
 <footer class="bg-neutral-800 text-white">
     <div class="container max-w-screen-xl mx-auto px-4 py-8">
-        <div class="flex justify-center space-x-8">
-            {{ range .Site.Menus.footer }}
-            <a href="{{ .URL }}" 
-               class="text-white hover:text-gray-400 transition duration-200"
-               {{ if hasPrefix .URL "http" }}target="_blank"{{ end }}>
-                {{ .Name | safeHTML }}
+        <!-- Social Icons -->
+        <div class="flex justify-center space-x-16 mb-6">
+            {{ range .Site.Data.navigation.footer }}
+            <a href="{{ .url }}" 
+               class="text-white hover:text-gray-400 transition duration-200 text-3xl"
+               {{ with .target }}target="{{ . }}"{{ end }}>
+                {{ .name | safeHTML }}
             </a>
             {{ end }}
+        </div>
+
+        <!-- Copyright -->
+        <div class="text-center">
+            <p>&copy; {{ now.Year }} <a href="{{ .Site.BaseURL }}" class="duration-200 hover:text-gray-400">{{ .Site.Title }}</a></p>
         </div>
     </div>
 </footer>

@@ -1,26 +1,28 @@
 {{ define "main" }}
 {{ partial "hero" . }}
-<article class="post">
+<article class="post" style="background: #ffffff; padding: 2rem; border-radius: 8px; margin: 2rem auto; max-width: 1600px;">
     <div class="team-grid">
-        {{ range .Site.Params.team.members }}
-        <div class="team-card">
-            <div class="card-image">
-                <img src="../assets/images/{{ .image }}" alt="{{ .name }}">
-            </div>
-            <div class="card-content">
-                <h3>{{ .name }}</h3>
-                <h4><i>{{ .handle }}</i></h4>
-                <h4>{{ .role }}</h4>
-                <div class="social-links">
-                    {{ with .linkedin }}
-                    <a href="{{ . }}" target="_blank"><i class="fab fa-linkedin"></i></a>
+        {{ range .Site.Data.team.members }}
+            <div class="team-card">
+                <div class="card-image">
+                    <img src="../assets/images/{{ .image }}" alt="{{ .name }}">
+                </div>
+                <div class="card-content">
+                    <h3>{{ .name }}</h3>
+                    {{ if .handle }}
+                    <h4><i>{{ .handle }}</i></h4>
                     {{ end }}
-                    {{ with .twitter }}
-                    <a href="{{ . }}" target="_blank"><i class="fab fa-twitter"></i></a>
-                    {{ end }}
+                    <h4>{{ .role }}</h4>
+                    <div class="social-links">
+                        {{ with .linkedin }}
+                        <a href="{{ . }}" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        {{ end }}
+                        {{ with .twitter }}
+                        <a href="{{ . }}" target="_blank"><i class="fab fa-twitter"></i></a>
+                        {{ end }}
+                    </div>
                 </div>
             </div>
-        </div>
         {{ end }}
     </div>
 

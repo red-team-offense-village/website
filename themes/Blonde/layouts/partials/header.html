@@ -22,11 +22,12 @@
                 </div>
                 <div class="navmenu">
                     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-                    {{ range .Site.Menus.main }}
-                    <a href="{{ .URL }}"
+                    {{ range .Site.Data.navigation.main }}
+                    <a href="{{ .url }}"
                         class="no-underline duration-200 block mt-4 sm:inline-block sm:mt-0 text-white hover:opacity-50 mr-4"
-                        {{ if hasPrefix .URL "http" }}target="_blank"{{ end }}>
-                        {{ .Name | safeHTML }}
+                        {{ with .target }}target="{{ . }}"{{ end }}>
+                        {{ if .pre }}{{ .pre | safeHTML }}{{ end }}
+                        {{ .name | safeHTML }}
                     </a>
                     {{ end }}
                 </div>
