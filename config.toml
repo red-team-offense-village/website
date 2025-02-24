@@ -88,7 +88,7 @@ darkmode = "dark"
     name = ""  # Empty name since we're using an image
     url = "/"
     weight = 0
-    pre = "<img src='assets/images/2024-rtv-final-1-129x131.png' alt='RTV Logo' style='height: 40px; width: auto;'>"
+    pre = "<img src='assets/images/rtv-logo.png' alt='RTV Logo' style='height: 40px; width: auto;'>"
 
   [[menu.main]]
     identifier = "discord"
@@ -136,7 +136,7 @@ darkmode = "dark"
   [[menu.footer]]
     identifier = "discord"
     name = "<i class='fab fa-discord fa-lg'></i>"
-    url = "https://discord.gg/6kVXr4XApd"
+    url = "https://discord.gg/redteamvillage"
     weight = 1
 
   [[menu.footer]]
