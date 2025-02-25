@@ -1,6 +1,11 @@
 {{ define "main" }}
 
-{{ partial "hero" . }}
+<div class="hero">
+    <div class="hero-content">
+        <h1>{{ .Title }}</h1>
+    </div>
+</div>
+
 <article class="post" style="background: #ffffff; padding: 2rem; border-radius: 8px; margin: 2rem auto; max-width: 1600px;">
     <div class="home-container">
         <section class="mission-section">
@@ -320,6 +325,14 @@
 
     .updates-section {
         padding: 0 2rem 2rem 2rem;
+    }
+
+    .hero {
+        background-image: url('{{ .Site.BaseURL }}assets/images/rtv-logo.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
     }
     </style>
 </article>
