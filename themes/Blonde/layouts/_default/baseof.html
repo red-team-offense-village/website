@@ -4,7 +4,25 @@
 {{ else }}
 <html lang="{{ .Site.LanguageCode | default .Site.Language.Lang }}">
 {{ end }}
-{{- partial "head.html" . -}}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }}{{ if not .IsHome }} | {{ .Site.Title }}{{ end }}</title>
+    <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
+    
+    <!-- Update CSS links to use relURL -->
+    <link rel="stylesheet" href="{{ relURL "css/style.css" }}">
+    <link rel="stylesheet" href="{{ relURL "css/font.css" }}">
+    <link rel="stylesheet" href="{{ relURL "css/iconfont.css" }}">
+    
+    <!-- Keep external CDN links as absolute -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom head HTML -->
+    {{ with .Site.Params.customHeadHTML }}
+    {{ . | safeHTML }}
+    {{ end }}
+</head>
 
 <body class="font-sans">
     <div class="min-h-screen flex flex-col bg-gray-100 dark:bg-warmgray-800">
