@@ -82,10 +82,11 @@
     },
     {
       "name": "Nate Sanders",
-      "handle": "@mauvehead",
+      "handle": "@mauvehed",
       "role": "Core Staff",
       "image": "nate-240x240.jpg",
-      "linkedin": "https://www.linkedin.com/in/sandersn/"
+      "linkedin": "https://www.linkedin.com/in/sandersn/",
+      "twitter": "https://defcon.social/@mauvehed"
     },
     {
       "name": "Greg Oldham",
