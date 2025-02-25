@@ -4,7 +4,7 @@
         <div class="flex justify-center space-x-16 mb-6">
             {{ range .Site.Data.navigation.footer }}
             <a href="{{ if hasPrefix .url `http` }}{{ .url }}{{ else }}/website{{ .url }}{{ end }}"
-                class="text-white hover:text-gray-400 transition duration-200 text-3xl"
+                class="text-red hover:text-gray-400 transition duration-200 text-3xl px-3 my-2"
                 {{ with .target }}target="{{ . }}"{{ end }}>
                 {{ .name | safeHTML }}
             </a>

@@ -2,7 +2,7 @@
 {{ if eq .Site.Params.darkmode "dark" }}
 <html lang="{{ .Site.LanguageCode | default .Site.Language.Lang }}" class="dark">
 {{ else }}
-<html lang="{{ .Site.LanguageCode | default .Site.Language.Lang }}">
+<html lang="{{ .Site.LanguageCode | default .Site.Language.Lang }}" class="dark">
 {{ end }}
 <head>
     <meta charset="UTF-8">
@@ -10,10 +10,21 @@
     <title>{{ .Title }}{{ if not .IsHome }} | {{ .Site.Title }}{{ end }}</title>
     <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
     
-    <!-- Update CSS paths to use /website/ prefix -->
-    <link rel="stylesheet" href="/website/css/style.css">
-    <link rel="stylesheet" href="/website/css/font.css">
-    <link rel="stylesheet" href="/website/css/iconfont.css">
+    <!-- Load CSS from theme assets -->
+    {{ $style := resources.Get "css/style.css" }}
+    {{ if $style }}
+        <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+    {{ end }}
+    
+    {{ $font := resources.Get "css/font.css" }}
+    {{ if $font }}
+        <link rel="stylesheet" href="{{ $font.RelPermalink }}">
+    {{ end }}
+    
+    {{ $iconfont := resources.Get "css/iconfont.css" }}
+    {{ if $iconfont }}
+        <link rel="stylesheet" href="{{ $iconfont.RelPermalink }}">
+    {{ end }}
     
     <!-- Keep external CDN links as absolute -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -24,15 +35,17 @@
     {{ end }}
 </head>
 
-<body class="font-sans">
-    <div class="min-h-screen flex flex-col bg-gray-100 dark:bg-warmgray-800">
-        {{- partial "header.html" . -}}
-        <div class="container max-w-screen-xl mx-auto mt-4 flex-grow px-5 lg:px-0" id="content">
-            <div class="lg:mx-5">
-            {{- block "main" . }}{{- end }}
+<body class="font-sans dark:bg-warmgray-900">
+    <div class="min-h-screen flex flex-col">
+        <div class="container max-w-screen-xl mx-auto">
+            {{- partial "header.html" . -}}
+            <div class="flex-grow bg-neutral-900" id="content">
+                <div class="lg:mx-5 bg-white" style="margin-top: -1px;">
+                {{- block "main" . }}{{- end }}
+                </div>
             </div>
+            {{- partial "footer.html" . -}}
         </div>
-        {{- partial "footer.html" . -}}
     </div>
 </body>
 
