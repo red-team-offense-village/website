@@ -4,7 +4,7 @@
             <div class="flex items-center flex-no-shrink text-white mr-6">
                 <a href="{{ .Site.BaseURL }}" class="flex items-center">
                     <img src="{{ if eq (getenv "HUGO_ENV") "production" }}/website/assets/images/rtv-logo.png{{ else }}{{ .Site.BaseURL }}assets/images/rtv-logo.png{{ end }}" alt="RTV Logo" class="mr-3" style="height: 100px; width: auto;">
-                    <span class="font-semibold text-2xl tracking-tight">{{ .Site.Title }}</span>
+                    <span class="text-2xl tracking-tight font-['Saira']">{{ .Site.Title | upper }}</span>
                 </a>
             </div>
             <div class="flex md:hidden">
