@@ -1,0 +1,126 @@
+/* Team Page Styles */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.team-card {
+    background: #690d0d;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.team-card:hover {
+    transform: translateY(-4px);
+}
+
+.card-image {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.card-image img {
+    width: 192px;
+    height: 192px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.card-content h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.card-content h4 {
+    margin: 0.5rem 0;
+    color: #ffffff;
+    font-size: 1.1rem;
+}
+
+/* Schedule Page Styles */
+.schedule-container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.schedule-content {
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.schedule-content h2 {
+    color: #333333;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}
+
+.schedule-content p {
+    color: #666666;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Venue Page Styles */
+.venue-container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.venue-content {
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.venue-content h2 {
+    color: #333333;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}
+
+.venue-content p {
+    color: #666666;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .team-grid {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+    
+    .schedule-content h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .schedule-content h2,
+    .venue-content h2 {
+        font-size: 2rem;
+    }
+} 
