@@ -50,6 +50,23 @@
     font-size: 1.1rem;
 }
 
+.social-links {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+}
+
+.social-links a {
+    color: #ffffff;
+    font-size: 1.25rem;
+    transition: color 0.2s;
+}
+
+.social-links a:hover {
+    color: #2563eb;
+}
+
 /* Schedule Page Styles */
 .schedule-container {
     max-width: 1600px;
