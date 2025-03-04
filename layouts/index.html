@@ -1,68 +1,121 @@
 {{ define "main" }}
 
+<!-- Hero Section -->
 {{ partial "hero" . }}
 
-<article class="post" style="border-radius: 8px; padding-left: 2rem; padding-right: 2rem; max-width: 1600px;">
-    <div class="home-container">
-        <section class="mission-section mt-5 px-5">
-            <div class="mission-content">
-                <div class="mission-header">
-                    <h2>Our Mission</h2>
-                </div>
-                <div class="mission-text">
-                    <p>The Red Team Village is focused on training the art of critical thinking, collaboration, and strategy in offensive security. The RTV brings together information security professionals to share new tactics and techniques in offensive security. Attendees may spend time in introductory workshops or challenge themselves in an immersive Capture the Flag competition to put their newly obtained skills to the test.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="updates-section">
-            <div class="update-header">
-                <i class="fas fa-bullhorn"></i>
-                <h3>Latest Updates</h3>
-            </div>
-            <div class="update-content">
-                <div class="update-item">
-                    <span class="update-date">August 10-13, 2024</span>
-                    <p>Join us at DEFCON 33 in Las Vegas! We'll be hosting workshops, CTF competitions, and more.</p>
-                    <span class="tag">Conference</span>
-                </div>
-                <div class="update-item">
-                    <span class="update-date">Registration Open</span>
-                    <p>Registration for our DEFCON 32 CTF is now open. Sign up early to secure your spot!</p>
-                    <span class="tag">CTF</span>
-                </div>
-                <div class="update-item">
-                    <span class="update-date">Call for Papers</span>
-                    <p>Submit your workshop proposals for DEFCON 32. Deadline approaching soon!</p>
-                    <span class="tag">CFP</span>
-                </div>
-            </div>
-        </section>
-
-        <section class="featured-sections">
-            <div class="feature-grid">
-                <div class="feature-card">
-                    <i class="fas fa-users"></i>
-                    <h3>Community</h3>
-                    <p>Join our growing community of security professionals, researchers, and enthusiasts.</p>
-                    <a href="https://discord.gg/redteamvillage" class="feature-link">Join Discord</a>
-                </div>
-
-                <div class="feature-card">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <h3>Events</h3>
-                    <p>Find out where we'll be next, both online and in person.</p>
-                    <a href="/schedule" class="feature-link">View Events</a>
-                </div>
-
-                <div class="feature-card">
-                    <i class="fas fa-comment-dots"></i>
-                    <h3>Connect</h3>
-                    <p>Want to get in touch? Send us a message on X.</p>
-                    <a href="https://x.com/redteamvillage_" class="feature-link">Follow on X</a>
-                </div>
-            </div>
-        </section>
+<!-- Mission Section -->
+<section class="py-8 px-4">
+    <div class="max-w-6xl mx-auto">
+      <div class="bg-red-800 rounded-lg shadow-lg p-8 text-white">
+        <div class="flex flex-col md:flex-row items-center justify-between mb-8">
+          <h2 class="text-3xl font-bold text-center md:text-left w-full mb-4">Our Mission</h2>
+        </div>
+        <div class="text-lg leading-relaxed">
+          <p class="mb-4">
+            At Red Team Village, our mission is to foster a collaborative environment where security professionals can develop and enhance their offensive security skills. We believe in the power of community-driven education and the importance of practical, hands-on learning experiences.
+          </p>
+          <p class="mb-4">
+            We aim to bridge the gap between theoretical knowledge and real-world application by providing accessible training, resources, and networking opportunities. Through our events, workshops, and online platforms, we strive to build a diverse and inclusive community that advances the field of offensive security.
+          </p>
+          <p>
+            By empowering individuals with the knowledge and skills needed to identify and address security vulnerabilities, we contribute to creating a more secure digital world for everyone.
+          </p>
+        </div>
+      </div>
     </div>
-</article>
+  </section>
+
+<!-- Latest Updates Section -->
+<section class="py-8 px-4">
+  <div class="max-w-6xl mx-auto">
+    <div class="bg-white border-2 border-red-800 rounded-lg shadow-lg p-8">
+      <div class="flex items-center gap-4 mb-8 text-red-800">
+        <i class="fas fa-newspaper text-3xl"></i>
+        <h3 class="text-2xl font-bold text-gray-800">Latest Updates</h3>
+      </div>
+      
+      <div class="space-y-6">
+        <!-- Update Item 1 -->
+        <div class="py-4 border-b border-gray-200 last:border-0">
+          <span class="block text-red-800 font-bold mb-2">June 15, 2023</span>
+          <p class="text-gray-700 mb-2">
+            Registration is now open for our annual conference! Join us for three days of workshops, talks, and networking opportunities.
+          </p>
+          <span class="inline-block bg-red-800 text-white px-3 py-1 rounded-full text-sm">Conference</span>
+        </div>
+        
+        <!-- Update Item 2 -->
+        <div class="py-4 border-b border-gray-200 last:border-0">
+          <span class="block text-red-800 font-bold mb-2">May 28, 2023</span>
+          <p class="text-gray-700 mb-2">
+            New workshop series announced: "Advanced Penetration Testing Techniques" starting next month.
+          </p>
+          <span class="inline-block bg-red-800 text-white px-3 py-1 rounded-full text-sm">Workshop</span>
+        </div>
+        
+        <!-- Update Item 3 -->
+        <div class="py-4">
+          <span class="block text-red-800 font-bold mb-2">May 10, 2023</span>
+          <p class="text-gray-700 mb-2">
+            Congratulations to the winners of our Spring CTF competition! Check out the write-ups on our blog.
+          </p>
+          <span class="inline-block bg-red-800 text-white px-3 py-1 rounded-full text-sm">CTF</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Features Section -->
+<section class="py-8 px-8 bg-gray-100">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-3 sm:grid-cols-1 lg:grid-cols-3 gap-8">
+        
+        <!-- Feature Card 1 -->
+        <div class="bg-red-800 rounded-lg shadow-lg p-8 text-white transform transition duration-300 hover:-translate-y-1 hover:shadow-xl flex flex-col">
+          <div class="text-5xl mb-4 text-center">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <h3 class="text-2xl font-bold mb-4 text-center">Education</h3>
+          <p class="mb-6 text-center flex-grow">
+            Access workshops, training sessions, and resources designed to enhance your offensive security skills.
+          </p>
+          <a href="/events" class="bg-white text-gray-800 py-3 px-6 rounded font-semibold text-center hover:bg-gray-100 transition duration-300">
+            Learn More
+          </a>
+        </div>
+        
+        <!-- Feature Card 2 -->
+        <div class="bg-red-800 rounded-lg shadow-lg p-8 text-white transform transition duration-300 hover:-translate-y-1 hover:shadow-xl flex flex-col">
+          <div class="text-5xl mb-4 text-center">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3 class="text-2xl font-bold mb-4 text-center">Community</h3>
+          <p class="mb-6 text-center flex-grow">
+            Join a vibrant community of like-minded professionals and enthusiasts passionate about offensive security.
+          </p>
+          <a href="/about" class="bg-white text-black py-3 px-6 rounded font-semibold text-center hover:bg-gray-100 transition duration-300">
+            Join Us
+          </a>
+        </div>
+        
+        <!-- Feature Card 3 -->
+        <div class="bg-red-800 rounded-lg shadow-lg p-8 text-white transform transition duration-300 hover:-translate-y-1 hover:shadow-xl flex flex-col">
+          <div class="text-5xl mb-4 text-center">
+            <i class="fas fa-calendar-alt"></i>
+          </div>
+          <h3 class="text-2xl font-bold mb-4 text-center">Events</h3>
+          <p class="mb-6 text-center flex-grow">
+            Participate in conferences, CTFs, and workshops both online and in-person throughout the year.
+          </p>
+          <a href="/events" class="bg-white text-black py-3 px-6 rounded font-semibold text-center hover:bg-gray-100 transition duration-300">
+            View Events
+          </a>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
 {{ end }} 

@@ -7,10 +7,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ .Title }}{{ if not .IsHome }} | {{ .Site.Title }}{{ end }}</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
     <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
     
-    <!-- Load CSS from theme assets -->
+    <!-- Saira Font Import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Load Tailwind CSS first -->
+    {{ $css := resources.Get "css/main.css" }}
+    {{ $css = $css | css.PostCSS }}
+    {{ if hugo.IsProduction }}
+        {{ $css = $css | minify | fingerprint }}
+    {{ end }}
+    <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+    
+    <!-- Load other theme CSS -->
     {{ $style := resources.Get "css/style.css" }}
     {{ if $style }}
         <link rel="stylesheet" href="{{ $style.RelPermalink }}">
@@ -26,11 +40,6 @@
         <link rel="stylesheet" href="{{ $iconfont.RelPermalink }}">
     {{ end }}
     
-    {{ $pages := resources.Get "css/pages.css" }}
-    {{ if $pages }}
-        <link rel="stylesheet" href="{{ $pages.RelPermalink }}">
-    {{ end }}
-    
     <!-- Keep external CDN links as absolute -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
@@ -38,14 +47,21 @@
     {{ with .Site.Params.customHeadHTML }}
     {{ . | safeHTML }}
     {{ end }}
+    
+    <!-- Custom styles for Saira font -->
+    <style>
+        body {
+            font-family: 'Saira', sans-serif;
+        }
+    </style>
 </head>
 
-<body class="font-sans dark:bg-warmgray-900">
+<body class="font-sans bg-neutral-900">
     <div class="min-h-screen flex flex-col">
         <div class="container max-w-screen-xl mx-auto">
             {{- partial "header.html" . -}}
             <div class="flex-grow bg-neutral-900" id="content">
-                <div class="lg:mx-5 bg-white" style="margin-top: -1px;">
+                <div class="bg-white" style="margin-top: -1px;">
                 {{- block "main" . }}{{- end }}
                 </div>
             </div>

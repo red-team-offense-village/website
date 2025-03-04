@@ -7,43 +7,28 @@
       "weight": 1
     },
     {
+      "identifier": "sponsors",
+      "name": "<i class='fas fa-handshake'></i> SPONSORS",
+      "url": "/sponsors/",
+      "weight": 2
+    },
+    {
       "identifier": "venue",
       "name": "<i class='fas fa-map-marker-alt'></i> VENUE",
       "url": "/venue/",
-      "weight": 2
+      "weight": 3
     },
     {
       "identifier": "schedule",
       "name": "<i class='far fa-calendar'></i> SCHEDULE",
       "url": "/schedule/",
-      "weight": 3
-    },
-    {
-      "identifier": "discord",
-      "name": "<i class='fab fa-discord'></i> DISCORD",
-      "url": "https://discord.gg/redteamvillage",
-      "weight": 4,
-      "target": "_blank"
-    },
-    {
-      "identifier": "twitter",
-      "name": "<i class='fab fa-twitter'></i> TWITTER",
-      "url": "https://x.com/redteamvillage_",
-      "weight": 5,
-      "target": "_blank"
-    },
-    {
-      "identifier": "youtube",
-      "name": "<i class='fab fa-youtube'></i> YOUTUBE",
-      "url": "https://www.youtube.com/redteamvillage",
-      "weight": 6,
-      "target": "_blank"
+      "weight": 4
     },
     {
       "identifier": "volunteer",
       "name": "<i class='fas fa-external-link-alt'></i> VOLUNTEER PORTAL",
       "url": "https://volunteer.redteamvillage.io",
-      "weight": 7,
+      "weight": 5,
       "target": "_blank"
     }
   ],

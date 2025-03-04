@@ -1,5 +1,25 @@
-<div class="hero">
-    <div class="hero-content">
-        <h1>{{ .Title }}</h1>
+<div class="py-16 relative bg-red-800 overflow-hidden">
+    <!-- Font import -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Saira:wght@400;500;600;700&display=swap');
+        .hero-title {
+            font-family: 'Saira', sans-serif !important;
+        }
+    </style>
+
+    <!-- Solid background color -->
+    <div class="absolute inset-0 bg-red-800" style="z-index: 0;"></div>
+    
+    <!-- Centered background image container -->
+    <div class="absolute inset-0 flex items-center justify-center" style="z-index: 1;">
+        <div class="opacity-50">
+            <img src="{{ if eq (getenv "HUGO_ENV") "production" }}/website/assets/images/rtv-logo.png{{ else }}/website/assets/images/rtv-logo.png{{ end }}" alt="Background" class="w-full h-full object-contain">
+        </div>
+    </div>
+    
+    <!-- Content -->
+    <div class="relative max-w-[1200px] mx-auto px-8" style="z-index: 2;">
+      <!-- Your content here -->
+      <h2 class="text-white text-center text-4xl font-bold font-saira hero-title" style="font-family: 'Saira', sans-serif !important;">{{ .Title | upper }}</h2>
     </div>
 </div>
