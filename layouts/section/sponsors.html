@@ -1,16 +1,18 @@
 {{ define "main" }}
 {{ partial "hero" . }}
 
-<div class="container mx-auto px-8 py-8 max-w-6xl">
+<div class="container mx-auto px-4 py-4 max-w-6xl">
   <!-- Introduction Section -->
-  <section class="mb-16">
-    <div class="bg-red-800 rounded-lg shadow-md p-8">
-      <h2 class="text-3xl font-bold text-center text-white mb-6">
-        Our Sponsors
-      </h2>
-      <p class="text-lg text-white max-w-4xl mx-auto text-center">
-        We thank our sponsors for supporting Red Team Village and making our mission possible. Your backing allows us to provide learning opportunities, develop skills, and build connections among security professionals worldwide. Through your support, we deliver education, hands-on experiences, and collaborative environments that strengthen our industry by developing offensive security talent.
-      </p>
+  <section class="py-8 px-4 mb-8">
+    <div class="max-w-6xl mx-auto">
+      <div class="bg-red-800 rounded-lg shadow-lg p-8">
+        <h2 class="text-3xl font-bold text-center text-white mb-6">
+          Our Sponsors
+        </h2>
+        <p class="text-lg text-white max-w-4xl mx-auto text-center">
+          We thank our sponsors for supporting Red Team Village and making our mission possible. Your backing allows us to provide learning opportunities, develop skills, and build connections among security professionals worldwide. Through your support, we deliver education, hands-on experiences, and collaborative environments that strengthen our industry by developing offensive security talent.
+        </p>
+      </div>
     </div>
   </section>
 
@@ -61,7 +63,9 @@
               <div class="p-6 flex flex-col flex-grow text-center">
                 <h4 class="text-lg font-medium mb-3">{{ .name }}</h4>
                 <p class="text-gray-600 mb-4 flex-grow">{{ .description }}</p>
-                <a href="{{ .website }}" class="inline-block py-2 px-4 bg-primary hover:bg-secondary text-black rounded transition-colors duration-300 mt-auto" target="_blank" rel="noopener">Visit Website</a>
+                <div class="text-center">
+                  <a href="{{ .website }}" class="inline-block py-2 px-6 bg-red-800 hover:bg-red-900 text-white rounded transition-colors duration-300" target="_blank" rel="noopener">Visit Website</a>
+                </div>
               </div>
             </div>
             {{ end }}

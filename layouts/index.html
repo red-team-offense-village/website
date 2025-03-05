@@ -4,26 +4,26 @@
 {{ partial "hero" . }}
 
 <!-- Mission Section -->
-<section class="py-4 px-4">
-    <div class="max-w-6xl mx-auto">
-      <div class="bg-red-800 rounded-lg shadow-lg p-8 text-white">
-        <div class="flex flex-col md:flex-row items-center justify-between mb-8">
-          <h2 class="text-3xl font-bold text-center md:text-left w-full mb-4">Our Mission</h2>
-        </div>
-        <div class="text-lg leading-relaxed">
-          <p class="mb-4">
-            At Red Team Village, our mission is to foster a collaborative environment where security professionals can develop and enhance their offensive security skills. We believe in the power of community-driven education and the importance of practical, hands-on learning experiences.
-          </p>
-          <p class="mb-4">
-            We aim to bridge the gap between theoretical knowledge and real-world application by providing accessible training, resources, and networking opportunities. Through our events, workshops, and online platforms, we strive to build a diverse and inclusive community that advances the field of offensive security.
-          </p>
-          <p>
-            By empowering individuals with the knowledge and skills needed to identify and address security vulnerabilities, we contribute to creating a more secure digital world for everyone.
-          </p>
-        </div>
+<section class="py-8 px-4">
+  <div class="max-w-6xl mx-auto">
+    <div class="bg-red-800 rounded-lg shadow-lg p-8 text-white">
+      <div class="flex flex-col items-center justify-center mb-8">
+        <h2 class="text-3xl font-bold text-center mb-4">Our Mission</h2>
+      </div>
+      <div class="text-lg leading-relaxed text-center max-w-4xl mx-auto">
+        <p class="mb-4">
+          At Red Team Village, our mission is to foster a collaborative environment where security professionals can develop and enhance their offensive security skills. We believe in the power of community-driven education and the importance of practical, hands-on learning experiences.
+        </p>
+        <p class="mb-4">
+          We aim to bridge the gap between theoretical knowledge and real-world application by providing accessible training, resources, and networking opportunities. Through our events, workshops, and online platforms, we strive to build a diverse and inclusive community that advances the field of offensive security.
+        </p>
+        <p>
+          By empowering individuals with the knowledge and skills needed to identify and address security vulnerabilities, we contribute to creating a more secure digital world for everyone.
+        </p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
 <!-- Latest Updates Section -->
 <section class="py-8 px-4">
@@ -40,7 +40,7 @@
         <div class="py-4 border-b border-gray-200 last:border-0">
           <h4 class="text-xl font-bold text-gray-800 mb-1">{{ .title }}</h4>
           <div class="flex items-center gap-3 mb-3">
-            <span class="text-red-800 font-medium mr-4">{{ .date }}</span>
+            <span class="text-gray-800 font-medium mr-4">{{ .date }}</span>
             <span class="bg-gray-200 text-black px-3 py-1 rounded-full text-sm">{{ .tag }}</span>
           </div>
           <p class="text-gray-700 mb-4">
