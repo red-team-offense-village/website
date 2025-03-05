@@ -2,3 +2,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Custom styles after Tailwind */
+@layer utilities {
+  @media (min-width: 768px) {
+    .grid-cols-3-force {
+      grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    }
+  }
+}

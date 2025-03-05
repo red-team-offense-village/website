@@ -1,7 +1,7 @@
 {{ define "main" }}
 {{ partial "hero" . }}
 <article class="post" style="margin: 0 auto; max-width: 1600px;">
-    <div class="grid grid-cols-3 gap-8 p-8 max-w-[1200px] mx-auto md:grid-cols-2 sm:grid-cols-1">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 p-8 max-w-[1200px] mx-auto">
         {{ range .Site.Data.team.members }}
             <div class="bg-red-800 rounded-xl border border-[#e5e5e5] overflow-hidden shadow-lg transition-transform duration-200 hover:-translate-y-1 hover:shadow-xl">
                 <div class="p-6 flex justify-center">

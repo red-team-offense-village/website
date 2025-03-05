@@ -1,25 +1,50 @@
 <div class="bg-neutral-900">
-    <div class="container max-w-screen-xl mr-auto ml-auto">
-        <nav class="flex items-center justify-between flex-wrap p-6">
-            <div class="flex items-center flex-no-shrink text-white mr-6">
-                <a href="{{ .Site.BaseURL }}" class="flex items-center">
-                    <img src="{{ if eq (getenv "HUGO_ENV") "production" }}/website/assets/images/rtv-logo.png{{ else }}{{ .Site.BaseURL }}assets/images/rtv-logo.png{{ end }}" alt="RTV Logo" class="mr-3" style="height: 100px; width: auto;">
-                    <span class="text-2xl tracking-tight font-['Saira']">{{ .Site.Title | upper }}</span>
-                </a>
-            </div>
-            <div class="flex md:hidden">
-                <button id="hamburgerbtn" class="flex items-center px-3 py-1 text-white hover:opacity-50" aria-label="Hamburger Button">
-                    <span class="icon-menu text-2xl"></span>
-                </button>
-            </div>
-            <div class="hidden w-full md:flex md:flex-row sm:items-center md:w-auto" id="mobileMenu">
-                <div class="text-sm lg:flex-grow">
+    <div class="container max-w-screen-xl mx-auto px-4">
+        <nav class="py-4">
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex md:justify-between md:items-center">
+                <!-- Logo for desktop -->
+                <div class="flex items-center flex-shrink-0 text-white">
+                    <a href="{{ .Site.BaseURL }}" class="flex items-center">
+                        <img src="{{ if eq (getenv "HUGO_ENV") "production" }}/website/assets/images/rtv-logo.png{{ else }}{{ .Site.BaseURL }}assets/images/rtv-logo.png{{ end }}" alt="RTV Logo" class="mr-3" style="height: 80px; width: auto;">
+                        <span class="text-2xl tracking-tight font-['Saira']">{{ .Site.Title | upper }}</span>
+                    </a>
                 </div>
-                <div class="navmenu">
-                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+                
+                <!-- Desktop menu -->
+                <div class="flex items-center">
                     {{ range .Site.Data.navigation.main }}
                     <a href="{{ if hasPrefix .url `http` }}{{ .url }}{{ else }}{{ $.Site.BaseURL }}{{ .url }}{{ end }}"
-                        class="no-underline duration-200 block mt-4 sm:inline-block sm:mt-0 text-white hover:opacity-50 mr-4"
+                        class="no-underline duration-200 text-white hover:opacity-50 mx-4"
+                        {{ with .target }}target="{{ . }}"{{ end }}>
+                        {{ .name | safeHTML }}
+                    </a>
+                    {{ end }}
+                </div>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <div class="md:hidden">
+                <div class="flex justify-between items-center">
+                    <!-- Logo for mobile -->
+                    <div class="flex items-center flex-shrink-0 text-white">
+                        <a href="{{ .Site.BaseURL }}" class="flex items-center">
+                            <img src="{{ if eq (getenv "HUGO_ENV") "production" }}/website/assets/images/rtv-logo.png{{ else }}{{ .Site.BaseURL }}assets/images/rtv-logo.png{{ end }}" alt="RTV Logo" class="mr-2" style="height: 60px; width: auto;">
+                            <span class="text-xl tracking-tight font-['Saira']">{{ .Site.Title | upper }}</span>
+                        </a>
+                    </div>
+                    
+                    <!-- Hamburger button -->
+                    <button id="hamburgerbtn" class="flex items-center px-3 py-1 text-white hover:opacity-50" aria-label="Hamburger Button">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+                
+                <!-- Mobile menu (hidden by default) -->
+                <div id="mobileMenu" class="hidden mt-4">
+                    {{ range .Site.Data.navigation.main }}
+                    <a href="{{ if hasPrefix .url `http` }}{{ .url }}{{ else }}{{ $.Site.BaseURL }}{{ .url }}{{ end }}"
+                        class="no-underline duration-200 block py-2 text-white hover:opacity-50 border-b border-gray-800 last:border-0"
                         {{ with .target }}target="{{ . }}"{{ end }}>
                         {{ .name | safeHTML }}
                     </a>
@@ -29,18 +54,41 @@
         </nav>
     </div>
 </div>
+
 <style>
-    .active {
-        display: block;
+    /* Mobile menu when active */
+    #mobileMenu.active {
+        display: block !important;
+    }
+    
+    /* Improved mobile menu styling */
+    @media (max-width: 768px) {
+        #mobileMenu {
+            padding: 1rem;
+            background-color: #171717;
+            margin-top: 0.5rem;
+        }
+        
+        #mobileMenu a {
+            padding: 0.75rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        #mobileMenu a:last-child {
+            border-bottom: none;
+        }
     }
 </style>
 
 <script>
-    let hamburger = document.getElementById('hamburgerbtn');
-
-    let mobileMenu = document.getElementById('mobileMenu');
-
-    hamburger.addEventListener('click', function () {
-        mobileMenu.classList.toggle('active');
+    document.addEventListener('DOMContentLoaded', function() {
+        const hamburger = document.getElementById('hamburgerbtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        
+        if (hamburger && mobileMenu) {
+            hamburger.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
     });
 </script>
