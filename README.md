@@ -26,6 +26,7 @@ Anything that should be deployed to the final website and not rendered through H
 
 To add/remove/delete a "Latest Updates" entry on the main page, browse to the `data/updates.json` file and make changes there. Newer entries should be added to the top of the file. The structure of an entry follows:
 
+```
 updates
 |_title
 |_date
@@ -37,6 +38,7 @@ updates
 |_url
 | |_href
 | |_text
+```
 
 `title`: This is the title of the update, appears at the top of the update in bold.  
 `date`: This is the update posting date.  
@@ -67,6 +69,7 @@ Exmaple Update Entry:
 
 To modify the content of the team page, edit the `data/team.json` file. All entries here will be rendered in order of appearance within the file, so slot in a new entry on the appropriate space in the file. The structure of a team entry is as follows:
 
+```
 team
 |_members []
 |  |_name
@@ -75,6 +78,7 @@ team
 |  |_image
 |  |_linkedin
 |  |_twitter
+```
 
 `name`: Team member's Name.  
 `handle`: Team member's handle.  
@@ -103,6 +107,7 @@ This is a little more complex since we can have multiple events listed with spon
 
 The structure of the file is as follows:
 
+```
 events
 |_Name
 |_Dates
@@ -116,7 +121,7 @@ events
 |    |_Logo
 |    |_Website
 |    |_Description
-
+```
 The structure of an entry follows:
 
 events:  
