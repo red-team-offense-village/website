@@ -5,6 +5,10 @@
       "date": "June 15, 2023",
       "content": "Registration is now open for our annual conference! Join us for three days of workshops, talks, and networking opportunities.",
       "tag": "Conference",
+      "image": {
+        "src": "rtv-logo.png",
+        "alt": "Red Team Village Conference 2023"
+      },
       "url": {
         "href": "/events/annual-conference",
         "text": "Register Now"
@@ -15,6 +19,10 @@
       "date": "May 28, 2023",
       "content": "New workshop series announced: \"Advanced Penetration Testing Techniques\" starting next month.",
       "tag": "Workshop",
+      "image": {
+        "src": "rtv-logo.png",
+        "alt": "Logo"
+      },
       "url": {
         "href": "/events/workshops",
         "text": "View Workshops"
@@ -34,13 +42,21 @@
       "title": "New Industry Partnership",
       "date": "April 22, 2023",
       "content": "We're excited to announce our new partnership with CyberSec Industries to provide more training opportunities.",
-      "tag": "Partnership"
+      "tag": "Partnership",
+      "image": {
+        "src": "rtv-logo.png",
+        "alt": "Partnership Announcement"
+      }
     },
     {
       "title": "YouTube Channel Milestone",
       "date": "March 15, 2023",
       "content": "Our YouTube channel has reached 10,000 subscribers! Thank you for your support.",
       "tag": "Milestone",
+      "image": {
+        "src": "rtv-logo.png",
+        "alt": "YouTube 10K Subscribers"
+      },
       "url": {
         "href": "https://youtube.com/redteamvillage",
         "text": "Visit Channel",
