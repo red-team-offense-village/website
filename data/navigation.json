@@ -3,25 +3,25 @@
     {
       "identifier": "rtv-team",
       "name": "<i class='fas fa-users'></i> TEAM",
-      "url": "/team/",
+      "url": "team/",
       "weight": 1
     },
     {
       "identifier": "sponsors",
       "name": "<i class='fas fa-handshake'></i> SPONSORS",
-      "url": "/sponsors/",
+      "url": "sponsors/",
       "weight": 2
     },
     {
       "identifier": "venue",
       "name": "<i class='fas fa-map-marker-alt'></i> VENUE",
-      "url": "/venue/",
+      "url": "venue/",
       "weight": 3
     },
     {
       "identifier": "schedule",
       "name": "<i class='far fa-calendar'></i> SCHEDULE",
-      "url": "/schedule/",
+      "url": "schedule/",
       "weight": 4
     },
     {
