@@ -4,7 +4,7 @@
 {{ partial "hero" . }}
 
 <!-- Mission Section -->
-<section class="py-8 px-4">
+<section class="py-4 px-4">
     <div class="max-w-6xl mx-auto">
       <div class="bg-red-800 rounded-lg shadow-lg p-8 text-white">
         <div class="flex flex-col md:flex-row items-center justify-between mb-8">
@@ -35,32 +35,79 @@
       </div>
       
       <div class="space-y-6">
-        <!-- Update Item 1 -->
+        <!-- Initial visible updates -->
+        {{ range first 3 .Site.Data.updates.updates }}
         <div class="py-4 border-b border-gray-200 last:border-0">
-          <span class="block text-red-800 font-bold mb-2">June 15, 2023</span>
-          <p class="text-gray-700 mb-2">
-            Registration is now open for our annual conference! Join us for three days of workshops, talks, and networking opportunities.
+          <h4 class="text-xl font-bold text-gray-800 mb-1">{{ .title }}</h4>
+          <div class="flex items-center gap-3 mb-3">
+            <span class="text-red-800 font-medium mr-4">{{ .date }}</span>
+            <span class="bg-gray-200 text-black px-3 py-1 rounded-full text-sm">{{ .tag }}</span>
+          </div>
+          <p class="text-gray-700 mb-4">
+            {{ .content }}
           </p>
-          <span class="inline-block bg-red-800 text-white px-3 py-1 rounded-full text-sm">Conference</span>
+          <div class="flex flex-wrap items-center gap-3">
+            {{ with .url }}
+            <a href="{{ .href }}" class="inline-block bg-red-800 hover:bg-red-900 text-white px-6 py-2 rounded-md text-sm transition duration-200"{{ if .external }} target="_blank" rel="noopener"{{ end }}>
+              {{ .text }} {{ if .external }}<i class="fas fa-external-link-alt text-xs ml-1"></i>{{ end }}
+            </a>
+            {{ end }}
+          </div>
+        </div>
+        {{ end }}
+        
+        <!-- Hidden updates (shown when expanded) -->
+        {{ if gt (len .Site.Data.updates.updates) 3 }}
+        <div id="hidden-updates" class="hidden space-y-6">
+          {{ range after 3 .Site.Data.updates.updates }}
+          <div class="py-4 border-b border-gray-200 last:border-0">
+            <h4 class="text-xl font-bold text-gray-800 mb-1">{{ .title }}</h4>
+            <div class="flex items-center gap-3 mb-3">
+              <span class="text-red-800 font-medium mr-4">{{ .date }}</span>
+              <span class="bg-gray-200 text-black px-3 py-1 rounded-full text-sm">{{ .tag }}</span>
+            </div>
+            <p class="text-gray-700 mb-4">
+              {{ .content }}
+            </p>
+            <div class="flex flex-wrap items-center gap-3">
+              {{ with .url }}
+              <a href="{{ .href }}" class="inline-block bg-red-800 hover:bg-red-900 text-white px-6 py-2 rounded-md text-sm transition duration-200"{{ if .external }} target="_blank" rel="noopener"{{ end }}>
+                {{ .text }} {{ if .external }}<i class="fas fa-external-link-alt text-xs ml-1"></i>{{ end }}
+              </a>
+              {{ end }}
+            </div>
+          </div>
+          {{ end }}
         </div>
         
-        <!-- Update Item 2 -->
-        <div class="py-4 border-b border-gray-200 last:border-0">
-          <span class="block text-red-800 font-bold mb-2">May 28, 2023</span>
-          <p class="text-gray-700 mb-2">
-            New workshop series announced: "Advanced Penetration Testing Techniques" starting next month.
-          </p>
-          <span class="inline-block bg-red-800 text-white px-3 py-1 rounded-full text-sm">Workshop</span>
+        <!-- Toggle button -->
+        <div class="mt-8 text-center">
+          <button id="toggle-updates" class="inline-block bg-red-800 text-white px-6 py-2 rounded hover:bg-red-900 transition duration-300">
+            Show More Updates
+          </button>
         </div>
         
-        <!-- Update Item 3 -->
-        <div class="py-4">
-          <span class="block text-red-800 font-bold mb-2">May 10, 2023</span>
-          <p class="text-gray-700 mb-2">
-            Congratulations to the winners of our Spring CTF competition! Check out the write-ups on our blog.
-          </p>
-          <span class="inline-block bg-red-800 text-white px-3 py-1 rounded-full text-sm">CTF</span>
-        </div>
+        <script>
+          document.addEventListener('DOMContentLoaded', function() {
+            const toggleButton = document.getElementById('toggle-updates');
+            const hiddenUpdates = document.getElementById('hidden-updates');
+            
+            if (toggleButton && hiddenUpdates) {
+              toggleButton.addEventListener('click', function() {
+                if (hiddenUpdates.classList.contains('hidden')) {
+                  hiddenUpdates.classList.remove('hidden');
+                  toggleButton.textContent = 'Show Fewer Updates';
+                } else {
+                  hiddenUpdates.classList.add('hidden');
+                  toggleButton.textContent = 'Show More Updates';
+                  // Scroll back to updates section
+                  toggleButton.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }
+              });
+            }
+          });
+        </script>
+        {{ end }}
       </div>
     </div>
   </div>
