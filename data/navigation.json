@@ -13,12 +13,6 @@
       "weight": 2
     },
     {
-      "identifier": "venue",
-      "name": "<i class='fas fa-map-marker-alt'></i> VENUE",
-      "url": "venue/",
-      "weight": 3
-    },
-    {
       "identifier": "events",
       "name": "<i class='far fa-calendar'></i> EVENTS",
       "url": "events/",
