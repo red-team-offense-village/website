@@ -1,120 +1,35 @@
 {
   "events": [
     {
-      "name": "DEF CON 32 (2024)",
-      "dates": "August 8-11, 2024",
+      "name": "DEF CON 33 (2025)",
+      "dates": "August 7-10, 2025",
       "location": "Las Vegas, Nevada",
-      "description": "Join us at the world's largest hacker convention where Red Team Village will host workshops, capture the flag competitions, and networking events for security professionals.",
-      "image": "dc32.png",
+      "description": "Join us at the world's largest hacker convention where Red Team Village will host workshops, capture the flag competitions, more!",
+      "image": "dc33.png",
       "levels": [
         {
           "name": "Diamond",
           "sponsors": [
-            {
-              "name": "Security Corp Inc.",
-              "logo": "security-corp.png",
-              "website": "https://securitycorp.example.com",
-              "description": "Industry leader in penetration testing and security analysis, providing enterprise solutions for over 15 years."
-            }
           ]
         },
         {
           "name": "Platinum",
           "sponsors": [
-            {
-              "name": "CyberShield Technologies",
-              "logo": "cybershield.png",
-              "website": "https://cybershield.example.com",
-              "description": "Specializing in threat intelligence and incident response for Fortune 500 companies."
-            },
-            {
-              "name": "SecureNet Solutions",
-              "logo": "securenet.png",
-              "website": "https://securenet.example.com",
-              "description": "Providing comprehensive security assessments and red team exercises for critical infrastructure."
-            }
           ]
         },
         {
           "name": "Gold",
           "sponsors": [
-            {
-              "name": "HackSafe Systems",
-              "logo": "hacksafe.png",
-              "website": "https://hacksafe.example.com",
-              "description": "Creators of industry-standard vulnerability scanning tools used by security professionals worldwide."
-            },
-            {
-              "name": "ByteGuard",
-              "logo": "byteguard.png",
-              "website": "https://byteguard.example.com",
-              "description": "Specializing in secure code review and application security testing."
-            }
           ]
         },
         {
           "name": "Silver",
           "sponsors": [
-            {
-              "name": "DefendEdge",
-              "logo": "defendedge.png",
-              "website": "https://defendedge.example.com",
-              "description": "Offering cutting-edge security awareness training and phishing simulation services."
-            },
-            {
-              "name": "NetSentry",
-              "logo": "netsentry.png",
-              "website": "https://netsentry.example.com",
-              "description": "Network security monitoring and intrusion detection specialists."
-            }
           ]
         },
         {
           "name": "Bronze",
           "sponsors": [
-            {
-              "name": "SecurityAcademy",
-              "logo": "securityacademy.png",
-              "website": "https://securityacademy.example.com",
-              "description": "Premier cybersecurity education and certification provider."
-            },
-            {
-              "name": "CyberLabs",
-              "logo": "cyberlabs.png",
-              "website": "https://cyberlabs.example.com",
-              "description": "Research-driven security consultancy focused on emerging threats."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Hackers 2 Hackers Conference",
-      "dates": "December 14-15, 2024",
-      "location": "Sao Paulo, Brazil",
-      "description": "Hackers To Hackers Conference (H2HC) is a conference organized by people who work or are directly involved in research and development in the field of information security.",
-      "image": "h2hc.png",
-      "levels": [
-        {
-          "name": "Diamond",
-          "sponsors": [
-            {
-              "name": "ThreatMatrix",
-              "logo": "threatmatrix.png",
-              "website": "https://threatmatrix.example.com",
-              "description": "Leaders in adversary emulation and red team operations."
-            }
-          ]
-        },
-        {
-          "name": "Gold",
-          "sponsors": [
-            {
-              "name": "AttackSim",
-              "logo": "attacksim.png",
-              "website": "https://attacksim.example.com",
-              "description": "Creators of realistic attack simulation platforms for enterprise security testing."
-            }
           ]
         }
       ]

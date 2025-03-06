@@ -1,9 +1,9 @@
 {
   "updates": [
     {
-      "title": "Annual Conference Registration Open",
-      "date": "June 15, 2023",
-      "content": "Registration is now open for our annual conference! Join us for three days of workshops, talks, and networking opportunities.",
+      "title": "RTV CRON Workshop Call for Workshops",
+      "date": "March 6, 2025",
+      "content": "",
       "tag": "Conference",
       "image": {
         "src": "rtv-logo.png",
@@ -15,53 +15,10 @@
       }
     },
     {
-      "title": "New Workshop Series Announced",
-      "date": "May 28, 2023",
-      "content": "New workshop series announced: \"Advanced Penetration Testing Techniques\" starting next month.",
-      "tag": "Workshop",
-      "image": {
-        "src": "rtv-logo.png",
-        "alt": "Logo"
-      },
-      "url": {
-        "href": "/events/workshops",
-        "text": "View Workshops"
-      }
-    },
-    {
-      "title": "Spring CTF Competition Results",
-      "date": "May 10, 2023",
-      "content": "Congratulations to the winners of our Spring CTF competition! Check out the write-ups on our blog.",
-      "tag": "CTF",
-      "url": {
-        "href": "/blog/ctf-writeups",
-        "text": "Read Writeups"
-      }
-    },
-    {
-      "title": "New Industry Partnership",
-      "date": "April 22, 2023",
-      "content": "We're excited to announce our new partnership with CyberSec Industries to provide more training opportunities.",
-      "tag": "Partnership",
-      "image": {
-        "src": "rtv-logo.png",
-        "alt": "Partnership Announcement"
-      }
-    },
-    {
-      "title": "YouTube Channel Milestone",
-      "date": "March 15, 2023",
-      "content": "Our YouTube channel has reached 10,000 subscribers! Thank you for your support.",
-      "tag": "Milestone",
-      "image": {
-        "src": "rtv-logo.png",
-        "alt": "YouTube 10K Subscribers"
-      },
-      "url": {
-        "href": "https://youtube.com/redteamvillage",
-        "text": "Visit Channel",
-        "external": true
-      }
+      "title": "And Were Back!",
+      "date": "March 6, 2025",
+      "content": "We are excited to announce that the new Red Team Village website is officially live!",
+      "tag": "Village News"
     }
   ]
 } 

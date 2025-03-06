@@ -1,0 +1,71 @@
+{
+  "events": [
+    {
+      "title": "RTV CRON Episode 1",
+      "dateRange": "March 27, 2025",
+      "times": "TBD",
+      "location": "RTV Youtube Channel",
+      "description": "We're thrilled to launch RTV CRON, our new recurring series where cybersecurity meets community! We'll have a live workshop (speaker TBD) and we'll also be discussing the latest news in the village.",
+      "image": {
+        "src": "RTVcron.png",
+        "alt": "RTV cron"
+      },
+      "link": {
+        "url": "https://www.youtube.com/redteamvillage",
+        "text": "RTV Youtube Channel",
+        "external": true
+      },
+      "tags": ["Workshop", "Live"]
+    },
+    {
+      "title": "RTV CRON Episode 2",
+      "dateRange": "April 24, 2025",
+      "times": "TBD",
+      "location": "RTV Youtube Channel",
+      "description": "RTV cron Episode 2 will be a live workshop (speaker TBD) and we'll also be discussing the latest news in the village.",
+      "image": {
+        "src": "RTVcron.png",
+        "alt": "RTV cron"
+      },
+      "link": {
+        "url": "https://www.youtube.com/redteamvillage",
+        "text": "RTV Youtube Channel",
+        "external": true
+      },
+      "tags": ["Workshop", "Live"]
+    },
+    {
+      "title": "RTV @ HackSpaceCon",
+      "dateRange": "May 14-15, 2025",
+      "times": "TBD",
+      "location": "Radisson Resort at the Port",
+      "description": "RTV will be at HackSpaceCon 2025. We'll have a booth and we'll be discussing the latest news in the village. We'll also be hosting a CTF competition.",
+      "image": {
+        "src": "rtv-hsc-2025.png",
+        "alt": "RTV at HackSpaceCon 2025"
+      },"link": {
+        "url": "https://www.hackspacecon.com/",
+        "text": "HackSpaceCon Website",
+        "external": true
+      },
+      "tags": ["Virtual", "Meetup", "Supply Chain"]
+    },
+    {
+      "title": "Red Team Village at DEF CON 33",
+      "dateRange": "August 7-10, 2025",
+      "times": "TBD",
+      "location": "Las Vegas Convention Center, Red Team Village Area",
+      "description": "Visit the village at DEF CON 33! We'll have a weekend packed with workshops, activities, swag, and so much more!",
+      "image": {
+        "src": "dc33.png",
+        "alt": "DEF CON 33"
+      },
+      "link": {
+        "url": "https://www.defcon.org/",
+        "text": "DEF CON Website",
+        "external": true
+      },
+      "tags": ["Conference", "DEF CON"]
+    }
+  ]
+} 

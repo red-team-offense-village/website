@@ -19,9 +19,9 @@
       "weight": 3
     },
     {
-      "identifier": "schedule",
-      "name": "<i class='far fa-calendar'></i> SCHEDULE",
-      "url": "schedule/",
+      "identifier": "events",
+      "name": "<i class='far fa-calendar'></i> EVENTS",
+      "url": "events/",
       "weight": 4
     },
     {
