@@ -4,22 +4,22 @@
       "title": "RTV CRON Workshop Call for Workshops",
       "date": "March 6, 2025",
       "content": "We're looking for speakers for our RTV CRON workshop series! If you're interested in speaking, please fill out the Call on Sessionize.",
-      "tag": "RTV CRON",
+      "tag": ["RTV CRON", "Call for Workshops"],
       "image": {
-        "src": "RTVcron-cfs.png",
+        "src": "RTVcron-cfw.png",
         "alt": "Red Team Village Conference 2023"
       },
       "url": {
         "href": "https://sessionize.com/rtv-cron/",
-        "text": "Submit a Workshop",
+        "text": "Answer the Call!",
         "target": "_blank"
       }
     },
     {
-      "title": "And Were Back!",
+      "title": "And We're Back!",
       "date": "March 6, 2025",
       "content": "We are excited to announce that the new Red Team Village website is officially live!",
-      "tag": "Village News"
+      "tag": ["Village News", "Website"]
     }
   ]
 } 

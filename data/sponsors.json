@@ -31,6 +31,26 @@
           "name": "Bronze",
           "sponsors": [
           ]
+        },
+        {
+          "name": "Community",
+          "sponsors": [
+          ]
+        },
+        {
+          "name": "Party",
+          "sponsors": [
+          ]
+        },
+        {
+          "name": "CTF",
+          "sponsors": [
+          ]
+        },
+        {
+          "name": "Prize",
+          "sponsors": [
+          ] 
         }
       ]
     }
