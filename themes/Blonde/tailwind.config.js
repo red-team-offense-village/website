@@ -1,7 +1,16 @@
 module.exports = {
-  content: ["./**/*.html", "./**/*.md", "config.toml"],
+  content: [    
+    "./layouts/**/*.html",
+    "./content/**/*.{html,md}",
+    "./themes/Blonde/layouts/**/*.html",
+    "./themes/Blonde/assets/css/*.css"
+  ],
   darkMode: "class",
   theme: {
+    fontFamily: {
+      'sans': ['Saira', 'sans-serif'],
+      'saira': ['Saira', 'sans-serif'],
+    },
     extend: {
       colors: {
         warmgray: {

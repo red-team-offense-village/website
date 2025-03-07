@@ -1,0 +1,52 @@
+{
+  "main": [
+    {
+      "identifier": "rtv-team",
+      "name": "<i class='fas fa-users'></i> TEAM",
+      "url": "team/",
+      "weight": 1
+    },
+    {
+      "identifier": "sponsors",
+      "name": "<i class='fas fa-handshake'></i> SPONSORS",
+      "url": "sponsors/",
+      "weight": 2
+    },
+    {
+      "identifier": "events",
+      "name": "<i class='far fa-calendar'></i> EVENTS",
+      "url": "events/",
+      "weight": 4
+    },
+    {
+      "identifier": "volunteer",
+      "name": "<i class='fas fa-external-link-alt'></i> VOLUNTEER PORTAL",
+      "url": "https://volunteer.redteamvillage.io",
+      "weight": 5,
+      "target": "_blank"
+    }
+  ],
+  "footer": [
+    {
+      "identifier": "discord",
+      "name": "<i class='fab fa-discord fa-lg'></i>",
+      "url": "https://discord.gg/redteamvillage",
+      "weight": 1,
+      "target": "_blank"
+    },
+    {
+      "identifier": "twitter",
+      "name": "<i class='fab fa-twitter fa-lg'></i>",
+      "url": "https://x.com/redteamvillage_",
+      "weight": 2,
+      "target": "_blank"
+    },
+    {
+      "identifier": "youtube",
+      "name": "<i class='fab fa-youtube fa-lg'></i>",
+      "url": "https://www.youtube.com/redteamvillage",
+      "weight": 3,
+      "target": "_blank"
+    }
+  ]
+} 

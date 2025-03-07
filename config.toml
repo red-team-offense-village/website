@@ -1,4 +1,4 @@
-baseURL = "http://localhost:1313"
+baseURL = "http://localhost:1313/website/"
 title = "Red Team Village"
 author = "Red Team Village"
 languageCode = "en"
@@ -81,76 +81,6 @@ darkmode = "dark"
 #    enabled = true
 #    tagNumber = ''
 
-[menu]
-
-  [[menu.main]]
-    identifier = "logo"
-    name = ""  # Empty name since we're using an image
-    url = "/"
-    weight = 0
-    pre = "<img src='assets/images/2024-rtv-final-1-129x131.png' alt='RTV Logo' style='height: 40px; width: auto;'>"
-
-  [[menu.main]]
-    identifier = "discord"
-    name = "<i class='fab fa-discord'></i> DISCORD"
-    url = "#"
-    weight = 1
-
-  [[menu.main]]
-    identifier = "twitter"
-    name = "<i class='fab fa-twitter'></i> TWITTER"
-    url = "#"
-    weight = 2
-
-  [[menu.main]]
-    identifier = "youtube"
-    name = "<i class='fab fa-youtube'></i> YOUTUBE"
-    url = "#"
-    weight = 3
-
-  [[menu.main]]
-    identifier = "rtv-team"
-    name = "<i class='fas fa-users'></i> TEAM"
-    url = "/team/"
-    weight = 4
-
-  [[menu.main]]
-    identifier = "volunteer"
-    name = "<i class='fas fa-external-link-alt'></i> VOLUNTEER PORTAL"
-    url = "/volunteer/"
-    weight = 5
-
-  [[menu.main]]
-    identifier = "venue"
-    name = "<i class='fas fa-map-marker-alt'></i> VENUE"
-    url = "/venue/"
-    weight = 6
-
-  [[menu.main]]
-    identifier = "schedule"
-    name = "<i class='far fa-calendar'></i> SCHEDULE"
-    url = "/schedule/"
-    weight = 7
-
-  # Footer Social Icons
-  [[menu.footer]]
-    identifier = "discord"
-    name = "<i class='fab fa-discord fa-lg'></i>"
-    url = "#"
-    weight = 1
-
-  [[menu.footer]]
-    identifier = "twitter"
-    name = "<i class='fab fa-twitter fa-lg'></i>"
-    url = "#"
-    weight = 2
-
-  [[menu.footer]]
-    identifier = "youtube"
-    name = "<i class='fab fa-youtube fa-lg'></i>"
-    url = "#"
-    weight = 3
-
 [taxonomies]
 category = "categories"
 tag = "tags"
@@ -162,7 +92,7 @@ archive = "archives"
     disabled = false
     simple = true
 
-  [privacy.twitter]
+  [privacy.x]
     disabled = false
     enableDNT = true
     simple = true
@@ -180,5 +110,5 @@ archive = "archives"
   [services.instagram]
     disableInlineCSS = true
 
-  [services.twitter]
+  [services.x]
     disableInlineCSS = true

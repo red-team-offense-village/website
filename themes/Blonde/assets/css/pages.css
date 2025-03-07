@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@300;400;500;600;700&display=swap');
+
+/* Apply Saira font to all elements */
+body, h1, h2, h3, h4, h5, h6, p, a, span, div, button, input, textarea, select {
+    font-family: 'Saira', sans-serif;
+}
+
+/* Team Page Styles */
+.social-links {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+}
+
+.social-links a {
+    color: #ffffff;
+    font-size: 1.25rem;
+    transition: color 0.2s;
+}
+
+.social-links a:hover {
+    color: #2563eb;
+}
+
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .team-grid {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+    
+    .schedule-content h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .schedule-content h2,
+    .venue-content h2 {
+        font-size: 2rem;
+    }
+}
+
+.welcome-section {
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.welcome-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.welcome-content h2 {
+    color: #333333;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}
+
+.welcome-content p {
+    color: #666666;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.update-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.update-card {
+    background: #ffffff;
+    border: 2px solid #690d0d;
+    border-radius: 8px;
+    padding: 2rem;
+}
+
+.update-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    color: #690d0d;
+}
+
+.update-header i {
+    font-size: 2rem;
+}
+
+.update-header h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 0;
+    color: #333333;
+}
+
+.update-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.update-item {
+    padding: 1rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.update-item:last-child {
+    border-bottom: none;
+}
+
+.update-date {
+    display: block;
+    color: #690d0d;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.update-item p {
+    color: #666666;
+    margin: 0.5rem 0;
+    line-height: 1.6;
+}
+
+.tag {
+    display: inline-block;
+    background: #690d0d;
+    color: #ffffff;
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+}
+
+.updates-section {
+    padding: 0 2rem 2rem 2rem;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .mission-section {
+        padding: 2rem;
+    }
+
+    .mission-header {
+        flex-direction: row;
+        text-align: center;
+    }
+
+    .mission-header h2 {
+        font-size: 2rem;
+    }
+
+    .mission-text {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .update-card {
+        padding: 1.5rem;
+    }
+
+    .update-header h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .welcome-content h2 {
+        font-size: 2rem;
+    }
+} 
+
+/* Sponsors Page Styles */
+
+/* Container */
+.sponsors-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* Content Boxes */
+.content-box {
+  background-color: #690d0d;
+  color: white;
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 3rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.highlight-box {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+}
+
+.highlight-box .btn {
+  background-color: white;
+  color: var(--primary-color);
+  margin-top: 1rem;
+}
+
+/* Section Titles */
+.section-title {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+  font-size: 2rem;
+  padding-bottom: 0.5rem;
+}
+
+.section-title:after {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  background-color: var(--primary-color);
+  bottom: 0;
+  left: 25%;
+}
+
+.highlight-box .section-title {
+  color: white;
+}
+
+.highlight-box .section-title:after {
+  background-color: white;
+}

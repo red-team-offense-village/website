@@ -1,0 +1,58 @@
+{
+  "events": [
+    {
+      "name": "DEF CON 33 (2025)",
+      "dates": "August 7-10, 2025",
+      "location": "Las Vegas, Nevada",
+      "description": "Join us at the world's largest hacker convention where Red Team Village will host workshops, capture the flag competitions, more!",
+      "image": "dc33.png",
+      "levels": [
+        {
+          "name": "Diamond",
+          "sponsors": [
+          ]
+        },
+        {
+          "name": "Platinum",
+          "sponsors": [
+          ]
+        },
+        {
+          "name": "Gold",
+          "sponsors": [
+          ]
+        },
+        {
+          "name": "Silver",
+          "sponsors": [
+          ]
+        },
+        {
+          "name": "Bronze",
+          "sponsors": [
+          ]
+        },
+        {
+          "name": "Community",
+          "sponsors": [
+          ]
+        },
+        {
+          "name": "Party",
+          "sponsors": [
+          ]
+        },
+        {
+          "name": "CTF",
+          "sponsors": [
+          ]
+        },
+        {
+          "name": "Prize",
+          "sponsors": [
+          ] 
+        }
+      ]
+    }
+  ]
+} 
