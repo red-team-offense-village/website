@@ -19,9 +19,9 @@
     <!-- Load Tailwind CSS first -->
     {{ $css := resources.Get "css/main.css" }}
     {{ $css = $css | css.PostCSS }}
-    {{ if hugo.IsProduction }}
+    <!--{{ if hugo.IsProduction }}-->
         {{ $css = $css | minify | fingerprint }}
-    {{ end }}
+    <!--{{ end }}-->
     <link rel="stylesheet" href="{{ $css.RelPermalink }}">
     
     <!-- Load other theme CSS -->

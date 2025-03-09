@@ -74,7 +74,7 @@
               {{ with .image }}
               
                 <img 
-                  src="{{ if eq (getenv "HUGO_ENV") "production" }}/assets/images/events/{{ .src }}{{ else }}../assets/images/events/{{ .src }}{{ end }}" 
+                  src="/assets/images/events/{{ .src }}" 
                   alt="{{ .alt }}" 
                   class="w-full h-auto rounded-lg shadow-md object-cover"
                 >
