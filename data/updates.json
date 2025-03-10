@@ -16,14 +16,14 @@
       "content": "We're looking for volunteers for our DEF CON 33 event! If you're interested in volunteering with Red Team Village at DEF CON this year, please fill out the volunteer form linked below. We need volunteers to help with various aspects of our operation, including CTF support, workshop assistance, crowd control, general logistics, and much more.\n\n Volunteering offers a great opportunity to network with like-minded security professionals, gain behind-the-scenes experience at one of the world's premier hacking conferences, and contribute to the offensive security community. No matter your skill level, we have roles that can match your interests and expertise. All volunteers will receive special RTV volunteer swag and our sincere appreciation for helping make this year's village a success.",
       "tag": ["DEF CON 33", "Call for Volunteers"],
       "url": {
-        "href": "https://docs.google.com/forms/d/e/1FAIpQLSdNX3tTMYn0kG4k6Z4Cz0AsIZJmjFrqiDPh-CJQ1lQAfoPeFQ/viewform?usp=header",
+        "href": "https://forms.gle/LM9NWobjXYYxvHR78",
         "text": "Volunteer for the Village",
         "target": "_blank",
         "external": true
       }
     },
     {
-      "title": "Call for Workshops/Tactics for DEF CON 33",
+      "title": "Call for Workshops & Tactics for DEF CON 33",
       "date": "March 10, 2025",
       "content": "We're looking for workshops and tactics for our DEF CON 33 event! If you're interested in hosting a workshop or sharing a tactic, please fill out the workshop form linked below.\n\nIdeal workshops provide structured, hands-on learning experiences led by an instructor. Meanwhile, tactics are short, self-guided activities that attendees can try out at their own pace in our less formal environment—perfect for demonstrating quick techniques, tool usage, or security concepts that can be completed in 10-20 minutes. These asynchronous activities allow participants to engage with practical offensive security skills in a drop-in format throughout the conference.\n\nWhether you're a seasoned professional with a comprehensive workshop or have a clever tactical exercise worth sharing, we encourage you to submit your proposal. Selected presenters will have the opportunity to share their expertise with hundreds of passionate security practitioners in our dedicated village space at DEF CON 33. Submit your workshop or tactics proposal soon, as selection will be competitive!",
       "tag": ["DEF CON 33", "Call for Workshops"],
