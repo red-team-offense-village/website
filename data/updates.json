@@ -2,7 +2,7 @@
   "updates": [
     {
       "title": "RTV CRON Workshop Call for Workshops",
-      "date": "March 6, 2025",
+      "date": "March 10, 2025",
       "content": "We're looking for speakers for our RTV CRON workshop series! If you're interested in speaking, please fill out the Call on Sessionize. We're looking for a two hour workshop on a topic of your choice (as long as it's related to offensive security). For examples of what we're looking for, check out the RTV Overflow videos which we recently released on our YouTube channel.",
       "tag": ["RTV CRON", "Call for Workshops"],
       "image": {
@@ -17,7 +17,7 @@
     },
     {
       "title": "And We're Back!",
-      "date": "March 6, 2025",
+      "date": "March 10, 2025",
       "content": "We are excited to announce that the new Red Team Village website is officially live!",
       "tag": ["Village News", "Website"]
     }

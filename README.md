@@ -50,20 +50,21 @@ updates
 Exmaple Update Entry:
 
 ```json
-{
-      "title": "Annual Conference Registration Open",
-      "date": "June 15, 2023",
-      "content": "Registration is now open for our annual conference! Join us for three days of workshops, talks, and networking opportunities.",
-      "tag": "Conference",
-      "image": {
-        "src": "rtv-logo.png",
-        "alt": "Red Team Village Conference 2023"
-      },
-      "url": {
-        "href": "/events/annual-conference",
-        "text": "Register Now"
-      }
-}
+  {
+    "title": "RTV CRON Workshop Call for Workshops",
+    "date": "March 6, 2025",
+    "content": "We're looking for speakers for our RTV CRON workshop series! If you're interested in speaking, please fill out the Call on Sessionize. We're looking for a two hour workshop on a topic of your choice (as long as it's related to offensive security). For examples of what we're looking for, check out the RTV Overflow videos which we recently released on our YouTube channel.",
+    "tag": ["RTV CRON", "Call for Workshops"],
+    "image": {
+      "src": "RTVcron-cfw.png",
+      "alt": "Red Team Village Conference 2023"
+    },
+    "url": {
+      "href": "https://sessionize.com/rtv-cron/",
+      "text": "Answer the Call!",
+      "target": "_blank"
+    }
+  }
 ```
 ### Team Page Content Instructions
 
@@ -90,14 +91,14 @@ team
 Example Team Member Entry:
 
 ```json
-{
+  {
       "name": "Mike Lisi",
       "handle": "@mikehacksthings",
       "role": "President",
       "image": "mike-240x240.png",
       "linkedin": "https://www.linkedin.com/in/mikelisi/",
       "twitter": "https://x.com/mikehacksthings"
-}
+  }
 ```
 ### Sponsors Page Content Instructions
 
@@ -144,26 +145,29 @@ sponsors:
 
 Example Entry:
 ```json
-{
-      "name": "DEF CON 32 (2024)",
-      "dates": "August 8-11, 2024",
-      "location": "Las Vegas, Nevada",
-      "description": "Join us at the world's largest hacker convention where Red Team Village will host workshops, capture the flag competitions, and networking events for security professionals.",
-      "image": "dc32.png",
-      "levels": [
-        {
-          "name": "Diamond",
-          "sponsors": [
-            {
-              "name": "Security Corp Inc.",
-              "logo": "security-corp.png",
-              "website": "https://securitycorp.example.com",
-              "description": "Industry leader in penetration testing and security analysis, providing enterprise solutions for over 15 years."
-            }
-          ]
-        }
-      ]
-}
+  "events": [
+      {
+        "name": "DEF CON 33 (2025)",
+        "dates": "August 7-10, 2025",
+        "location": "Las Vegas, Nevada",
+        "description": "Join us at the world's largest hacker convention where Red Team Village will host workshops, capture the flag competitions, more!",
+        "image": "dc33.png",
+        "levels": [
+          {
+            "name": "Diamond",
+            "sponsors": [
+              {
+                "name": "Security Corp Inc.",
+                "logo": "security-corp.png",
+                "website": "https://securitycorp.example.com",
+                "description": "Industry leader in penetration testing and security analysis, providing enterprise solutions for over 15 years."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 ```
 
 
