@@ -18,15 +18,21 @@ on:
       - 'hugo.json'
       - '.github/workflows/preview.yml'
 
+# These permissions are needed for GitHub Pages deployment
 permissions:
   contents: read
   pages: write
   id-token: write
-  pull-requests: write # Needed to comment on PR
+  pull-requests: write
+  actions: write
+  deployments: write
 
 jobs:
   build-preview:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     env:
       HUGO_VERSION: 0.137.1
     steps:
