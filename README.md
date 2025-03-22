@@ -14,6 +14,56 @@ hugo server
 
 This will launch a local web server running on <http://127.0.0.1:1313/website/> that auto-updates the test site live when changes are detected on disk.
 
+### Optional: Pre-commit Hooks
+
+We use pre-commit hooks to maintain code quality. While optional, these hooks help ensure consistent formatting and prevent common issues. To use them:
+
+1. Install pre-commit:
+
+   ```sh
+   pip install pre-commit
+   ```
+
+2. Install the hooks:
+   ```sh
+   pre-commit install
+   ```
+
+The hooks will run automatically before each commit and will:
+
+- Check file formatting (without modifying files)
+- Prevent direct commits to the main branch
+- Validate YAML, JSON, and TOML files
+
+If any checks fail, you'll need to fix the issues manually before committing.
+
+#### Manual Formatting
+
+To check or fix formatting issues manually:
+
+1. Check formatting of staged files (no modifications):
+
+   ```sh
+   pre-commit run prettier
+   ```
+
+2. Fix formatting of staged files:
+
+   ```sh
+   npx prettier --write $(git diff --cached --name-only --diff-filter=ACMR)
+   ```
+
+3. Check all files (no modifications):
+
+   ```sh
+   pre-commit run prettier --all-files --hook-stage manual
+   ```
+
+4. Fix all files:
+   ```sh
+   npx prettier --write .
+   ```
+
 ### Directory Structure
 
 Configuration can be managed in the file `hugo.toml`. It is unlikely you'll need to touch this.
@@ -44,28 +94,29 @@ updates
 `date`: This is the update posting date.  
 `content`: This is the text of the update.  
 `tag`: This is the pill tag associated with the update.  
-`image`: This is an optional parameter where you can specify the image file name to display with the update.   Images should be added to the `static/assets/images/updates` folder.  
-`url`: This is an optional URL to display a Call-to-Action button with the update. If the link is external, the site will include an icon indicating that the link is external.  
+`image`: This is an optional parameter where you can specify the image file name to display with the update. Images should be added to the `static/assets/images/updates` folder.  
+`url`: This is an optional URL to display a Call-to-Action button with the update. If the link is external, the site will include an icon indicating that the link is external.
 
 Exmaple Update Entry:
 
 ```json
-  {
-    "title": "RTV CRON Workshop Call for Workshops",
-    "date": "March 6, 2025",
-    "content": "We're looking for speakers for our RTV CRON workshop series! If you're interested in speaking, please fill out the Call on Sessionize. We're looking for a two hour workshop on a topic of your choice (as long as it's related to offensive security). For examples of what we're looking for, check out the RTV Overflow videos which we recently released on our YouTube channel.",
-    "tag": ["RTV CRON", "Call for Workshops"],
-    "image": {
-      "src": "RTVcron-cfw.png",
-      "alt": "Red Team Village Conference 2023"
-    },
-    "url": {
-      "href": "https://sessionize.com/rtv-cron/",
-      "text": "Answer the Call!",
-      "target": "_blank"
-    }
+{
+  "title": "RTV CRON Workshop Call for Workshops",
+  "date": "March 6, 2025",
+  "content": "We're looking for speakers for our RTV CRON workshop series! If you're interested in speaking, please fill out the Call on Sessionize. We're looking for a two hour workshop on a topic of your choice (as long as it's related to offensive security). For examples of what we're looking for, check out the RTV Overflow videos which we recently released on our YouTube channel.",
+  "tag": ["RTV CRON", "Call for Workshops"],
+  "image": {
+    "src": "RTVcron-cfw.png",
+    "alt": "Red Team Village Conference 2023"
+  },
+  "url": {
+    "href": "https://sessionize.com/rtv-cron/",
+    "text": "Answer the Call!",
+    "target": "_blank"
   }
+}
 ```
+
 ### Team Page Content Instructions
 
 To modify the content of the team page, edit the `data/team.json` file. All entries here will be rendered in order of appearance within the file, so slot in a new entry on the appropriate space in the file. The structure of a team entry is as follows:
@@ -86,23 +137,24 @@ team
 `role`: Team member's role.  
 `image`: Image name. Images should be added to the `static/assets/images/team` folder.  
 `linkedin`: URL of member's LinkedIn page.  
-`twitter`: URL of member's Twitter/X profile.  
+`twitter`: URL of member's Twitter/X profile.
 
 Example Team Member Entry:
 
 ```json
-  {
-      "name": "Mike Lisi",
-      "handle": "@mikehacksthings",
-      "role": "President",
-      "image": "mike-240x240.png",
-      "linkedin": "https://www.linkedin.com/in/mikelisi/",
-      "twitter": "https://x.com/mikehacksthings"
-  }
+{
+  "name": "Mike Lisi",
+  "handle": "@mikehacksthings",
+  "role": "President",
+  "image": "mike-240x240.png",
+  "linkedin": "https://www.linkedin.com/in/mikelisi/",
+  "twitter": "https://x.com/mikehacksthings"
+}
 ```
+
 ### Sponsors Page Content Instructions
 
-To modify the content of the sponsors page, edit the `data/sponsors.json` file. All entries here will be rendered in order of appearance within the file, so slot in a new entry on the appropriate space in the file. 
+To modify the content of the sponsors page, edit the `data/sponsors.json` file. All entries here will be rendered in order of appearance within the file, so slot in a new entry on the appropriate space in the file.
 
 This is a little more complex since we can have multiple events listed with sponsors associated with each event.
 
@@ -123,6 +175,7 @@ events
 |    |_Website
 |    |_Description
 ```
+
 The structure of an entry follows:
 
 events:  
@@ -131,19 +184,20 @@ events:
 `location`: Location of the event.  
 `description`: Description of the event.  
 `image`: Image for the event.  
-`levels`: Structure containing an array of sponsor levels.  
+`levels`: Structure containing an array of sponsor levels.
 
 levels:  
 `name`: Name of the sponsor level.  
-`sponsors`: Structure containing an array of sponsors.  
+`sponsors`: Structure containing an array of sponsors.
 
 sponsors:  
 `name`: Name of the sponsor.  
 `logo`: Logo of the sponsor.  
 `website`: Website of the sponsor.  
-`description`: Description of the sponsor.  
+`description`: Description of the sponsor.
 
 Example Entry:
+
 ```json
   "events": [
       {
@@ -169,5 +223,3 @@ Example Entry:
     ]
   }
 ```
-
-
