@@ -18,7 +18,12 @@ on:
       - "hugo.json"
       - ".github/workflows/preview.yml"
 
-# These permissions are needed for GitHub Pages deployment
+  workflow_dispatch:
+    inputs:
+      pr_number:
+        description: "PR number to preview"
+        required: true
+
 permissions:
   contents: read
   id-token: write
@@ -44,10 +49,20 @@ jobs:
       - name: Install Dart Sass
         run: sudo snap install dart-sass
 
-      - name: Checkout
+      - name: Get PR number
+        id: pr
+        run: |
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+            echo "PR_NUMBER=${{ github.event.inputs.pr_number }}" >> $GITHUB_ENV
+          else
+            echo "PR_NUMBER=${{ github.event.pull_request.number }}" >> $GITHUB_ENV
+          fi
+
+      - name: Checkout PR code
         uses: actions/checkout@v4
         with:
-          ref: ${{ github.event.pull_request.base.ref }}
+          # Checkout the merged PR ref
+          ref: refs/pull/${{ env.PR_NUMBER }}/merge
           submodules: recursive
           fetch-depth: 0
 
@@ -73,26 +88,26 @@ jobs:
           hugo \
             --gc \
             --minify \
-            --baseURL "pr-${{ github.event.pull_request.number }}-${{ github.event.repository.name }}.preview/"
+            --baseURL "pr-${{ env.PR_NUMBER }}-${{ github.event.repository.name }}.preview/"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          name: pr-preview-${{ github.event.pull_request.number }}
+          name: pr-preview-${{ env.PR_NUMBER }}
           path: ./public
 
       - name: Deploy Preview
         uses: actions/deploy-pages@v4
         id: deployment
         with:
-          artifact_name: pr-preview-${{ github.event.pull_request.number }}
+          artifact_name: pr-preview-${{ env.PR_NUMBER }}
           preview: true
 
       - name: Find Comment
         uses: peter-evans/find-comment@v3
         id: find-comment
         with:
-          issue-number: ${{ github.event.pull_request.number }}
+          issue-number: ${{ env.PR_NUMBER }}
           comment-author: "github-actions[bot]"
           body-includes: Preview deployment
 
@@ -100,11 +115,11 @@ jobs:
         uses: peter-evans/create-or-update-comment@v3
         with:
           comment-id: ${{ steps.find-comment.outputs.comment-id }}
-          issue-number: ${{ github.event.pull_request.number }}
+          issue-number: ${{ env.PR_NUMBER }}
           body: |
             🚀 Preview deployment is ready!
 
             You can preview the changes at: ${{ steps.deployment.outputs.page_url }}
 
-            _This preview was automatically generated for PR #${{ github.event.pull_request.number }}_
+            _This preview was automatically generated for PR #${{ env.PR_NUMBER }}_
           edit-mode: replace
