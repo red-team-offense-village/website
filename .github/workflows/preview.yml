@@ -3,6 +3,20 @@ name: PR Preview
 on:
   pull_request:
     types: [opened, synchronize, reopened]
+    paths:
+      - 'content/**'
+      - 'layouts/**'
+      - 'static/**'
+      - 'themes/**'
+      - 'assets/**'
+      - 'data/**'
+      - 'config.toml'
+      - 'config.yaml'
+      - 'config.json'
+      - 'hugo.toml'
+      - 'hugo.yaml'
+      - 'hugo.json'
+      - '.github/workflows/preview.yml'
 
 permissions:
   contents: read
