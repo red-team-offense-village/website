@@ -1,0 +1,40 @@
+name: Security Scan
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  schedule:
+    - cron: '0 0 * * 0'  # Weekly scan
+
+jobs:
+  security:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Run npm audit
+        run: npm audit
+
+      - name: Run Snyk to check for vulnerabilities
+        uses: snyk/actions/node@master
+        continue-on-error: true  # To prevent build failure on vulnerabilities
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+        with:
+          args: --severity-threshold=high
+
+      - name: Run GitGuardian scan
+        uses: GitGuardian/ggshield-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITGUARDIAN_API_KEY: ${{ secrets.GITGUARDIAN_API_KEY }}
+
+      - name: Run CodeQL Analysis
+        uses: github/codeql-action/init@v3
+        with:
+          languages: javascript
+      
+      - name: Perform CodeQL Analysis
+        uses: github/codeql-action/analyze@v3 
