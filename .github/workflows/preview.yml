@@ -20,12 +20,12 @@ on:
 
 # These permissions are needed for GitHub Pages deployment
 permissions:
-  contents: write
-  pages: write
+  contents: read
   id-token: write
   pull-requests: write
   actions: write
   deployments: write
+  pages: write
 
 jobs:
   build-preview:
