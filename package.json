@@ -2,7 +2,7 @@
   "name": "red-team-village-website",
   "version": "1.0.0",
   "description": "Red Team Village Website",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
     "dev": "hugo server",
     "build": "hugo --minify"
@@ -12,15 +12,15 @@
     "array-union": "^3.0.0",
     "autoprefixer": "^10.4.14",
     "dir-glob": "^3.0.1",
-    "postcss-cli": "^11.0.1",
-    "tailwindcss": "^4.0.15",
-    "@tailwindcss/typography": "^0.5.9",
-    "globby": "^14.1.0"
+    "globby": "^14.1.0",
+    "postcss": "^8.4.24",
+    "postcss-cli": "^10.1.0",
+    "postcss-import": "^15.1.0",
+    "tailwindcss": "^3.3.2"
   },
   "devDependencies": {
     "eslint": "^9.23.0",
     "eslint-config-prettier": "^10.1.1"
   },
-  "type": "commonjs",
   "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }
