@@ -19,17 +19,18 @@ on:
       - '.github/workflows/preview.yml'
 
 # These permissions are needed for GitHub Pages deployment
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-  pull-requests: write
-  actions: write
-  deployments: write
+permissions: read-all
 
 jobs:
   build-preview:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+      pull-requests: write
+      actions: write
+      deployments: write
     env:
       HUGO_VERSION: 0.137.1
     steps:
@@ -47,6 +48,7 @@ jobs:
           ref: ${{ github.event.pull_request.head.sha }}
           submodules: recursive
           fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
       
       - name: Setup Pages
         id: pages
@@ -82,6 +84,7 @@ jobs:
         uses: actions/deploy-pages@v4
         id: deployment
         with:
+          token: ${{ secrets.GITHUB_TOKEN }}
           artifact_name: pr-preview-${{ github.event.pull_request.number }}
           preview: true
       
@@ -92,10 +95,12 @@ jobs:
           issue-number: ${{ github.event.pull_request.number }}
           comment-author: 'github-actions[bot]'
           body-includes: Preview deployment
+          token: ${{ secrets.GITHUB_TOKEN }}
       
       - name: Create or Update Comment
         uses: peter-evans/create-or-update-comment@v3
         with:
+          token: ${{ secrets.GITHUB_TOKEN }}
           comment-id: ${{ steps.find-comment.outputs.comment-id }}
           issue-number: ${{ github.event.pull_request.number }}
           body: |
