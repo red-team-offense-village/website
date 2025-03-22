@@ -35,4 +35,4 @@ updates:
       - "go"
     commit-message:
       prefix: "build"
-      include: "scope" 
+      include: "scope"
