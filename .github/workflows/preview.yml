@@ -30,9 +30,6 @@ permissions:
 jobs:
   build-preview:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     env:
       HUGO_VERSION: 0.137.1
     steps:
