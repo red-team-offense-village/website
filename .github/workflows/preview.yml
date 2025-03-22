@@ -19,18 +19,17 @@ on:
       - '.github/workflows/preview.yml'
 
 # These permissions are needed for GitHub Pages deployment
-permissions: read-all
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+  pull-requests: write
+  actions: write
+  deployments: write
 
 jobs:
   build-preview:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      pages: write
-      id-token: write
-      pull-requests: write
-      actions: write
-      deployments: write
     env:
       HUGO_VERSION: 0.137.1
     steps:
