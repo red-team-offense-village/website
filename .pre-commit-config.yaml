@@ -1,0 +1,29 @@
+# .pre-commit-config.yaml
+# This file contains the configuration for pre-commit hooks.
+# Each hook helps maintain code quality by running automated checks before commits.
+#
+exclude: '(\..*\.y[a]?ml|\.github/workflows|build-version\.json|themes/|node_modules/)'
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: no-commit-to-branch
+        args: ['--branch', 'main'] # prevent local commits to main branch
+      - id: check-yaml
+      - id: check-json
+      - id: check-toml
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.18.2
+    hooks:
+      - id: gitleaks
+  - repo: https://github.com/pre-commit/mirrors-prettier
+    rev: v4.0.0-alpha.8
+    hooks:
+      - id: prettier
+        name: prettier-check
+        entry: prettier --check
+        types_or: [markdown, javascript, ts, json]
+        verbose: true
+        exclude: 'node_modules'
+        additional_dependencies:
+          - prettier@3.2.5
