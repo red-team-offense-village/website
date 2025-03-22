@@ -1,17 +1,12 @@
-module.exports = {
-  content: [
-    "./layouts/**/*.html",
-    "./themes/**/layouts/**/*.html",
-    "./content/**/*.md",
-  ],
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./layouts/**/*.html', './content/**/*.md'],
   theme: {
-    extend: {
-      colors: {
-        primary: "#991b1b", // red-800
-      },
-    },
+    extend: {},
   },
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
   // Make sure important is set to true if needed
   important: true,
 };
