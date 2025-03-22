@@ -43,7 +43,8 @@
       "image": {
         "src": "rtv-hsc-2025.png",
         "alt": "RTV at HackSpaceCon 2025"
-      },"link": {
+      },
+      "link": {
         "url": "https://www.hackspacecon.com/",
         "text": "HackSpaceCon Website",
         "external": true
@@ -68,4 +69,4 @@
       "tags": ["Conference", "DEF CON"]
     }
   ]
-} 
+}
