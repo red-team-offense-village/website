@@ -1,29 +1,24 @@
 name: PR Preview
 
 on:
-  pull_request_target:
+  pull_request:
     types: [opened, synchronize, reopened]
     paths:
-      - "content/**"
-      - "layouts/**"
-      - "static/**"
-      - "themes/**"
-      - "assets/**"
-      - "data/**"
-      - "config.toml"
-      - "config.yaml"
-      - "config.json"
-      - "hugo.toml"
-      - "hugo.yaml"
-      - "hugo.json"
-      - ".github/workflows/preview.yml"
+      - 'content/**'
+      - 'layouts/**'
+      - 'static/**'
+      - 'themes/**'
+      - 'assets/**'
+      - 'data/**'
+      - 'config.toml'
+      - 'config.yaml'
+      - 'config.json'
+      - 'hugo.toml'
+      - 'hugo.yaml'
+      - 'hugo.json'
+      - '.github/workflows/preview.yml'
 
-  workflow_dispatch:
-    inputs:
-      pr_number:
-        description: "PR number to preview"
-        required: true
-
+# These permissions are needed for GitHub Pages deployment
 permissions:
   contents: read
   id-token: write
@@ -45,40 +40,30 @@ jobs:
         run: |
           wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
           && sudo dpkg -i ${{ runner.temp }}/hugo.deb
-
+      
       - name: Install Dart Sass
         run: sudo snap install dart-sass
-
-      - name: Get PR number
-        id: pr
-        run: |
-          if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
-            echo "PR_NUMBER=${{ github.event.inputs.pr_number }}" >> $GITHUB_ENV
-          else
-            echo "PR_NUMBER=${{ github.event.pull_request.number }}" >> $GITHUB_ENV
-          fi
-
-      - name: Checkout PR code
+      
+      - name: Checkout
         uses: actions/checkout@v4
         with:
-          # Checkout the merged PR ref
-          ref: refs/pull/${{ env.PR_NUMBER }}/merge
+          ref: ${{ github.event.pull_request.head.sha }}
           submodules: recursive
           fetch-depth: 0
-
+      
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
-
+      
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
-          cache: "yarn"
-
+          node-version: '20'
+          cache: 'yarn'
+      
       - name: Install dependencies
         run: yarn install
-
+      
       - name: Build with Hugo
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
@@ -88,38 +73,38 @@ jobs:
           hugo \
             --gc \
             --minify \
-            --baseURL "pr-${{ env.PR_NUMBER }}-${{ github.event.repository.name }}.preview/"
-
+            --baseURL "${{ steps.pages.outputs.base_url }}"
+      
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          name: pr-preview-${{ env.PR_NUMBER }}
+          name: pr-preview-${{ github.event.pull_request.number }}
           path: ./public
-
+      
       - name: Deploy Preview
         uses: actions/deploy-pages@v4
         id: deployment
         with:
-          artifact_name: pr-preview-${{ env.PR_NUMBER }}
+          artifact_name: pr-preview-${{ github.event.pull_request.number }}
           preview: true
-
+      
       - name: Find Comment
         uses: peter-evans/find-comment@v3
         id: find-comment
         with:
-          issue-number: ${{ env.PR_NUMBER }}
-          comment-author: "github-actions[bot]"
+          issue-number: ${{ github.event.pull_request.number }}
+          comment-author: 'github-actions[bot]'
           body-includes: Preview deployment
-
+      
       - name: Create or Update Comment
         uses: peter-evans/create-or-update-comment@v3
         with:
           comment-id: ${{ steps.find-comment.outputs.comment-id }}
-          issue-number: ${{ env.PR_NUMBER }}
+          issue-number: ${{ github.event.pull_request.number }}
           body: |
             🚀 Preview deployment is ready!
-
+            
             You can preview the changes at: ${{ steps.deployment.outputs.page_url }}
-
-            _This preview was automatically generated for PR #${{ env.PR_NUMBER }}_
-          edit-mode: replace
+            
+            _This preview was automatically generated for PR #${{ github.event.pull_request.number }}_
+          edit-mode: replace 
