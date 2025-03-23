@@ -73,7 +73,7 @@ jobs:
           hugo \
             --gc \
             --minify \
-            --baseURL "pr-${{ github.event.pull_request.number }}-${{ github.event.repository.name }}.preview/"
+            --baseURL "${{ steps.pages.outputs.base_url }}"
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
