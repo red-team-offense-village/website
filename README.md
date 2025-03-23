@@ -14,6 +14,17 @@ hugo server
 
 This will launch a local web server running on <http://127.0.0.1:1313/website/> that auto-updates the test site live when changes are detected on disk.
 
+### Pull Request Previews
+
+We use Netlify for automatic preview deployments of pull requests. When you create a PR:
+
+1. Netlify will automatically build a preview of your changes
+2. A preview URL will be posted as a comment on your PR
+3. The preview URL format will be: `https://deploy-preview-{PR-number}--{site-name}.netlify.app`
+4. Preview deployments are automatically cleaned up after 30 days
+
+This allows reviewers to see your changes live before merging.
+
 ### Optional: Pre-commit Hooks
 
 We use pre-commit hooks to maintain code quality. While optional, these hooks help ensure consistent formatting and prevent common issues. To use them:
