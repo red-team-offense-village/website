@@ -4,7 +4,7 @@
 
 [build.environment]
   HUGO_VERSION = "0.137.1"
-  TZ = "America/Los_Angeles"
+  TZ = "America/Chicago"
 
 [context.deploy-preview]
   command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
