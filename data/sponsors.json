@@ -9,40 +9,33 @@
       "levels": [
         {
           "name": "Diamond",
-          "sponsors": [
-          ]
+          "sponsors": []
         },
         {
           "name": "Platinum",
-          "sponsors": [
-          ]
+          "sponsors": []
         },
         {
           "name": "Gold",
-          "sponsors": [
-          ]
+          "sponsors": []
         },
         {
           "name": "Silver",
-          "sponsors": [
-          ]
+          "sponsors": []
         },
         {
           "name": "Bronze",
-          "sponsors": [
-          ]
+          "sponsors": []
         },
         {
           "name": "CTF/Contest",
-          "sponsors": [
-          ]
+          "sponsors": []
         },
         {
           "name": "Prize",
-          "sponsors": [
-          ] 
+          "sponsors": []
         }
       ]
     }
   ]
-} 
+}
