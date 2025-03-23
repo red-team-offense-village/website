@@ -69,10 +69,15 @@ jobs:
             --baseURL "https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/${{ env.PREVIEW_BRANCH }}/"
 
       - name: Deploy to Preview Branch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          # Configure git
+          # Configure git with token-based authentication
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          
+          # Update remote URL to use token authentication
+          git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git
           
           # Create or update the preview branch
           git checkout -B ${{ env.PREVIEW_BRANCH }}
