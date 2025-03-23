@@ -1,0 +1,9 @@
+{
+  "buildCommand": "hugo --gc --minify",
+  "outputDirectory": "public",
+  "framework": "hugo",
+  "cleanUrls": true,
+  "github": {
+    "silent": true
+  }
+}
