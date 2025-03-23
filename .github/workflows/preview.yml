@@ -20,12 +20,8 @@ on:
 
 # These permissions are needed for GitHub Pages deployment
 permissions:
-  contents: read
-  id-token: write
+  contents: write
   pull-requests: write
-  actions: write
-  deployments: write
-  pages: write
 
 jobs:
   build-preview:
@@ -35,6 +31,7 @@ jobs:
       cancel-in-progress: true
     env:
       HUGO_VERSION: 0.137.1
+      PREVIEW_BRANCH: preview-${{ github.event.pull_request.number }}
     steps:
       - name: Install Hugo CLI
         run: |
@@ -50,10 +47,7 @@ jobs:
           ref: ${{ github.event.pull_request.head.sha }}
           submodules: recursive
           fetch-depth: 0
-      
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@v5
+          token: ${{ secrets.GH_PAT }}
       
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -73,20 +67,33 @@ jobs:
           hugo \
             --gc \
             --minify \
-            --baseURL "pr-${{ github.event.pull_request.number }}-${{ github.event.repository.name }}.preview/"
-      
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          name: pr-preview-${{ github.event.pull_request.number }}
-          path: ./public
-      
-      - name: Deploy Preview
-        uses: actions/deploy-pages@v4
-        id: deployment
-        with:
-          artifact_name: pr-preview-${{ github.event.pull_request.number }}
-          preview: true
+            --baseURL "https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/${{ env.PREVIEW_BRANCH }}/"
+
+      - name: Deploy to Preview Branch
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+        run: |
+          # Configure git with token-based authentication
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          
+          # Update remote URL to use token authentication
+          git remote set-url origin https://x-access-token:${GH_PAT}@github.com/${{ github.repository }}.git
+          
+          # Create or update the preview branch
+          git checkout -B ${{ env.PREVIEW_BRANCH }}
+          
+          # Remove everything except .git and public directory
+          find . -mindepth 1 -maxdepth 1 ! -name '.git' ! -name 'public' -exec rm -rf {} +
+          
+          # Move public contents to root
+          mv public/* .
+          rm -rf public
+          
+          # Commit and push
+          git add -A
+          git commit -m "Preview build for PR #${{ github.event.pull_request.number }}"
+          git push -f origin ${{ env.PREVIEW_BRANCH }}
       
       - name: Find Comment
         uses: peter-evans/find-comment@v3
@@ -104,7 +111,7 @@ jobs:
           body: |
             🚀 Preview deployment is ready!
             
-            You can preview the changes at: ${{ steps.deployment.outputs.page_url }}
+            You can preview the changes at: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/${{ env.PREVIEW_BRANCH }}/
             
             _This preview was automatically generated for PR #${{ github.event.pull_request.number }}_
           edit-mode: replace 
