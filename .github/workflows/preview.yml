@@ -47,6 +47,7 @@ jobs:
           ref: ${{ github.event.pull_request.head.sha }}
           submodules: recursive
           fetch-depth: 0
+          token: ${{ secrets.GH_PAT }}
       
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -70,14 +71,14 @@ jobs:
 
       - name: Deploy to Preview Branch
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_PAT: ${{ secrets.GH_PAT }}
         run: |
           # Configure git with token-based authentication
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           
           # Update remote URL to use token authentication
-          git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git
+          git remote set-url origin https://x-access-token:${GH_PAT}@github.com/${{ github.repository }}.git
           
           # Create or update the preview branch
           git checkout -B ${{ env.PREVIEW_BRANCH }}
