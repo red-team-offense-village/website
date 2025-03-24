@@ -1,0 +1,81 @@
+{{ define "main" }}
+{{ partial "hero" . }}
+
+<div class="container mx-auto px-4 py-12 max-w-6xl">
+  <div class="bg-white mb-4">
+    <h2 class="text-3xl font-bold text-red-800 mb-4">What is RTV Cron?</h2>
+    <p class="text-lg text-gray-700 mb-8">
+      Join us for RTV Cron, our monthly livestream happening on the last Thursday of each month. During each session we'll have a hands-on workshop where you can see the tools and techniques in action, catch updates on what's new with RTV, as well as other helpful content. It's a great chance to get your questions answered in the live chat and meet others in the community. Can't make it? No problem – we post the recordings so you can catch up when it works for you. Each stream usually runs about an hour to an hour and a half.
+    </p>
+    <h2 class="text-3xl font-bold text-red-800 mb-4">Where can I watch?</h2>
+    <p class="text-lg text-gray-700 mb-8">
+      The stream is hosted on our YouTube channel: <a href="https://youtube.com/redteamvillage" target="_blank" class="text-red-800 hover:text-red-900">Red Team Village</a>.
+    </p>
+  </div>
+  <div>
+    <h2 class="text-3xl font-bold text-red-800 mb-4">RTV Cron Episodes</h2>
+    <div class="grid grid-cols-1">
+      <!-- Loop through episodes from data file -->
+      {{ range $.Site.Data.rtv_cron_episodes }}
+      <div class="bg-white border-2 border-red-800 rounded-lg shadow-lg p-6">
+        <div class="flex flex-col h-full">
+          <!-- Episode Image with Background -->
+          <div class="mb-4 overflow-hidden rounded-lg bg-red-800 relative">
+            <div class="flex justify-center items-center">
+              <div class="w-full md:w-3/4 relative">
+                <img src="/assets/images/episodes/{{ .image }}" alt="{{ .title }} thumbnail" class="w-full object-contain" style="height: 24rem;">
+              </div>
+            </div>
+            <!-- Decorative elements on sides -->
+            <div class="absolute top-0 left-0 w-1/8 h-full bg-red-800 opacity-10"></div>
+            <div class="absolute top-0 right-0 w-1/8 h-full bg-red-800 opacity-10"></div>
+          </div>
+          
+          <h3 class="text-2xl font-bold text-red-800 mb-3">{{ .title }}</h3>
+          
+          <!-- Presenter Info -->
+          <div class="mb-4">
+            <p class="text-gray-600 font-semibold">Presented by:</p>
+            <p class="text-gray-800">{{ .presenter }}</p>
+          </div>
+
+          <!-- Episode Date -->
+          <div class="mb-4">
+            <p class="text-gray-600 font-semibold">Air Date:</p>
+            <p class="text-gray-800">{{ .date }}</p>
+          </div>
+
+          
+
+          <!-- Description -->
+          <p class="text-gray-700 mb-4 flex-grow">
+            {{ .description | markdownify }}
+          </p>
+
+          <!-- Tags -->
+          <div class="flex flex-wrap gap-2 my-4">
+            {{ range .tags }}
+            <span class="px-4 py-1 bg-red-800 text-white rounded-full text-sm border border-red-900">{{ . }}</span>
+            {{ end }}
+          </div>
+
+          <!-- Sponsor Section - only shown if sponsor is defined -->
+          {{ if .sponsor }}
+          <div class="mb-4">
+            <p class="text-gray-600 font-semibold">Episode Sponsored by:</p>
+            <p class="text-gray-800">{{ .sponsor }}</p>
+          </div>
+          {{ end }}
+
+          <!-- Watch Button -->
+          <a href="{{ .watchUrl }}" target="_blank" class="inline-block bg-red-800 text-white px-6 py-2 rounded hover:bg-red-900 transition-colors text-center">
+            Watch Episode <i class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</div>
+
+{{ end }}
