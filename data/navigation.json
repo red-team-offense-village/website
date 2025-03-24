@@ -13,7 +13,7 @@
       "weight": 2
     },
     {
-      "identifier": "Cron",
+      "identifier": "cron",
       "name": "<i class='fas fa-clock'></i> RTV CRON",
       "url": "rtv-cron/",
       "weight": 3
