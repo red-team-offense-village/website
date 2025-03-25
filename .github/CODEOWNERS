@@ -1,0 +1,22 @@
+# These owners will be the default owners for everything in
+# the repo. Unless a later match takes precedence,
+# they will be requested for review when someone opens a pull request.
+*       @mikehacksthings
+
+# Website configuration files
+hugo.toml       @mauvehed
+netlify.toml    @mauvehed
+*.config.js     @mikehacksthings
+
+# Content and data files
+/content/       @mikehacksthings
+/data/          @mikehacksthings
+/static/        @mikehacksthings
+
+# GitHub specific files
+/.github/       @mauvehed
+
+# Development configuration
+.pre-commit-config.yaml    @mauvehed
+package.json              @mauvehed
+yarn.lock                 @mauvehed 

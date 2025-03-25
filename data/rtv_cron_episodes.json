@@ -1,0 +1,11 @@
+[
+  {
+    "title": "Influence_Ops: Tactical Pretexting",
+    "date": "March 27, 2025",
+    "presenter": "Jeff Tomkiewicz",
+    "description": "Pretexting is one of the most powerful and versatile tools in the social engineer’s arsenal. Whether used in red teaming, penetration testing, or adversary simulation, a well-crafted pretext can bypass even the most hardened security controls—not through technical exploits, but by leveraging trust, authority, and human psychology.\n\nIn this two-hour interactive workshop, we will dive deep into the art and science of pretexting, exploring its historical roots, ethical considerations, and real-world applications in offensive security. Participants will gain hands-on experience in developing layered personas, crafting believable scenarios, and executing pretexts across multiple attack surfaces, including phishing campaigns, vishing (voice phishing), and physical infiltration techniques.",
+    "tags": ["red team", "human hacking", "social engineering"],
+    "watchUrl": "https://www.youtube.com/watch?v=vlow4qZSOSE",
+    "image": "rtv-cron-0x1.jpg"
+  }
+] 

@@ -9,40 +9,37 @@
       "levels": [
         {
           "name": "Diamond",
-          "sponsors": [
-          ]
+          "sponsors": []
         },
         {
           "name": "Platinum",
-          "sponsors": [
-          ]
+          "sponsors": []
         },
         {
           "name": "Gold",
-          "sponsors": [
-          ]
+          "sponsors": []
         },
         {
           "name": "Silver",
-          "sponsors": [
-          ]
+          "sponsors": []
         },
         {
           "name": "Bronze",
-          "sponsors": [
-          ]
+          "sponsors": []
         },
         {
-          "name": "CTF/Contest",
-          "sponsors": [
-          ]
+          "name": "Red Team Village CTF Sponsor",
+          "sponsors": []
+        },
+        {
+          "name": "Cyber Wargames Sponsor",
+          "sponsors": []
         },
         {
           "name": "Prize",
-          "sponsors": [
-          ] 
+          "sponsors": []
         }
       ]
     }
   ]
-} 
+}
