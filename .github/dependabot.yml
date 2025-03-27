@@ -23,16 +23,4 @@ updates:
       - "github_actions"
     commit-message:
       prefix: "ci"
-      include: "scope"
-
-  - package-ecosystem: "gomod"
-    directory: "/"
-    schedule:
-      interval: "weekly"
-    open-pull-requests-limit: 5
-    labels:
-      - "dependencies"
-      - "go"
-    commit-message:
-      prefix: "build"
       include: "scope" 
