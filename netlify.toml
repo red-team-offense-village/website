@@ -1,6 +1,6 @@
 [build]
   publish = "public"
-  command = "mise install && mise exec -- hugo"
+  command = "mise install && yarn install && mise exec -- hugo"
 
 [build.environment]
   HUGO_VERSION = "0.137.1"
