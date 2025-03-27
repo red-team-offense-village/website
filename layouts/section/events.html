@@ -61,7 +61,7 @@
                 <!-- CTA Button -->
                 {{ with .link }}
                 <div>
-                  <a href="{{ .url }}" class="inline-block bg-red-800 hover:bg-red-900 text-white px-6 py-2 rounded-md text-sm transition duration-200"{{ if .external }} target="_blank" rel="noopener"{{ end }}>
+                  <a href="{{ .url }}" class="inline-block bg-red-800 hover:bg-red-900 text-white px-6 py-2 mt-4 rounded-md text-sm transition duration-200"{{ if .external }} target="_blank" rel="noopener"{{ end }}>
                     {{ .text }} {{ if .external }}<i class="fas fa-external-link-alt text-xs ml-1"></i>{{ end }}
                   </a>
                 </div>

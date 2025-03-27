@@ -78,9 +78,9 @@
         {{ end }}
         
         <!-- Hidden updates (shown when expanded) -->
-        {{ if gt (len .Site.Data.updates.updates) 3 }}
+        {{ if gt (len .Site.Data.updates.updates) 5 }}
         <div id="hidden-updates" class="hidden space-y-6">
-          {{ range after 3 .Site.Data.updates.updates }}
+          {{ range after 5 .Site.Data.updates.updates }}
           <div class="py-4 border-b border-gray-200 last:border-0">
             <div class="flex flex-col md:flex-row gap-6">
               <div class="flex-grow">
