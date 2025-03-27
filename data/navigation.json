@@ -13,6 +13,12 @@
       "weight": 2
     },
     {
+      "identifier": "cron",
+      "name": "<i class='fas fa-clock'></i> RTV CRON",
+      "url": "rtv-cron/",
+      "weight": 3
+    },
+    {
       "identifier": "events",
       "name": "<i class='far fa-calendar'></i> EVENTS",
       "url": "events/",
@@ -49,4 +55,4 @@
       "target": "_blank"
     }
   ]
-}
+} 

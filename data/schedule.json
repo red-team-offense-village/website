@@ -1,24 +1,24 @@
 {
   "events": [
     {
-      "title": "RTV CRON Episode 1",
+      "title": "RTV CRON 0x1",
       "dateRange": "March 27, 2025",
-      "times": "TBD",
+      "times": "7:00PM EDT",
       "location": "RTV Youtube Channel",
-      "description": "We're thrilled to launch RTV CRON, our new recurring series where cybersecurity meets community! We'll have a live workshop (speaker TBD) and we'll also be discussing the latest news in the village.",
+      "description": "We're thrilled to launch RTV CRON, our new recurring series where cybersecurity meets community! We'll have a live workshop and we'll also be discussing the latest news in the village.\n\nThis month, we'll be joined by Jeff Tomkiewicz to discuss the art of Pretexting. Pretexting is one of the most powerful and versatile tools in the social engineer’s arsenal. Whether used in red teaming, penetration testing, or adversary simulation, a well-crafted pretext can bypass even the most hardened security controls—not through technical exploits, but by leveraging trust, authority, and human psychology.\n\nIn this two-hour interactive workshop, we will dive deep into the art and science of pretexting, exploring its historical roots, ethical considerations, and real-world applications in offensive security. Participants will gain hands-on experience in developing layered personas, crafting believable scenarios, and executing pretexts across multiple attack surfaces, including phishing campaigns, vishing (voice phishing), and physical infiltration techniques.",
       "image": {
-        "src": "RTVcron.png",
+        "src": "rtv-cron-0x1.jpg",
         "alt": "RTV cron"
       },
       "link": {
-        "url": "https://www.youtube.com/redteamvillage",
+        "url": "https://www.youtube.com/watch?v=vlow4qZSOSE",
         "text": "RTV Youtube Channel",
         "external": true
       },
       "tags": ["Workshop", "Live"]
     },
     {
-      "title": "RTV CRON Episode 2",
+      "title": "RTV CRON 0x2",
       "dateRange": "April 24, 2025",
       "times": "TBD",
       "location": "RTV Youtube Channel",
@@ -43,8 +43,7 @@
       "image": {
         "src": "rtv-hsc-2025.png",
         "alt": "RTV at HackSpaceCon 2025"
-      },
-      "link": {
+      },"link": {
         "url": "https://www.hackspacecon.com/",
         "text": "HackSpaceCon Website",
         "external": true
@@ -52,7 +51,7 @@
       "tags": ["Virtual", "Meetup", "Supply Chain"]
     },
     {
-      "title": "Red Team Village at DEF CON 33",
+      "title": "Red Team Village @ DEF CON 33",
       "dateRange": "August 7-10, 2025",
       "times": "TBD",
       "location": "Las Vegas Convention Center, Red Team Village Area",
@@ -69,4 +68,4 @@
       "tags": ["Conference", "DEF CON"]
     }
   ]
-}
+} 

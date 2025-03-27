@@ -1,6 +1,17 @@
 {
   "updates": [
     {
+      "title": "RTV CRON 0x1",
+      "date": "March 24, 2025",
+      "content": "The first episode of RTV CRON is coming soon! We'll have a live workshop and we'll also be discussing the latest news in the village. Join us on Thursday, March 27th at 7:00 PM EDT featuring Jeff Tomkiewicz in his workshop titled 'Influence_Ops: Tactical Pretexting'.",
+      "tag": ["RTV CRON", "Live"],
+      "url": {
+        "href": "/rtv-cron/",
+        "text": "More Info",
+        "external": false
+      }
+    },
+    {
       "title": "Call for Sponsors for DEF CON 33",
       "date": "March 14, 2025",
       "content": "We're officially accepting sponsors for our DEF CON 33 event! If you're interested in sponsoring the Red Team Village this year, please reach out to our team. We have various sponsorship tiers available from Bronze to Diamond, as well as specialized opportunities including CTF/Contest Sponsorships and Prize Contributions.\n\nOur team can share a sponsorship prospectus detailing all benefits and visibility opportunities for each level. We're also open to discussing custom sponsorship ideas that align with your organization's goals. Contact us soon to secure your spot, as premium sponsorship opportunities are limited and will fill quickly!",

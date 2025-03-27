@@ -1,0 +1,5 @@
+[tools]
+hugo-extended = "0.137.1"
+
+[env]
+MISE_VERBOSE = "1" 
