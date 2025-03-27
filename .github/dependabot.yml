@@ -8,6 +8,8 @@ updates:
     labels:
       - "dependencies"
       - "npm"
+    assignees:
+      - "mauvehed"
     commit-message:
       prefix: "chore"
       prefix-development: "chore"
@@ -21,6 +23,8 @@ updates:
     labels:
       - "dependencies"
       - "github_actions"
+    assignees:
+      - "mauvehed"
     commit-message:
       prefix: "ci"
       include: "scope" 
