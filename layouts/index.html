@@ -2,28 +2,52 @@
 
 <!-- Hero Section -->
 {{ partial "hero" . }}
-
-<!-- Mission Section -->
-<section class="py-8 px-4">
+ 
+<!-- Call to Action Section -->
+<section class="py-12 px-4 bg-neutral-100">
+  <h2 class="text-3xl font-bold text-center mb-4">DEF CON 33 Call for Everything!</h2>
+  <p class="text-center mb-8 px-8">We're now accepting submissions for DEF CON 33! If you're passionate about cybersecurity, we invite you to participate by hosting a workshop, sharing innovative tactics, becoming a sponsor, or volunteering your time. Help make this year's event exceptional by joining our community of security enthusiasts. Submit your workshop/tactics proposals through the form below, or reach out regarding sponsorship and volunteer opportunities.</p>
   <div class="max-w-6xl mx-auto">
-    <div class="bg-red-800 rounded-lg shadow-lg p-8 text-white">
-      <div class="flex flex-col items-center justify-center mb-8">
-        <h2 class="text-3xl font-bold text-center mb-4">Our Mission</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Workshops CTA -->
+      <div class="bg-white rounded-lg shadow-lg p-6 border-t-4 border-red-800">
+        <div class="flex items-center gap-3 mb-4">
+          <i class="fas fa-chalkboard-teacher text-2xl text-red-800"></i>
+          <h3 class="text-xl font-bold text-gray-800">Submit a Workshop/Tactic</h3>
+        </div>
+        <p class="text-gray-600 mb-4">Share your knowledge with the community! We're looking for engaging workshops across all skill levels.</p>
+        <a href="/workshops" class="inline-block w-full text-center bg-red-800 hover:bg-red-900 text-white px-6 py-3 rounded-md transition duration-200">
+          Submit Your Workshop <i class="fas fa-external-link-alt text-xs ml-1"></i>
+        </a>
       </div>
-      <div class="text-lg leading-relaxed text-center max-w-4xl mx-auto">
-        <p class="mb-4">
-          At Red Team Village, our mission is to foster a collaborative environment where security professionals can develop and enhance their offensive security skills. We believe in the power of community-driven education and the importance of practical, hands-on learning experiences.
-        </p>
-        <p class="mb-4">
-          We aim to bridge the gap between theoretical knowledge and real-world application by providing accessible training, resources, and networking opportunities. Through our events, workshops, and online platforms, we strive to build a diverse and inclusive community that advances the field of offensive security.
-        </p>
-        <p>
-          By empowering individuals with the knowledge and skills needed to identify and address security vulnerabilities, we contribute to creating a more secure digital world for everyone.
-        </p>
+
+      <!-- Sponsors CTA -->
+      <div class="bg-white rounded-lg shadow-lg p-6 border-t-4 border-red-800">
+        <div class="flex items-center gap-3 mb-4">
+          <i class="fas fa-handshake text-2xl text-red-800"></i>
+          <h3 class="text-xl font-bold text-gray-800">Become a Sponsor</h3>
+        </div>
+        <p class="text-gray-600 mb-4">Support our mission and connect with the community. Various sponsorship tiers available.</p>
+        <a href="mailto:sponsors@redteamvillage.io" class="inline-block w-full text-center bg-red-800 hover:bg-red-900 text-white px-6 py-3 rounded-md transition duration-200">
+          Sponsor the Event <i class="fas fa-envelope text-xs ml-1"></i>
+        </a>
+      </div>
+
+      <!-- Volunteers CTA -->
+      <div class="bg-white rounded-lg shadow-lg p-6 border-t-4 border-red-800">
+        <div class="flex items-center gap-3 mb-4">
+          <i class="fas fa-users text-2xl text-red-800"></i>
+          <h3 class="text-xl font-bold text-gray-800">Volunteer With Us</h3>
+        </div>
+        <p class="text-gray-600 mb-4">Be part of making this event amazing! Join our volunteer team and help shape the experience.</p>
+        <a href="https://forms.gle/LM9NWobjXYYxvHR78" class="inline-block w-full text-center bg-red-800 hover:bg-red-900 text-white px-6 py-3 rounded-md transition duration-200">
+          Join as Volunteer <i class="fas fa-external-link-alt text-xs ml-1"></i>
+        </a>
       </div>
     </div>
   </div>
 </section>
+
 
 <!-- Latest Updates Section -->
 <section class="py-8 px-4">
@@ -155,9 +179,31 @@
   </div>
 </section>
 
+<!-- Mission Section -->
+<section class="py-8 px-4">
+  <div class="max-w-6xl mx-auto">
+    <div class="rounded-lg shadow-lg p-8 text-black border-red-800 border-2">
+      <div class="flex flex-col items-center justify-center mb-8">
+        <h2 class="text-3xl font-bold text-center mb-4">Our Mission</h2>
+      </div>
+      <div class="text-lg leading-relaxed text-center max-w-4xl mx-auto">
+        <p class="mb-4">
+          At Red Team Village, our mission is to foster a collaborative environment where security professionals can develop and enhance their offensive security skills. We believe in the power of community-driven education and the importance of practical, hands-on learning experiences.
+        </p>
+        <p class="mb-4">
+          We aim to bridge the gap between theoretical knowledge and real-world application by providing accessible training, resources, and networking opportunities. Through our events, workshops, and online platforms, we strive to build a diverse and inclusive community that advances the field of offensive security.
+        </p>
+        <p>
+          By empowering individuals with the knowledge and skills needed to identify and address security vulnerabilities, we contribute to creating a more secure digital world for everyone.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
-<!-- Features Section -->
+<!-- Resources -->
 <section class="py-8 px-4 bg-gray-100">
+  <h2 class="text-3xl font-bold text-center mb-4">Additional Resources</h2>
   <div class="max-w-6xl mx-auto">
     <div class="flex flex-col md:flex-row flex-wrap gap-8">
       <div class="w-full md:w-1/3 md:flex-1 bg-red-800 rounded-lg shadow-lg p-8 text-white transform transition duration-300 hover:-translate-y-1 hover:shadow-xl flex flex-col">
