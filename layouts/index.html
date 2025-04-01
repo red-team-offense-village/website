@@ -155,6 +155,55 @@
         
         <script>
           document.addEventListener('DOMContentLoaded', function() {
+            // Toggle for workshop details
+            const toggleWorkshopBtn = document.getElementById('toggle-workshop-details');
+            const workshopDetails = document.getElementById('workshop-details');
+            
+            if (toggleWorkshopBtn && workshopDetails) {
+              toggleWorkshopBtn.addEventListener('click', function() {
+                if (workshopDetails.classList.contains('hidden')) {
+                  workshopDetails.classList.remove('hidden');
+                  toggleWorkshopBtn.textContent = 'Read less';
+                } else {
+                  workshopDetails.classList.add('hidden');
+                  toggleWorkshopBtn.textContent = 'Read more';
+                }
+              });
+            }
+            
+            // Toggle for sponsor details
+            const toggleSponsorBtn = document.getElementById('toggle-sponsor-details');
+            const sponsorDetails = document.getElementById('sponsor-details');
+            
+            if (toggleSponsorBtn && sponsorDetails) {
+              toggleSponsorBtn.addEventListener('click', function() {
+                if (sponsorDetails.classList.contains('hidden')) {
+                  sponsorDetails.classList.remove('hidden');
+                  toggleSponsorBtn.textContent = 'Read less';
+                } else {
+                  sponsorDetails.classList.add('hidden');
+                  toggleSponsorBtn.textContent = 'Read more';
+                }
+              });
+            }
+            
+            // Toggle for volunteer details
+            const toggleVolunteerBtn = document.getElementById('toggle-volunteer-details');
+            const volunteerDetails = document.getElementById('volunteer-details');
+            
+            if (toggleVolunteerBtn && volunteerDetails) {
+              toggleVolunteerBtn.addEventListener('click', function() {
+                if (volunteerDetails.classList.contains('hidden')) {
+                  volunteerDetails.classList.remove('hidden');
+                  toggleVolunteerBtn.textContent = 'Read less';
+                } else {
+                  volunteerDetails.classList.add('hidden');
+                  toggleVolunteerBtn.textContent = 'Read more';
+                }
+              });
+            }
+            
+            // Toggle for updates
             const toggleButton = document.getElementById('toggle-updates');
             const hiddenUpdates = document.getElementById('hidden-updates');
             
