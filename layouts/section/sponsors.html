@@ -48,8 +48,11 @@
     <div class="max-w-7xl mx-auto">
       <div class="mx-auto">
         {{ range .levels }}
+        {{ if .sponsors }}
         <div class="mb-16">
-          <h3 class="text-3xl font-bold text-center mb-4">{{ .name }} Sponsors</h3>
+          <h3 class="text-3xl font-bold text-center mb-4">
+            {{ .name }} {{ if eq (len .sponsors) 1 }}Sponsor{{ else }}Sponsors{{ end }}
+          </h3>
           
           <!-- Updated grid with better centering -->
           <div class="flex flex-wrap justify-center gap-8 max-w-6xl mx-auto">
@@ -71,6 +74,7 @@
             {{ end }}
           </div>
         </div>
+        {{ end }}
         {{ end }}
       </div>
     </div>

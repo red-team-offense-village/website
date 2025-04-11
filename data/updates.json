@@ -1,6 +1,17 @@
 {
   "updates": [
     {
+      "title": "RTV CRON 0x2",
+      "date": "April 24, 2025 3:00 PM EDT",
+      "content": "The second episode of RTV CRON is coming soon! We'll have a live workshop and we'll also be discussing the latest news in the village. Join us on Thursday, April 24th at 3:00 PM EDT featuring Kevin Clark and Skyler Knecht in their workshop titled 'Systematic Malware: A Rule-Based Approach to Creating Payloads'. Also, we'll be unveiling our RTV mascot for DEF CON 33!",
+      "tag": ["RTV CRON", "Live"],
+      "url": {
+        "href": "/rtv-cron/",
+        "text": "More Info",
+        "external": false
+      }
+    },
+    {
       "title": "RTV CRON 0x1",
       "date": "March 24, 2025",
       "content": "The first episode of RTV CRON is coming soon! We'll have a live workshop and we'll also be discussing the latest news in the village. Join us on Thursday, March 27th at 7:00 PM EDT featuring Jeff Tomkiewicz in his workshop titled 'Influence_Ops: Tactical Pretexting'.",
