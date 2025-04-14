@@ -1,5 +1,15 @@
 [
   {
+    "title": "Systematic Malware: A Rule-Based Approach to Creating Payloads",
+    "date": "April 24, 2025 3:00 PM EDT",
+    "presenter": "Kevin Clark & Skyler Knecht",
+    "description": "Creating evasive payloads in the modern EDR landscape is less about knowing what to do, and more about learning what not to do. Although EDR has moved away from relying on static binary signatures, rule-based detections are still in play. Every step of payload execution is an opportunity to be detected. In this workshop, we showcase step-by-step instructions on how to craft evasive payloads. Attendees will have a better understanding of how to craft complex payloads and learn about how payloads are executed, from process creation to initial callback.",
+    "tags": ["malware", "payloads", "EDR"],
+    "watchUrl": "https://www.youtube.com/watch?v=-xStGweK9KI",
+    "image": "rtv-cron.png"
+
+  },
+  {
     "title": "Influence_Ops: Tactical Pretexting",
     "date": "March 27, 2025",
     "presenter": "Jeff Tomkiewicz",
