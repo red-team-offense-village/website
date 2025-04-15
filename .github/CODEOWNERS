@@ -17,6 +17,6 @@ netlify.toml    @mauvehed
 /.github/       @mauvehed
 
 # Development configuration
-.pre-commit-config.yaml    @mauvehed
+.pre-commit-config.yaml   @mauvehed
 package.json              @mauvehed
 yarn.lock                 @mauvehed 
