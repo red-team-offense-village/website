@@ -5,7 +5,7 @@
       "dateRange": "April 24, 2025",
       "times": "3:00 PM EDT",
       "location": "RTV Youtube Channel",
-      "description": "The second episode of RTV CRON is coming soon! We'll have a live workshop and we'll also be discussing the latest news in the village. Join us on Thursday, April 24th at 3:00 PM EDT featuring Kevin Clark and Skyler Knecht in their workshop titled 'Systematic Malware: A Rule-Based Approach to Creating Payloads'. Also, we'll be unveiling our RTV mascot for DEF CON 33!",
+      "description": "Creating evasive payloads in the modern EDR landscape is less about knowing what to do, and more about learning what not to do. Although EDR has moved away from relying on static binary signatures, rule-based detections are still in play. Every step of payload execution is an opportunity to be detected. In this workshop, we showcase step-by-step instructions on how to craft evasive payloads. Attendees will have a better understanding of how to craft complex payloads and learn about how payloads are executed, from process creation to initial callback.",
       "image": {
         "src": "rtv-cron-0x2.jpg",
         "alt": "RTV cron"
