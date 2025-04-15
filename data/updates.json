@@ -1,6 +1,21 @@
 {
   "updates": [
     {
+      "title": "RTV CRON Call for Workshops",
+      "date": "March 10, 2025",
+      "content": "We're looking for speakers for our RTV CRON workshop series! If you're interested in speaking, please fill out the Call on Sessionize. We're looking for a two hour workshop on a topic of your choice (as long as it's related to offensive security). For examples of what we're looking for, check out the RTV Overflow videos which we recently released on our [YouTube channel](https://www.youtube.com/@RedTeamVillage/videos).",
+      "tag": ["RTV CRON", "Call for Workshops"],
+      "image": {
+        "src": "RTVcron-cfw.png",
+        "alt": "Red Team Village Conference 2023"
+      },
+      "url": {
+        "href": "https://sessionize.com/rtv-cron/",
+        "text": "Answer the Call!",
+        "external": true
+      }
+    },
+    {
       "title": "RTV CRON 0x2",
       "date": "April 24, 2025 3:00 PM EDT",
       "content": "The second episode of RTV CRON is coming soon! We'll have a live workshop and we'll also be discussing the latest news in the village. Join us on Thursday, April 24th at 3:00 PM EDT featuring Kevin Clark and Skyler Knecht in their workshop titled 'Systematic Malware: A Rule-Based Approach to Creating Payloads'. Also, we'll be unveiling our RTV mascot for DEF CON 33!",
@@ -53,21 +68,6 @@
         "href": "https://sessionize.com/rtv-at-defcon-33/",
         "text": "Submit a Workshop/Tactic",
         "target": "_blank",
-        "external": true
-      }
-    },
-    {
-      "title": "RTV CRON Call for Workshops",
-      "date": "March 10, 2025",
-      "content": "We're looking for speakers for our RTV CRON workshop series! If you're interested in speaking, please fill out the Call on Sessionize. We're looking for a two hour workshop on a topic of your choice (as long as it's related to offensive security). For examples of what we're looking for, check out the RTV Overflow videos which we recently released on our [YouTube channel](https://www.youtube.com/@RedTeamVillage/videos).",
-      "tag": ["RTV CRON", "Call for Workshops"],
-      "image": {
-        "src": "RTVcron-cfw.png",
-        "alt": "Red Team Village Conference 2023"
-      },
-      "url": {
-        "href": "https://sessionize.com/rtv-cron/",
-        "text": "Answer the Call!",
         "external": true
       }
     },
