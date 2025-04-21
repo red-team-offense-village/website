@@ -1,6 +1,7 @@
-{{ if not hugo.IsServer }}
-    {{ template "_internal/shortcodes/instagram.html" . }}
-{{ else }}
-    <!-- Render the placeholder for the shortcode -->
-    <pre>Instagram Photo: {{ .Get 0 }}</pre>
-{{ end }}
+{{ $id := .Get 0 }}
+<div class="instagram-embed">
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/{{ $id }}/" data-instgrm-version="14">
+        <a href="https://www.instagram.com/p/{{ $id }}/">Instagram Post</a>
+    </blockquote>
+    <script async src="//www.instagram.com/embed.js"></script>
+</div>
