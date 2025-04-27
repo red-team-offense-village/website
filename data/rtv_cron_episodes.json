@@ -1,12 +1,12 @@
 [
   {
     "title": "Systematic Malware: A Rule-Based Approach to Creating Payloads",
-    "date": "April 24, 2025 3:00 PM EDT",
+    "date": "April 24, 2025",
     "presenter": "Kevin Clark & Skyler Knecht",
     "description": "Creating evasive payloads in the modern EDR landscape is less about knowing what to do, and more about learning what not to do. Although EDR has moved away from relying on static binary signatures, rule-based detections are still in play. Every step of payload execution is an opportunity to be detected. In this workshop, we showcase step-by-step instructions on how to craft evasive payloads. Attendees will have a better understanding of how to craft complex payloads and learn about how payloads are executed, from process creation to initial callback.",
     "tags": ["malware", "payloads", "EDR"],
     "watchUrl": "https://www.youtube.com/watch?v=-xStGweK9KI",
-    "image": "rtv-cron.png"
+    "image": "rtv-cron-0x2.png"
 
   },
   {
@@ -16,6 +16,6 @@
     "description": "Pretexting is one of the most powerful and versatile tools in the social engineer’s arsenal. Whether used in red teaming, penetration testing, or adversary simulation, a well-crafted pretext can bypass even the most hardened security controls—not through technical exploits, but by leveraging trust, authority, and human psychology.\n\nIn this two-hour interactive workshop, we will dive deep into the art and science of pretexting, exploring its historical roots, ethical considerations, and real-world applications in offensive security. Participants will gain hands-on experience in developing layered personas, crafting believable scenarios, and executing pretexts across multiple attack surfaces, including phishing campaigns, vishing (voice phishing), and physical infiltration techniques.\n\n**Workshop Materials**: [https://github.com/theGh0stfaceKiller/InfluenceOps_RTV_VM](https://github.com/theGh0stfaceKiller/InfluenceOps_RTV_VM)",
     "tags": ["red team", "human hacking", "social engineering"],
     "watchUrl": "https://www.youtube.com/watch?v=vlow4qZSOSE",
-    "image": "cron-0x1-thumb.png"
+    "image": "rtv-cron-0x1.png"
   }
 ] 
