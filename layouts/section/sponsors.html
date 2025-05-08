@@ -59,9 +59,7 @@
             {{ $sponsorCount := len .sponsors }}
             {{ range .sponsors }}
             <div class="w-full 
-              {{ if eq $sponsorCount 1 }}md:w-3/4 lg:w-3/4{{ end }}
-              {{ if eq $sponsorCount 2 }}md:w-1/2{{ end }}
-              {{ if gt $sponsorCount 2 }}md:w-1/3 lg:w-1/3{{ end }}
+              md:w-3/4 lg:w-3/4
               bg-white !border-[3px] !border-red-800 rounded-lg overflow-hidden shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-3 flex flex-col" style="border: 3px solid #991b1b !important;">
               <div class="p-4 !bg-black flex items-center justify-center" style="background-color: black;">
                 <a href="{{ .website }}" target="_blank" rel="noopener" class="flex items-center justify-center w-full h-full">

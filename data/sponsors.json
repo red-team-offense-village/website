@@ -42,6 +42,23 @@
                   "url": "https://www.instagram.com/hakai_security"
                 }
               ]
+            },
+            {
+              "name": "Synack Red Team",
+              "description": "Hacker House is a community-driven platform that provides a space for hackers to come together and share ideas, collaborate on projects, and learn from each other.",
+              "website": "https://synack.com/red-team",
+              "logo": "synack.png",
+              "socials": [
+                {
+                  "name": "X",
+                  "url": "https://x.com/synackredteam"
+                },
+                {
+                  "name": "LinkedIn",
+                  "url": "https://www.linkedin.com/company/synack-red-team/"
+                }
+                
+              ]
             }
           ]
         },
