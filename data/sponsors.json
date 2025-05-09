@@ -22,7 +22,45 @@
         },
         {
           "name": "Silver",
-          "sponsors": []
+          "sponsors": [
+            {
+              "name": "HAKAI",
+              "description": "Hakai Security is a cybersecurity consulting firm operating within a comprehensive ecosystem focused on real-world offensive security. We deliver specialized services in Red Team operations, penetration testing, DevSecOps, and Attack Surface Management (ASM) - QuimeraX. Alongside our consulting services, we run an educational platform designed to advance offensive security education (Hacking Club), offering hands-on learning experiences that reflect real-world challenges faced by security professionals.",
+              "website": "https://hakaisecurity.io/",
+              "logo": "hakai.png",
+              "socials": [
+                {
+                  "name": "X",
+                  "url": "https://x.com/hakaioffsec"
+                },
+                {
+                  "name": "LinkedIn",
+                  "url": "https://www.linkedin.com/company/hakai-offensive-security/"
+                },
+                {
+                  "name": "Instagram",
+                  "url": "https://www.instagram.com/hakai_security"
+                }
+              ]
+            },
+            {
+              "name": "Synack Red Team",
+              "description": "The Synack Red Team is more than a bug bounty platform.  It represents a trusted global community of highly-skilled security researchers tasked with helping secure some of the world's most notable brands and government agencies.  Be curious, get paid for doing what you love, and find your hacker home!",
+              "website": "https://synack.com/red-team",
+              "logo": "synack.png",
+              "socials": [
+                {
+                  "name": "X",
+                  "url": "https://x.com/synackredteam"
+                },
+                {
+                  "name": "LinkedIn",
+                  "url": "https://www.linkedin.com/company/synack-red-team/"
+                }
+                
+              ]
+            }
+          ]
         },
         {
           "name": "Bronze",
@@ -30,7 +68,28 @@
         },
         {
           "name": "Red Team Village CTF",
-          "sponsors": []
+          "sponsors": [
+            {
+              "name": "Optiv",
+              "description": "Optiv is the cyber advisory and solutions leader, delivering strategic and technical expertise that allows you to secure your full potential. We advise, deploy and operate complete cybersecurity programs from strategy and managed security services to risk, integration and technology solutions.",
+              "website": "https://www.optiv.com/",
+              "logo": "optiv.png",
+              "socials": [
+                {
+                  "name": "X",
+                  "url": "https://x.com/Optiv"
+                },
+                {
+                  "name": "LinkedIn",
+                  "url": "https://www.linkedin.com/company/optiv-inc/"
+                },
+                {
+                  "name": "YouTube",
+                  "url": "https://www.youtube.com/@OptivInc"
+                }
+              ]
+            }
+          ]
         },
         {
           "name": "Cyber Wargames",
