@@ -1,6 +1,17 @@
 {
   "updates": [
     {
+      "title": "RTV CRON 0x3",
+      "date": "May 29, 2025",
+      "content": "The third episode of RTV CRON is coming May 29th! We'll be providing updates on our DEF CON 33 plans and Mike Bell will be presenting 'Introduction to Ghidra and Version Tracking'.",
+      "tag": ["RTV CRON", "Live"],
+      "url": {
+        "href": "/rtv-cron/",
+        "text": "More Info",
+        "external": false
+      }
+    },
+    {
       "title": "RTV CRON Call for Workshops",
       "date": "March 10, 2025",
       "content": "We're looking for speakers for our RTV CRON workshop series! If you're interested in speaking, please fill out the Call on Sessionize. We're looking for a two hour workshop on a topic of your choice (as long as it's related to offensive security). For examples of what we're looking for, check out the RTV Overflow videos which we recently released on our [YouTube channel](https://www.youtube.com/@RedTeamVillage/videos).",
