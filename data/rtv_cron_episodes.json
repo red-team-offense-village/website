@@ -1,5 +1,14 @@
 [
   {
+    "title": "Introduction to Ghidra and Version Tracking",
+    "date": "May 29, 2025",
+    "presenter": "Mike Bell",
+    "description":"For the workshop, Mike will demonstrate basic Ghidra functionality such as importing programs, launching tools, and using the standard windows and plugins. Next he will explain the design and use of the Version Tracking tool, and how it can help your workflow understanding functionality while analyzing upgrades to software. Finally, time permitting, he will show beginning usage of the BSim capability and how this can be a game changer for discovering lineage of software en masse. Those who tune in are encouraged to ask questions about the application, as Mike will be demonstrating everything live without a net.",
+    "tags": ["Ghidra", "workshop"],
+    "watchUrl": "https://www.youtube.com/watch?v=6ou3Qcwuao8",
+    "image": "rtv-cron-0x3.png"
+  },
+  {
     "title": "Systematic Malware: A Rule-Based Approach to Creating Payloads",
     "date": "April 24, 2025",
     "presenter": "Kevin Clark & Skyler Knecht",

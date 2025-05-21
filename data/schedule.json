@@ -1,6 +1,17 @@
 {
   "events": [
     {
+      "title": "RTV CRON 0x3",
+      "dateRange": "May 29, 2025",
+      "times": "7:00 PM EDT",
+      "location": "Red Team Village Discord",
+      "description": "The third episode of RTV CRON is coming May 29th! We'll be providing updates on our DEF CON 33 plans and Mike Bell will be presenting 'Introduction to Ghidra and Version Tracking'.",
+      "image": {
+        "src": "rtv-cron-0x3.jpg",
+        "alt": "RTV CRON 0x3"
+      }
+    },
+    {
       "title": "RTV @ HackSpaceCon",
       "dateRange": "May 14-15, 2025",
       "times": "TBD",
