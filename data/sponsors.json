@@ -14,7 +14,28 @@
         },
         {
           "name": "Platinum",
-          "sponsors": []
+          "sponsors": [
+            {
+              "name": "Flare",
+              "description": "Flare is the leader in Threat Exposure Management, helping organizations of all sizes detect high-risk exposures found on the clear and dark web. Combining the industry's best cybercrime database with a ridiculously intuitive user experience, Flare enables customers to reclaim the information advantage and get ahead of threat actors. For more information, visit https://flare.io",
+              "website": "https://flare.io/",
+              "logo": "flare.png",
+              "socials": [
+                {
+                  "name": "X",
+                  "url": "https://x.com/flaresystems"
+                },
+                {
+                  "name": "LinkedIn",
+                  "url": "https://www.linkedin.com/company/flare-io"
+                },
+                {
+                  "name": "YouTube",
+                  "url": "https://www.youtube.com/@flarecybersecurity"
+                }
+              ]
+            }
+          ]
         },
         {
           "name": "Gold",
@@ -64,7 +85,24 @@
         },
         {
           "name": "Bronze",
-          "sponsors": []
+          "sponsors": [
+            {
+              "name": "Risk3Sixty",
+              "description":"Risk3sixty empowers security and GRC leaders with elite consulting, a powerful GRC platform, and proven playbooks. The company is trusted by top organizations and recognized for innovation, execution, and a culture that attracts top industry talent.",
+              "website": "https://www.risk3sixty.com/",
+              "logo": "armada.png",
+              "socials": [
+                {
+                  "name": "LinkedIn",
+                  "url": "https://www.linkedin.com/company/risk3sixty"
+                },
+                {
+                  "name": "YouTube",
+                  "url": "https://www.youtube.com/@risk3sixty"
+                }
+              ]
+            }
+          ]
         },
         {
           "name": "Red Team Village CTF",
@@ -97,7 +135,28 @@
         },
         {
           "name": "Prize",
-          "sponsors": []
+          "sponsors": [
+            {
+              "name": "The SecOps Group",
+              "description": "PentestingExams.com by The SecOps Group is a platform offering practical, scenario-based penetration testing exams across a wide range of domains—including web, mobile (Android & iOS), cloud, network, Active Directory, blockchain, and AI/ML. Each exam is designed to test real-world offensive security skills, helping professionals stay sharp and relevant in an evolving threat landscape. Our mission is to raise the bar for hands-on pentesting expertise and support the global security community through rigorous, accessible certifications.",
+              "website": "https://pentestingexams.com/",
+              "logo": "secopsgroup.png",
+              "socials": [
+                {
+                  "name": "X",
+                  "url": "https://x.com/@TheSecOpsGroup"
+                },
+                {
+                  "name": "LinkedIn",
+                  "url": "https://www.linkedin.com/company/secops-group/"
+                },
+                {
+                  "name": "YouTube",
+                  "url": "https://www.youtube.com/@TheSecOpsGroup"
+                }
+              ]
+            }
+          ]
         }
       ]
     }
