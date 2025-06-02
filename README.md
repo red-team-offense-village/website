@@ -6,7 +6,17 @@ This git repository contains the [website](http://redteamvillage.io) for the Red
 
 ## Local Dev
 
-If you want to make changes and actually test them locally you will need to [install Hugo](https://gohugo.io/installation/). How you accomplish that is beyond this README file. We recommend using Homebrew.
+To test changes locally you will need to install:
+ - [Hugo](https://gohugo.io/installation/) (We recommend using Homebrew)
+ - [Yarn](https://yarnpkg.com/getting-started/install)
+
+Install yarn dependencies:
+
+```sh
+yarn install
+```
+
+Then run the Hugo server locally:
 
 ```sh
 hugo server
