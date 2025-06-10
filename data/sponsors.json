@@ -62,6 +62,22 @@
           "name": "Silver",
           "sponsors": [
             {
+              "name": "HackingHub",
+              "description": "Learn to hack, for the real world.",
+              "website": "https://www.linkedin.com/company/hackinghub",
+              "logo": "hackinghub.png",
+              "socials": [
+                {
+                  "name": "X",
+                  "url": "https://x.com/hackinghub_io"
+                },
+                {
+                  "name": "LinkedIn",
+                  "url": "https://www.linkedin.com/company/hackinghub"
+                }
+              ]
+            },
+            {
               "name": "HAKAI",
               "description": "Hakai Security is a cybersecurity consulting firm operating within a comprehensive ecosystem focused on real-world offensive security. We deliver specialized services in Red Team operations, penetration testing, DevSecOps, and Attack Surface Management (ASM) - QuimeraX. Alongside our consulting services, we run an educational platform designed to advance offensive security education (Hacking Club), offering hands-on learning experiences that reflect real-world challenges faced by security professionals.",
               "website": "https://hakaisecurity.io/",
@@ -95,11 +111,18 @@
                   "name": "LinkedIn",
                   "url": "https://www.linkedin.com/company/synack-red-team/"
                 }
-                
+              ]
+            },
+            {
+              "name": "ThreatSims",
+              "description": "ThreatSims transforms cybersecurity simulations into practical skills through immersive, hands-on learning experiences. As a comprehensive training platform trusted by leading organizations, ThreatSims has served over 15,000 participants across 40+ events, delivering 2,100+ specialized modules that prepare professionals for real-world cybersecurity challenges.",
+              "website": "https://threatsims.com/",
+              "logo": "threatsims.png",
+              "socials": [               
               ]
             }
           ]
-        },
+        },            
         {
           "name": "Bronze",
           "sponsors": [
