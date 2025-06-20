@@ -1,0 +1,265 @@
+{{ define "main" }}
+{{ partial "hero" . }}
+
+<div class="container mx-auto px-4 py-12 max-w-6xl">
+  <!-- Introduction Section -->
+  <section class="mb-16">
+    <div class="bg-white border-2 border-red-800 rounded-lg shadow-lg p-8">
+      <div class="flex items-center gap-4 mb-8 text-red-800">
+        <i class="fas fa-gamepad text-3xl"></i>
+        <h2 class="text-3xl font-bold text-gray-800">Cyber Wargames at DefCon 33</h2>
+      </div>
+
+      <p class="text-lg text-gray-700 mb-8">
+        Want to flex your hacking skills, demonstrate your expertise, or enter a competition for the first time? Join us for the Cyber Wargames Event at DefCon 33!
+      </p>
+
+      <p class="text-lg text-gray-700 mb-8">
+        Ready to sign up? Please visit our "pre-reg" form linked below. Pre-registration is <b>not</b> a commitment to compete - we will reach out closer to August to confirm your participation and schedule your event.
+      </p>
+
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdkw8StglxHF60eQDvs0ZXXRvjGolqtOh3VFZJpSFwKpb0GWQ/viewform?usp=dialog" class="bg-red-800 text-white px-4 py-2 rounded-md hover:bg-red-900 transition-colors">Pre-Register Now!</a>
+    </div>
+  </section>
+
+  <!-- What is Cyber Wargames Section -->
+  <section class="mb-16">
+    <div class="bg-white border-2 border-red-800 rounded-lg shadow-lg p-8">
+      <div class="flex items-center gap-4 mb-8 text-red-800">
+        <i class="fas fa-question-circle text-3xl"></i>
+        <h2 class="text-3xl font-bold text-gray-800">What is Cyber Wargames?</h2>
+      </div>
+
+      <p class="text-lg text-gray-700 mb-8">
+        Cyber Wargames is a collection of infrastructure attack-defense cyber games.
+      </p>
+
+      <div class="space-y-8">
+        <!-- Redteam Rumble -->
+        <div class="bg-gray-50 border border-gray-200 rounded-lg p-6">
+          <h3 class="text-2xl font-bold text-red-800 mb-4">Redteam Rumble</h3>
+          <p class="text-gray-700">
+            Teams are tasked with protecting their systems and services while identifying and exploiting vulnerabilities on other team's systems in this Redteam free-for-all. Points will be awarded for controlling services and flags within their own, and each opponents, infrastructure.
+          </p>
+        </div>
+
+        <!-- Strategic Operations -->
+        <div class="bg-gray-50 border border-gray-200 rounded-lg p-6">
+          <h3 class="text-2xl font-bold text-red-800 mb-4">Strategic Operations</h3>
+          <p class="text-gray-700">
+            Strategic Operations will feature two teams going head to head in a classic offense vs defense battle. The defensive team gains points by successfully providing mission critical services during a short scoring window, while offensive teams will gain points by performing targeted service interruptions and data manipulation.
+          </p>
+        </div>
+
+        <!-- King of the Hill -->
+        <div class="bg-gray-50 border border-gray-200 rounded-lg p-6">
+          <h3 class="text-2xl font-bold text-red-800 mb-4">King of the Hill</h3>
+          <p class="text-gray-700">
+            King of the Hill will be live day and night, with a constantly evolving landscape of systems for most of the conference, and allows individuals to capture and control dynamically spawning systems and services to gain points for victory!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- When Section -->
+  <section class="mb-16">
+    <div class="bg-white border-2 border-red-800 rounded-lg shadow-lg p-8">
+      <div class="flex items-center gap-4 mb-8 text-red-800">
+        <i class="fas fa-calendar-alt text-3xl"></i>
+        <h2 class="text-3xl font-bold text-gray-800">When is Cyber Wargames Taking Place?</h2>
+      </div>
+
+      <div class="space-y-6">
+        <!-- Redteam Rumble Schedule -->
+        <div class="bg-gray-50 border border-gray-200 rounded-lg p-6">
+          <h3 class="text-xl font-bold text-red-800 mb-4">Redteam Rumble</h3>
+          <ul class="space-y-2 text-gray-700">
+            <p>There are two scheduled Redteam Rumble events:</p>
+
+            <li class="flex items-center">
+              <i class="fas fa-calendar-day text-red-800 mr-3"></i>
+              Friday, Aug 8th, 2025 1500-1700 PDT
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-calendar-day text-red-800 mr-3"></i>
+              Saturday, Aug 9th, 2025 1500-1700 PDT
+            </li>
+
+            <p>Each event will consist of 4 teams competing in a free-for-all for 2 hours. <b>Pre-registration is required.</b></p>
+          </ul>
+        </div>
+
+        <!-- Strategic Operations Schedule -->
+        <div class="bg-gray-50 border border-gray-200 rounded-lg p-6">
+          <h3 class="text-xl font-bold text-red-800 mb-4">Strategic Operations</h3>
+
+          <ul class="space-y-2 text-gray-700">
+            <p>Stragetic Operations Events will be <i>pre-scheduled</i> on Friday and Saturday from 0900 to 1500 PDT</p>
+
+            <li class="flex items-center">
+              <i class="fas fa-calendar-day text-red-800 mr-3"></i>
+              Friday, Aug 8th, 2025 0900 - 1500 PDT
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-calendar-day text-red-800 mr-3"></i>
+              Saturday, Aug 9th, 2025 0900 - 1500 PDT
+            </li>
+
+            <p>Each event will consist of 2 teams competing in an attacker vs defender battle for anywhere from 30 - 90 minutes.
+              <br>
+              <b>Pre-registration is reccomended, but not required.</b>
+            </p>
+
+            <p>One of our goals with Strategic Operations is to provide a fun and engaging experience for attendees that discover us on the competition floor, without requiring prior registration. We will do our best to accomodate <i>walk in</i> participants when possible!</p>
+          </ul>
+        </div>
+
+        <!-- King of the Hill Schedule -->
+        <div class="bg-gray-50 border border-gray-200 rounded-lg p-6">
+          <h3 class="text-xl font-bold text-red-800 mb-4">King of the Hill</h3>
+          <ul class="space-y-2 text-gray-700">
+            <li class="flex items-center">
+              <i class="fas fa-clock text-red-800 mr-3"></i>
+              King of the Hill will be available online, 24 hours a day, from Friday, Aug 8th 0830 to Sunday, Aug 10th 1000 PDT. Compete in person or remotely!
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- eligibility & Rules section -->
+  <section class="mb-16">
+    <div class="bg-white border-2 border-red-800 rounded-lg shadow-lg p-8">
+      <div class="flex items-center gap-4 mb-8 text-red-800">
+        <i class="fas fa-info-circle text-3xl"></i>
+        <h2 class="text-3xl font-bold text-gray-800">Eligibility & Rules</h2>
+      </div>
+
+      <ul class="space-y-2 text-gray-700">
+
+        <li class="text-lg text-gray-700">
+          <i class="fas fa-info-circle text-red-800 mr-3"></i>
+          Teams competing in Redteam Rumble and Strategic Operations must attend <b>in person</b> at the Las Vegas
+          Convention Center for DEFCON 33. King of the Hill can be competed in remotely.
+        </li>
+
+        <li class="text-lg text-gray-700">
+          <i class="fas fa-info-circle text-red-800 mr-3"></i>
+          You must bring your own equipment (laptops, power, etc) in order to access the competition environment.
+          We will have a table for your team to use as well as conference WiFi, but we will not be providing laptops or other equipment.
+          We may not have power available during the competition, please come prepared.
+        </li>
+
+        <li class="text-lg text-gray-700">
+          <i class="fas fa-info-circle text-red-800 mr-3"></i>
+          Teams must not exceed 5 players. If your team is larger than 5 players, we encourage you to split up and
+          register multiple teams. If you wish to compete against a particular team (ex: battle your friends), let us know
+          and we'll be happy to arrange that!
+        </li>
+
+        <li class="text-lg text-gray-700">
+          <i class="fas fa-info-circle text-red-800 mr-3"></i>
+          There are no restrictions on how many times any team or individual can compete. We aim to make our experience
+          replayable, and hope to see you again!
+        </li>
+
+        <li class="text-lg text-gray-700">
+          <i class="fas fa-info-circle text-red-800 mr-3"></i>
+          Teams of all skill levels are accepted and encouraged to compete. We will do our best to accomodate teams of all
+          skill levels and provide a fun experience for everyone. Generally, King of the Hill is the easiest event,
+          followed by Strategic Operations, with Redteam Rumble being the most difficult.
+        </li>
+
+        <li class="text-lg text-gray-700">
+          <i class="fas fa-info-circle text-red-800 mr-3"></i>
+          Pre-registration is not a commitment to compete, but highly encouraged. We will reach out closer to August to
+          confirm your participation and schedule your event(s).
+        </li>
+      </ul>
+    </div>
+  </section>
+
+
+  <!-- Where Section -->
+  <section class="mb-16">
+    <div class="bg-white border-2 border-red-800 rounded-lg shadow-lg p-8">
+      <div class="flex items-center gap-4 mb-8 text-red-800">
+        <i class="fas fa-map-marker-alt text-3xl"></i>
+        <h2 class="text-3xl font-bold text-gray-800">Where Will Cyber Wargames Be Held?</h2>
+      </div>
+
+      <p class="text-lg text-gray-700">
+        Redteam Rumble and Strategic Operation events will be held within the dedicated Cyber Wargames contest space at DefCon 33. King of the Hill will be held online, and can be accessed from anywhere.
+      </p>
+    </div>
+  </section>
+
+  <!-- What Do I Win Section -->
+  <section class="mb-16">
+    <div class="bg-white border-2 border-red-800 rounded-lg shadow-lg p-8">
+      <div class="flex items-center gap-4 mb-8 text-red-800">
+        <i class="fas fa-trophy text-3xl"></i>
+        <h2 class="text-3xl font-bold text-gray-800">What Do I Win?</h2>
+      </div>
+
+      <p class="text-lg text-gray-700">
+        A series of mystery prizes graciously donated from our sponsors will be available to event winners. Plus some <i>sweet</i> <b>bragging rights!</b>
+      </p>
+    </div>
+  </section>
+
+  <!-- Event Structure Section -->
+  <section class="mb-16">
+    <div class="bg-white border-2 border-red-800 rounded-lg shadow-lg p-8">
+      <div class="flex items-center gap-4 mb-8 text-red-800">
+        <i class="fas fa-sitemap text-3xl"></i>
+        <h2 class="text-3xl font-bold text-gray-800">Event Structure</h2>
+      </div>
+
+      <div class="space-y-8">
+        <!-- King of the Hill Structure -->
+        <div class="bg-gray-50 border border-gray-200 rounded-lg p-6">
+          <h3 class="text-2xl font-bold text-red-800 mb-4">King of the Hill</h3>
+          <p class="text-gray-700 my-2">
+            Contestants will access a virtual environment with dynamic challenges that need to be exploited and contested. Individuals gain points for each system they are able to plant and maintain their flag on.
+          </p>
+          <p class="text-gray-700 my-2">
+            Systems will automatically spawn and be destroyed through the course of the event, with a scoreboard tracking all team's progress. Quickly exploiting and holding new systems is key to success!
+          </p>
+        </div>
+
+        <!-- Strategic Operations Structure -->
+        <div class="bg-gray-50 border border-gray-200 rounded-lg p-6">
+          <h3 class="text-2xl font-bold text-red-800 mb-4">Strategic Operations</h3>
+          <p class="text-gray-700 my-2">
+            A contest scenario will be selected and deployed. Each team will have a period to prepare for the upcoming scoring period. Once the scoring period begins, teams battle over control of critical services within the scenario.
+          </p>
+          <p class="text-gray-700 my-2">
+            There will be multiple scoring periods during each event. Each team is battling for control of a single set of systems and services. The attacking team will only gain points for maintaining control of a <b>functional</b> service - <i>destroying the service will award them nothing.</i>
+          </p>
+          <p class="text-gray-700 my-2">
+            This event is designed with beginners and experts alike in mind. Multiple scenarios will allow for a wide range of skill levels to compete, and replayability for teams if desired.
+          </p>
+        </div>
+
+        <!-- Redteam Rumble Structure -->
+        <div class="bg-gray-50 border border-gray-200 rounded-lg p-6">
+          <h3 class="text-2xl font-bold text-red-800 mb-4">Redteam Rumble</h3>
+          <p class="text-gray-700">
+            Redteam Rumble was piloted with a single competition at DEFCON 32 with great success, and we're thrilled to bring it back for DefCon 33! This event is designed with more advanced competitors in mind, and is not for the faint of heart!
+          </p>
+          <p class="text-gray-700 my-2">
+            Teams will defend their "Castle," a virtual environment comprising several systems and services (both Windows and Linux systems may be included). Each castle has exposed services and exploitable vulnerabilities, along with a few hidden extras.
+          </p>
+          <p class="text-gray-700 my-2">
+            This event is a free-for-all between 4 teams competing against each other to gain points by controlling services and flags within their own, and each opponents, infrastructure.
+            That means your team will have to balance defending your own systems, while simultaneously hunting for vulnerabilities that can be exploited to control other teams' systems.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+{{ end }}

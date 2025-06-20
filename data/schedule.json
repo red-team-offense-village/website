@@ -38,6 +38,22 @@
         "external": true
       },
       "tags": ["Conference", "DEF CON"]
+    },
+    {
+      "title": "Cyber Wargames @ DEF CON 33",
+      "dateRange": "August 8-10, 2025",
+      "times": "9am - 5pm",
+      "location": "Las Vegas Convention Center, Competition Floor",
+      "description": "Join us for Cyber Wargames at DEF CON 33! It's an exciting new collection of infrastructure attack-defense cyber games. Find out more by clicking on the link below!",
+      "image": {
+        "src": "dc33.png",
+        "alt": "DEF CON 33"
+      },
+      "link": {
+        "url": "/cyber-wargames",
+        "text": "Cyber Wargames Details"
+      },
+      "tags": ["Conference", "DEF CON", "Competition"]
     }
   ]
-} 
+}
