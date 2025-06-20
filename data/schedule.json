@@ -1,31 +1,26 @@
 {
   "events": [
     {
-      "title": "RTV CRON 0x3",
-      "dateRange": "May 29, 2025",
-      "times": "7:00 PM EDT",
-      "location": "Red Team Village Discord",
-      "description": "The third episode of RTV CRON is coming May 29th! We'll be providing updates on our DEF CON 33 plans and Mike Bell will be presenting 'Introduction to Ghidra and Version Tracking'.",
+      "title": "RTV CRON 0x4",
+      "dateRange": "June 26, 2025",
+      "times": "TBD",
+      "location": "Red Team Village YouTube Channel",
+      "description": "The fourth episode of RTV CRON is coming June 26th! We'll be providing updates on our DEF CON 33 plans along with a live workshop.",
       "image": {
-        "src": "rtv-cron-0x3.jpg",
-        "alt": "RTV CRON 0x3"
+        "src": "rtv-cron.png",
+        "alt": "RTV CRON 0x4"
       }
     },
     {
-      "title": "RTV @ HackSpaceCon",
-      "dateRange": "May 14-15, 2025",
+      "title": "RTV CRON 0x5",
+      "dateRange": "July 31, 2025",
       "times": "TBD",
-      "location": "Radisson Resort at the Port",
-      "description": "RTV will be at HackSpaceCon 2025. We'll have a booth and we'll be discussing the latest news in the village. We'll also be hosting a CTF competition.",
+      "location": "Red Team Village YouTube Channel",
+      "description": "The fourth episode of RTV CRON is coming July 31st! We'll be providing updates on our DEF CON 33 plans along with a live workshop.",
       "image": {
-        "src": "rtv-hsc-2025.png",
-        "alt": "RTV at HackSpaceCon 2025"
-      },"link": {
-        "url": "https://www.hackspacecon.com/",
-        "text": "HackSpaceCon Website",
-        "external": true
-      },
-      "tags": ["Virtual", "Meetup", "Supply Chain"]
+        "src": "rtv-cron.png",
+        "alt": "RTV CRON 0x5"
+      }
     },
     {
       "title": "Red Team Village @ DEF CON 33",
