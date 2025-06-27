@@ -133,6 +133,44 @@
                   "url": "https://www.youtube.com/c/CorelightInc"
                 }
               ]
+            },
+            {
+              "name": "ThreatSims",
+              "description": "The Synack Red Team is more than a bug bounty platform.  It represents a trusted global community of highly-skilled security researchers tasked with helping secure some of the world's most notable brands and government agencies.  Be curious, get paid for doing what you love, and find your hacker home!",
+              "website": "https://threatsims.com/",
+              "logo": "threatsims.png",
+              "socials": [
+                {
+                  "name": "X",
+                  "url": "https://x.com/threatsims"
+                },
+                {
+                  "name": "LinkedIn",
+                  "url": "https://www.linkedin.com/company/threatsims/"
+                }
+                
+              ]
+            }, 
+            {
+              "name": "HackingHub",
+              "description": "Learn to hack, for the real world",
+              "website": "https://hackinghub.io",
+              "logo": "hackinghub.png",
+              "socials": [
+                {
+                  "name": "YouTube",
+                  "url": "https://www.youtube.com/@hackinghub_io"
+                },
+                {
+                  "name": "X",
+                  "url": "https://x.com/hackinghub_io"
+                },
+                {
+                  "name": "LinkedIn",
+                  "url": "https://www.linkedin.com/company/hackinghub-io"
+                }
+                
+              ]
             }
           ]
         },
@@ -222,6 +260,26 @@
                 {
                   "name": "YouTube",
                   "url": "https://www.youtube.com/@malteksolutions"
+                }
+              ]
+            },
+            {
+              "name": "Just Hacking Training",
+              "description": "Just Hacking Training is a platform providing \"Focused Technical Training for All Levels\" with 50+ affordable, hands-on options in 4 categories: Courses, Free Upskill Challenges, Hack-Alongs and CTFs. With new content released twice a month throughout 2025, bi-monthly livestreams with John Hammond and our All-Star contributors and even some \"Name Your Price\" options, JHT will advance your career regardless of experience level or budget.",
+              "website": "https://www.justhacking.com",
+              "logo": "justhacking.png",
+              "socials": [
+                {
+                  "name": "LinkedIn",
+                  "url": "https://www.linkedin.com/company/justhacking/"
+                },
+                {
+                  "name": "X",
+                  "url": "https://x.com/justhackinghq"
+                },
+                {
+                  "name": "YouTube",
+                  "url": "https://www.youtube.com/@justhackingtraining"
                 }
               ]
             }
