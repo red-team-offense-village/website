@@ -50,22 +50,6 @@
                   "url": "https://www.linkedin.com/company/white-knight-labs/"
                 }
               ]
-            },
-            {
-              "name": "Kindo",
-              "description":"A Global Cyber Security Consultancy specializing in Offensive Cyber Engagements.",
-              "website": "https://whiteknightlabs.com/",
-              "logo": "wkl-3.png",
-              "socials": [
-                {
-                  "name": "X",
-                  "url": "https://twitter.com/WKL_cyber"
-                },
-                {
-                  "name": "LinkedIn",
-                  "url": "https://www.linkedin.com/company/white-knight-labs/"
-                }
-              ]
             }
           ]
         },
