@@ -115,6 +115,26 @@
               ]
             },
             {
+              "name": "Corelight",
+              "description": "Corelight transforms network and cloud activity into evidence so that data-first defenders can stay ahead of ever-changing attacks. Delivered by our Open NDR Platform, Corelight’s comprehensive, correlated evidence gives you unparalleled visibility into your network. This evidence allows you to unlock new analytics, investigate faster, hunt like an expert, and even disrupt future attacks. Our on-prem and cloud sensors go anywhere to capture structured, industry-standard telemetry and insights that work with the tools and processes you already use. Corelight’s global customers include Fortune 500 companies, major government agencies, and research universities.",
+              "website": "https://corelight.com/",
+              "logo": "corelight.png",
+              "socials": [
+                {
+                  "name": "X",
+                  "url": "https://x.com/corelight_inc"
+                },
+                {
+                  "name": "LinkedIn",
+                  "url": "https://www.linkedin.com/company/corelight/"
+                },
+                {
+                  "name": "YouTube",
+                  "url": "https://www.youtube.com/c/CorelightInc"
+                }
+              ]
+            },
+            {
               "name": "ThreatSims",
               "description": "The Synack Red Team is more than a bug bounty platform.  It represents a trusted global community of highly-skilled security researchers tasked with helping secure some of the world's most notable brands and government agencies.  Be curious, get paid for doing what you love, and find your hacker home!",
               "website": "https://threatsims.com/",
