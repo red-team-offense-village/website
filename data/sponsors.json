@@ -34,6 +34,22 @@
                   "url": "https://www.youtube.com/@flarecybersecurity"
                 }
               ]
+            },
+            {
+              "name": "White Knight Labs",
+              "description":"A Global Cyber Security Consultancy specializing in Offensive Cyber Engagements.",
+              "website": "https://whiteknightlabs.com/",
+              "logo": "wkl-3.png",
+              "socials": [
+                {
+                  "name": "X",
+                  "url": "https://twitter.com/WKL_cyber"
+                },
+                {
+                  "name": "LinkedIn",
+                  "url": "https://www.linkedin.com/company/white-knight-labs/"
+                }
+              ]
             }
           ]
         },
@@ -65,7 +81,7 @@
               "name": "HAKAI",
               "description": "Hakai Security is a cybersecurity consulting firm operating within a comprehensive ecosystem focused on real-world offensive security. We deliver specialized services in Red Team operations, penetration testing, DevSecOps, and Attack Surface Management (ASM) - QuimeraX. Alongside our consulting services, we run an educational platform designed to advance offensive security education (Hacking Club), offering hands-on learning experiences that reflect real-world challenges faced by security professionals.",
               "website": "https://hakaisecurity.io/",
-              "logo": "hakai.png",
+              "logo": "hakai-2.png",
               "socials": [
                 {
                   "name": "X",
