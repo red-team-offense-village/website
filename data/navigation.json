@@ -23,13 +23,6 @@
       "name": "<i class='far fa-calendar'></i> EVENTS",
       "url": "events/",
       "weight": 4
-    },
-    {
-      "identifier": "volunteer",
-      "name": "<i class='fas fa-external-link-alt'></i> VOLUNTEER PORTAL",
-      "url": "https://volunteer.redteamvillage.io",
-      "weight": 5,
-      "target": "_blank"
     }
   ],
   "footer": [
