@@ -50,6 +50,36 @@
                   "url": "https://www.linkedin.com/company/white-knight-labs/"
                 }
               ]
+            },
+            {
+              "name": "Amazon",
+              "description": "The Devices and Services Security team builds innovative tools that detect, assess, and mitigate security issues across our consumer device businesses, from Echo to Fire TV to Alexa. We believe the best way to protect our customers is to ensure our products are secure and compliant by default, and our security engineers and developers are working together across the product development life cycle to make that a reality.",
+              "website": "https://amazon.jobs/content/en/teams/amazon-security/devices-services",
+              "logo": "amazon.png"
+            },
+            {
+              "name": "Kindo",
+              "description": "Kindo revolutionizes enterprise operations by integrating autonomous infrastructure with AI-native security, empowering organizations to deploy self-managed AI agents that boost efficiency and strengthen defenses against evolving cyber threats. Kindo unifies SecOps, DevOps, and ITOps with secure, autonomous agents that understand intent, generate action, and execute at scale. It combines orchestration, policy, and automation in a single agentic system—giving teams full control across every operational layer. Kindo can run on-prem, in the cloud, or even across hybrid cloud and multi-cloud infrastructures. Self-Managed Kindo runs within your own environment, on a trusted machine that’s equipped with the appropriate certificates and credentials to access your systems.",
+              "website": "https://www.kindo.ai",
+              "logo": "kindo.png",
+              "socials": [  
+                {
+                  "name": "LinkedIn",
+                  "url": "https://www.linkedin.com/company/kindo-ai"
+                },
+                {
+                  "name": "YouTube",
+                  "url": "https://www.youtube.com/@kindoai"
+                },
+                {
+                  "name": "X",
+                  "url": "https://x.com/kindoai"
+                },
+                {
+                  "name": "Instagram",
+                  "url": "https://www.instagram.com/kindo.ai"
+                }
+              ] 
             }
           ]
         },
@@ -69,6 +99,38 @@
                 {
                   "name": "LinkedIn",
                   "url": "https://www.linkedin.com/company/alteredsecurity/"
+                }
+              ]
+            },
+            {
+              "name": "HTX",
+              "description": "As Singapore's science and technology agency for homeland security, HTX innovates and delivers cutting-edge technologies to force multiply the Home Team departments in their daily operations such as solving crimes, securing our borders, saving lives, safeguarding data and systems, and enhancing public safety and security, to accomplish our shared mission to keep Singapore safe and secure. To meet the Home Team’s unique requirements to operate in our complex environment, we take a holistic approach to provide end-to-end science and technology solutions to ensure that the Home Team's technologies and systems continuously perform at an optimal level while keeping pace with rapid changes.",
+              "website": "https://www.htx.gov.sg",
+              "logo": "htx2.png",
+              "socials": [
+                {
+                  "name": "LinkedIn",
+                  "url": "https://www.linkedin.com/company/htxsg/"
+                }
+              ]
+            },
+            { 
+              "name": "SpecterOps",
+              "description": "SpecterOps is the leader in Identity risk management. Possessing deep knowledge of adversary tradecraft, the company enables organizations to detect and remove critical attack paths – a practice called Identity Attack Path Management. BloodHound Enterprise is the company's managed SaaS for identity and security teams, allowing for attack path remediation guidance and reporting to show improvements over time. For more on SpecterOps, visit https://specterops.io.",
+              "website": "https://specterops.io",
+              "logo": "specterops.png",
+              "socials": [
+                {
+                  "name": "LinkedIn",
+                  "url": "http://linkedin.com/company/specterops"
+                },
+                {
+                  "name": "YouTube",
+                  "url": "https://www.youtube.com/@specterops"
+                },
+                {
+                  "name": "X",
+                  "url": "https://x.com/specterops"
                 }
               ]
             }
@@ -190,6 +252,30 @@
                 {
                   "name": "YouTube",
                   "url": "https://www.youtube.com/@risk3sixty"
+                }
+              ]
+            },
+            {
+              "name": "Bishop Fox",
+              "description": "Bishop Fox is the leading authority in offensive security, providing solutions ranging from continuous penetration testing, red teaming, and attack surface management to product, cloud, and application security assessments. Discover why our Cosmos platform, service innovation, and culture of excellence draw industry awards, and our offerings are consistently ranked as “world class” by customers.",
+              "website": "https://bishopfox.com/",
+              "logo": "bishopfox2.png",
+              "socials": [
+                {
+                  "name": "LinkedIn",
+                  "url": "https://www.linkedin.com/company/bishop-fox/posts/?feedView=all/"
+                },
+                {
+                  "name": "YouTube",
+                  "url": "https://www.youtube.com/c/Bishopfox"
+                },
+                {
+                  "name": "X",
+                  "url": "https://x.com/bishopfox"
+                },
+                {
+                  "name": "Facebook",
+                  "url": "https://www.facebook.com/BishopFoxConsulting"
                 }
               ]
             }
