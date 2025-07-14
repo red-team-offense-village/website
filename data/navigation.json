@@ -23,6 +23,12 @@
       "name": "<i class='far fa-calendar'></i> EVENTS",
       "url": "events/",
       "weight": 4
+    },
+    {
+      "identifier": "defcon-33",
+      "name": "<i class='fas fa-shield-alt'></i> DEFCON 33",
+      "url": "defcon-33/",
+      "weight": 5
     }
   ],
   "footer": [
