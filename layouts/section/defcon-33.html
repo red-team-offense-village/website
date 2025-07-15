@@ -85,7 +85,7 @@
             <h3 class="text-xl font-bold text-gray-800">Cyber Wargames</h3>
           </div>
           <p class="text-gray-700 mb-4">
-            Participate in our immersive cyber wargames where teams compete in realistic attack and defense scenarios. Practice your red team tactics in a controlled environment while learning from experienced operators.
+            Participate in our immersive cyber wargames where teams compete in realistic attack and defense scenarios. Practice your offensive and defensive tactics in a controlled environment while learning from experienced operators.
           </p>
           <div class="flex items-center gap-2 text-gray-600">
             <i class="far fa-clock"></i>
@@ -113,17 +113,25 @@
          View our complete schedule of panels, workshops, and tactics.
        </p>
 
-       <div class="sessionize-wrapper overflow-hidden w-full max-w-full">
-         <style>
-           .sessionize-wrapper iframe,
-           .sessionize-wrapper .sessionize-grid {
-             width: 100% !important;
-             max-width: 100% !important;
-             overflow: hidden !important;
-           }
-         </style>
-         <script type="text/javascript" src="https://sessionize.com/api/v2/0znkcbla/view/GridSmart"></script>
-       </div>
+        <div class="sessionize-wrapper w-full max-w-full relative">
+          <div class="overflow-x-auto">
+            <script type="text/javascript" src="https://sessionize.com/api/v2/0znkcbla/view/Grid"></script>
+          </div>
+          <!-- Mobile overlay with button -->
+          <div class="md:hidden absolute inset-0 bg-white bg-opacity-95 flex items-center justify-center z-10">
+            <div class="text-center p-8">
+              <i class="fas fa-calendar-alt text-red-800 text-4xl mb-4"></i>
+              <h3 class="text-xl font-bold text-gray-800 mb-4">Village Schedule</h3>
+              <p class="text-gray-700 mb-6">
+                View our complete schedule of workshops, tactics, and panels for DEFCON 33.
+              </p>
+              <a href="https://sessionize.com/rtv-at-defcon-33/" target="_blank" rel="noopener" class="inline-block bg-red-800 hover:bg-red-900 text-white px-6 py-3 rounded-md text-lg font-semibold transition duration-200">
+                <i class="fas fa-external-link-alt mr-2"></i>
+                View Schedule on Sessionize
+              </a>
+            </div>
+          </div>
+        </div>
     </div>
   </section>
 </div>
