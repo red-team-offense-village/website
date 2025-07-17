@@ -233,6 +233,26 @@
                 }
                 
               ]
+            },
+            { 
+              "name": "RedSeer Security",
+              "description": "RedSeer Security has a global team of certified experts in offensive and defensive security. Our focus is to partner with customers to protect organizations' digital, physical and human assets against ongoing threats and support their overall security posture.",
+              "website": "https://www.redseersecurity.com",
+              "logo": "redseer2.png",
+              "socials": [
+                {
+                  "name": "LinkedIn",
+                  "url": "https://www.linkedin.com/company/red-seer-inc"
+                },
+                {
+                  "name": "YouTube",
+                  "url": "https://www.youtube.com/@redseersecurity"
+                },
+                {
+                  "name": "X",
+                  "url": "https://x.com/redseersecurity"
+                }
+              ]
             }
           ]
         },
@@ -367,6 +387,25 @@
                   "name": "YouTube",
                   "url": "https://www.youtube.com/@justhackingtraining"
                 }
+              ]
+            },
+            { 
+              "name": "Packt Publishing",
+              "description": "Packt is a global, trusted tech publisher empowering developers, security professionals, and engineers with hands-on learning across today's most vital domains — from cybersecurity and AI to DevOps, data, cloud, and more. With a library of over 9,000 titles, Packt delivers practical, real-world guidance to help individuals and teams build skills that matter.<br><br>At DEF CON 33, we're proud to support the Red Team Village with a curated collection of books focused on offensive security, reverse engineering, malware analysis, and ethical hacking. Whether you're a red teamer, ethical hacker, or security engineer, Packt's resources are designed to sharpen your skills with tools and techniques that reflect real-world challenges and scenarios.",
+              "website": "https://www.packtpub.com",
+              "logo": "packt.png",
+              "socials": [
+                {
+                  "name": "LinkedIn",
+                  "url": "https://www.linkedin.com/company/packt-publishing/"
+                },
+                {
+                  "name": "YouTube",
+                  "url": "https://www.youtube.com/c/PacktVideo"
+                },
+                {
+                  "name": "Facebook",
+                  "url": "https://www.facebook.com/PacktPub/"}
               ]
             }
           ]
