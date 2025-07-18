@@ -298,6 +298,22 @@
                   "url": "https://www.facebook.com/BishopFoxConsulting"
                 }
               ]
+            },
+            {
+              "name": "CyQuest",
+              "description": "Cyquest is a gamified cybersecurity learning platform where students master real-world skills through quests, challenges, and leveling up. Gaming meets hacking education - gain XP with every win. Complete quests, earn XP, unlock achievements. Sign up today for free! ",
+              "website": "http://www.cyquest.io/",
+              "logo": "cyquest.png",
+              "socials": [
+                {
+                  "name": "LinkedIn",
+                  "url": "https://www.linkedin.com/company/cyquest/"
+                },
+                {
+                  "name": "X",
+                  "url": "https://x.com/CYQUEST_io"
+                }
+              ]
             }
           ]
         },
@@ -328,7 +344,24 @@
         },
         {
           "name": "Cyber Wargames",
-          "sponsors": []
+          "sponsors": [
+            {
+              "name": "CyQuest",
+              "description": "Cyquest is a gamified cybersecurity learning platform where students master real-world skills through quests, challenges, and leveling up. Gaming meets hacking education - gain XP with every win. Complete quests, earn XP, unlock achievements. Sign up today for free! ",
+              "website": "http://www.cyquest.io/",
+              "logo": "cyquest.png",
+              "socials": [
+                {
+                  "name": "LinkedIn",
+                  "url": "https://www.linkedin.com/company/cyquest/"
+                },
+                {
+                  "name": "X",
+                  "url": "https://x.com/CYQUEST_io"
+                }
+              ]
+            }
+          ]
         },
         {
           "name": "Prize",
