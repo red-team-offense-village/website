@@ -300,8 +300,8 @@
               ]
             },
             {
-              "name": "CyQuest",
-              "description": "Cyquest is a gamified cybersecurity learning platform where students master real-world skills through quests, challenges, and leveling up. Gaming meets hacking education - gain XP with every win. Complete quests, earn XP, unlock achievements. Sign up today for free! ",
+              "name": "CYQUEST",
+              "description": "CYQUEST is a gamified cybersecurity learning platform where students master real-world skills through quests, challenges, and leveling up. Gaming meets hacking education - gain XP with every win. Complete quests, earn XP, unlock achievements. Sign up today for free! ",
               "website": "http://www.cyquest.io/",
               "logo": "cyquest.png",
               "socials": [
@@ -346,8 +346,8 @@
           "name": "Cyber Wargames",
           "sponsors": [
             {
-              "name": "CyQuest",
-              "description": "Cyquest is a gamified cybersecurity learning platform where students master real-world skills through quests, challenges, and leveling up. Gaming meets hacking education - gain XP with every win. Complete quests, earn XP, unlock achievements. Sign up today for free! ",
+              "name": "CYQUEST",
+              "description": "CYQUEST is a gamified cybersecurity learning platform where students master real-world skills through quests, challenges, and leveling up. Gaming meets hacking education - gain XP with every win. Complete quests, earn XP, unlock achievements. Sign up today for free! ",
               "website": "http://www.cyquest.io/",
               "logo": "cyquest.png",
               "socials": [
@@ -439,6 +439,22 @@
                 {
                   "name": "Facebook",
                   "url": "https://www.facebook.com/PacktPub/"}
+              ]
+            },
+            {
+              "name": "Arcanum Security",
+              "description": "Arcanum Information Security provides top-tier security assessments and training. We offer a full range of pentest and red team assessments, as well as comprehensive AI Pentests. Additionally, we train on cutting-edge web assessment techniques, AI Red Teaming and Pentesting, and AI Scaling for security teams.",
+              "website": "https://www.arcanum-sec.com",
+              "logo": "arcanum3.png",
+              "socials": [
+                {
+                  "name": "X",
+                  "url": "https://www.x.com/arcanuminfosec"
+                },
+                {
+                  "name": "X",
+                  "url": "https://www.x.com/jhaddix"
+                }
               ]
             }
           ]
