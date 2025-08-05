@@ -318,12 +318,12 @@
 	    {
 		"name":"Cisco",
 		"description":"Cisco delivers the critical infrastructure to help organizations thrive in the AI era. By fusing networking, security, observability, and collaboration, we power how people and technology work together.",
-		"website":"https://www.cisco.com".
+		"website":"https://www.cisco.com",
 		"logo":"cisco.png",
 		"socials":[
 			{
 			"name":"LinkedIn",
-			"url":"https://www.linkedin.com/company/cisco/",
+			"url":"https://www.linkedin.com/company/cisco/"
 			}
 			
 		]
