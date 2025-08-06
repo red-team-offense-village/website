@@ -469,7 +469,24 @@
                   "url": "https://www.x.com/jhaddix"
                 }
               ]
-            }
+            },
+	    {
+	       "name":"Hack The Box",
+	       "description":"Hack The Box is the Cyber Performance Center with the mission to provide a human-first platform to create and maintain high-performing cybersecurity individuals and organizations. As the only platform that unites upskilling, workforce development, and the human focus in the cybersecurity industry, Hack The Box is the go-to for organizations worldwide ready to push their teams to the top.",
+	       "website":"https://www.hackthebox.com",
+               "logo":"hackthebox.png",
+	       "socials":[
+		       {
+			       "name":"LinkedIn",
+			       "url":"https://www.linkedin.com/company/hackthebox/"
+		       },
+		       {
+			       "name":"X",
+			       "url":"https://x.com/hackthebox_eu"
+		       }
+
+	       ]
+	    }
           ]
         }
       ]
