@@ -17,12 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Saira:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Load Tailwind CSS first -->
-    {{ $css := resources.Get "css/main.css" }}
-    {{ $css = $css | css.PostCSS }}
-    <!--{{ if hugo.IsProduction }}-->
-        {{ $css = $css | minify | fingerprint }}
-    <!--{{ end }}-->
-    <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+    <link rel="stylesheet" href="/css/tailwind.css">
     
     <!-- Load other theme CSS -->
     {{ $style := resources.Get "css/style.css" }}

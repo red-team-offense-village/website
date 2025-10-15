@@ -3,24 +3,73 @@
 <!-- Hero Section -->
 {{ partial "hero" . }}
  
-<!-- DEFCON 33 Hero Section -->
+<!-- RTV @ BSidesNYC -->
 <section class="py-12 px-4 bg-neutral-100">
-  <div class="max-w-6xl mx-auto">
+  <div class="max-w-6xl mx-auto" id="bsidesnyc">
+    
     <div class="bg-white rounded-lg shadow-lg p-8 border-2 border-red-800">
-      <div class="flex items-center gap-4 mb-6 text-red-800">
-        <i class="fas fa-shield-alt text-4xl"></i>
-        <h2 class="text-4xl font-bold text-gray-800">RTV @ DEFCON 33</h2>
+            <!-- Title and Description -->
+            <div class="text-center mb-8">
+              <div class="flex items-center justify-center gap-4 mb-6 text-red-800">
+                <i class="fas fa-shield-alt text-4xl"></i>
+                <h2 class="text-4xl font-bold text-gray-800">RTV @ BSidesNYC</h2>
+              </div>
+      <!-- Image section - centered -->
+      <div class="mb-8">
+        <div class="max-w-2xl mx-auto">
+          <img src="/assets/images/bsidesnyc.png" 
+               alt="BSidesNYC Event" 
+               class="w-full h-auto rounded-lg shadow-xl hover:shadow-2xl transition duration-300"
+          >
+        </div>
       </div>
 
-      <p class="text-xl text-gray-700 mb-8">
-        Join Red Team Village at DEFCON 33 for workshops, tactics, CTF challenges, and more! Get the latest updates and information about our village activities.
-      </p>
 
-      <div class="flex justify-center">
-        <a href="/defcon-33" class="inline-flex items-center gap-2 bg-red-800 hover:bg-red-900 text-white px-8 py-4 rounded-lg text-xl font-bold transition duration-200">
-          View Full DEFCON 33 Details
-          <i class="fas fa-arrow-right"></i>
-        </a>
+
+        <p class="text-xl text-gray-700">
+          Join Red Team Village at BSidesNYC for swag, a live tactic demonstration and test your skills in our CTF!
+        </p>
+      </div>
+
+      <!-- Two activity boxes -->
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Tactic Demo Box -->
+        <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+          <div class="flex items-center gap-2 mb-4">
+            <i class="fas fa-chalkboard-teacher text-red-800 text-2xl"></i>
+            <h3 class="text-xl font-bold text-gray-800">Featured Tactic: Hunting DLL Sideloads</h3>
+          </div>
+          <p class="text-gray-700">
+            Learn to identify and exploit DLL sideloading vulnerabilities through hands-on techniques that go beyond automated scanning. This RTV tactic teaches attendees how to manually discover vulnerable applications, understand the conditions that make sideloading possible, and demonstrate real-world exploitation scenarios.
+          </p>
+          <p class="text-sm text-gray-600 mt-2 italic">Time TBD</p>
+        </div>
+
+        <!-- CTF Box -->
+        <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+          <div class="flex items-center gap-2 mb-4">
+            <i class="fas fa-clock text-red-800 text-2xl"></i>
+            <h3 class="text-xl font-bold text-gray-800">CTF Schedule</h3>
+          </div>
+          <div class="flex flex-col gap-4 mb-6">
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-gray-700">Start:</span>
+              <span class="text-gray-600">Oct 18 2025, 1:00 PM UTC</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-gray-700">End:</span>
+              <span class="text-gray-600">Oct 18 2025, 8:00 PM UTC</span>
+            </div>
+          </div>
+          <div class="text-center">
+            <a href="https://threatsims.com/user/events/904259c3-c646-4adc-85b1-91c719b52384" 
+               class="inline-block bg-red-800 hover:bg-red-900 text-white px-6 py-2 rounded-md text-sm transition duration-200"
+               target="_blank" 
+               rel="noopener">
+              Register for CTF <i class="fas fa-external-link-alt ml-2"></i>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -41,6 +90,15 @@
         {{ range first 5 .Site.Data.updates.updates }}
         <div class="py-4 border-b border-gray-200 last:border-0">
           <div class="flex flex-col md:flex-row gap-6">
+            {{ with .image }}
+            <div class="md:w-2/5 flex-shrink-0">
+              <img 
+                src="/assets/images/updates/{{ .src }}" 
+                alt="{{ .alt }}" 
+                class="w-full h-auto rounded-lg shadow-md object-cover hover:shadow-xl transition duration-300"
+              >
+            </div>
+            {{ end }}
             <div class="flex-grow">
               <h4 class="text-xl font-bold text-gray-800 mb-1">{{ .title }}</h4>
               <div class="flex items-center flex-wrap gap-2 mb-3">
@@ -66,15 +124,6 @@
                 {{ end }}
               </div>
             </div>
-            {{ with .image }}
-            <div class="md:w-1/3 flex-shrink-0">
-              <img 
-                src="/assets/images/updates/{{ .src }}" 
-                alt="{{ .alt }}" 
-                class="w-full h-auto rounded-lg shadow-md object-cover"
-              >
-            </div>
-            {{ end }}
           </div>
         </div>
         {{ end }}
@@ -85,6 +134,15 @@
           {{ range after 5 .Site.Data.updates.updates }}
           <div class="py-4 border-b border-gray-200 last:border-0">
             <div class="flex flex-col md:flex-row gap-6">
+              {{ with .image }}
+              <div class="md:w-2/5 flex-shrink-0">
+                <img 
+                  src="/assets/images/updates/{{ .src }}" 
+                  alt="{{ .alt }}" 
+                  class="w-full h-auto rounded-lg shadow-md object-cover hover:shadow-xl transition duration-300"
+                >
+              </div>
+              {{ end }}
               <div class="flex-grow">
                 <h4 class="text-xl font-bold text-gray-800 mb-1">{{ .title }}</h4>
                 <div class="flex items-center flex-wrap gap-2 mb-3">
@@ -110,15 +168,6 @@
                   {{ end }}
                 </div>
               </div>
-              {{ with .image }}
-              <div class="md:w-1/3 flex-shrink-0">
-                <img 
-                  src="/assets/images/updates/{{ .src }}" 
-                  alt="{{ .alt }}" 
-                  class="w-full h-auto rounded-lg shadow-md object-cover"
-                >
-              </div>
-              {{ end }}
             </div>
           </div>
           {{ end }}
