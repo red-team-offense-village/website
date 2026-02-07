@@ -52,6 +52,18 @@
       "url": "https://www.youtube.com/redteamvillage",
       "weight": 3,
       "target": "_blank"
+    },
+    {
+      "identifier": "instagram",
+      "name": "<i class='fab fa-instagram fa-lg'></i>",
+      "url": "https://www.instagram.com/theredteamvillage/",
+      "target": "_blank"
+    },
+    {
+      "identifier": "bluesky",
+      "name": "<i class='fab fa-bluesky fa-lg'></i>",
+      "url": "https://bsky.app/profile/theredteamvillage.bsky.social",
+      "target": "_blank"
     }
   ]
-} 
+}
