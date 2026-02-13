@@ -2,74 +2,33 @@
 
 <!-- Hero Section -->
 {{ partial "hero" . }}
- 
+
 <!-- RTV @ BSidesNYC -->
 <section class="py-12 px-4 bg-neutral-100">
   <div class="max-w-6xl mx-auto" id="bsidesnyc">
-    
+
     <div class="bg-white rounded-lg shadow-lg p-8 border-2 border-red-800">
-            <!-- Title and Description -->
-            <div class="text-center mb-8">
-              <div class="flex items-center justify-center gap-4 mb-6 text-red-800">
-                <i class="fas fa-shield-alt text-4xl"></i>
-                <h2 class="text-4xl font-bold text-gray-800">RTV @ BSidesNYC</h2>
-              </div>
-      <!-- Image section - centered -->
-      <div class="mb-8">
-        <div class="max-w-2xl mx-auto">
-          <img src="/assets/images/bsidesnyc.png" 
-               alt="BSidesNYC Event" 
-               class="w-full h-auto rounded-lg shadow-xl hover:shadow-2xl transition duration-300"
-          >
+      <!-- Title and Description -->
+      <div class="text-center mb-8">
+        <div class="flex items-center justify-center gap-4 mb-6 text-red-800">
+          <i class="fas fa-shield-alt text-4xl"></i>
+          <h2 class="text-4xl font-bold text-gray-800">New RTV Board Members</h2>
         </div>
-      </div>
+        <!-- Image section - centered -->
+        <div class="mb-8">
+          <div class="max-w-2xl mx-auto">
+            <img src="/assets/images/updates/2026-board.png" alt="New board members for the 2026 year"
+              class="w-full h-auto rounded-lg shadow-xl hover:shadow-2xl transition duration-300">
+          </div>
+        </div>
 
-
-
-        <p class="text-xl text-gray-700">
-          Join Red Team Village at BSidesNYC for swag, a live tactic demonstration and test your skills in our CTF!
+        <p class="text-xl text-gray-700 mb-2">
+          Please join us in welcoming the newest additions to the Red Team Village Board of Directors 🎉
         </p>
-      </div>
-
-      <!-- Two activity boxes -->
-      <div class="grid md:grid-cols-2 gap-8">
-        <!-- Tactic Demo Box -->
-        <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
-          <div class="flex items-center gap-2 mb-4">
-            <i class="fas fa-chalkboard-teacher text-red-800 text-2xl"></i>
-            <h3 class="text-xl font-bold text-gray-800">Featured Tactic: Hunting DLL Sideloads</h3>
-          </div>
-          <p class="text-gray-700">
-            Learn to identify and exploit DLL sideloading vulnerabilities through hands-on techniques that go beyond automated scanning. This RTV tactic teaches attendees how to manually discover vulnerable applications, understand the conditions that make sideloading possible, and demonstrate real-world exploitation scenarios.
-          </p>
-          <p class="text-sm text-gray-600 mt-2 italic">Time TBD</p>
-        </div>
-
-        <!-- CTF Box -->
-        <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
-          <div class="flex items-center gap-2 mb-4">
-            <i class="fas fa-clock text-red-800 text-2xl"></i>
-            <h3 class="text-xl font-bold text-gray-800">CTF Schedule</h3>
-          </div>
-          <div class="flex flex-col gap-4 mb-6">
-            <div class="flex items-center gap-2">
-              <span class="font-bold text-gray-700">Start:</span>
-              <span class="text-gray-600">Oct 18 2025, 1:00 PM UTC</span>
-            </div>
-            <div class="flex items-center gap-2">
-              <span class="font-bold text-gray-700">End:</span>
-              <span class="text-gray-600">Oct 18 2025, 8:00 PM UTC</span>
-            </div>
-          </div>
-          <div class="text-center">
-            <a href="https://threatsims.com/user/events/904259c3-c646-4adc-85b1-91c719b52384" 
-               class="inline-block bg-red-800 hover:bg-red-900 text-white px-6 py-2 rounded-md text-sm transition duration-200"
-               target="_blank" 
-               rel="noopener">
-              Register for CTF <i class="fas fa-external-link-alt ml-2"></i>
-            </a>
-          </div>
-        </div>
+        <p class="text-xl text-gray-700">
+          These leaders are stepping in to strengthen our mission, expand our programs, and continue building hands on
+          opportunities for the community.
+        </p>
       </div>
     </div>
   </div>
@@ -84,7 +43,7 @@
         <i class="fas fa-newspaper text-3xl"></i>
         <h3 class="text-2xl font-bold text-gray-800">Latest Updates</h3>
       </div>
-      
+
       <div class="space-y-6">
         <!-- Initial visible updates -->
         {{ range first 5 .Site.Data.updates.updates }}
@@ -92,26 +51,22 @@
           <div class="flex flex-col md:flex-row gap-6">
             {{ with .image }}
             <div class="md:w-2/5 flex-shrink-0">
-              <img 
-                src="/assets/images/updates/{{ .src }}" 
-                class="h-48 w-full object-cover"
-                alt="{{ .alt }}" 
-                class="w-full h-auto rounded-lg shadow-md object-cover hover:shadow-xl transition duration-300"
-              >
+              <img src="/assets/images/updates/{{ .src }}" class="h-48 w-full object-cover" alt="{{ .alt }}"
+                class="w-full h-auto rounded-lg shadow-md object-cover hover:shadow-xl transition duration-300">
             </div>
             {{ end }}
             <div class="flex-grow">
               <h4 class="text-xl font-bold text-gray-800 mb-1">{{ .title }}</h4>
               <div class="flex items-center flex-wrap gap-2 mb-3">
                 <span class="text-gray-800 font-bold mr-2">{{ .date }}</span>
-                
+
                 <!-- Handle multiple tags -->
                 {{ if reflect.IsSlice .tag }}
-                  {{ range .tag }}
-                  <span class="bg-gray-200 text-black px-3 py-1 rounded-full text-sm">{{ . }}</span>
-                  {{ end }}
+                {{ range .tag }}
+                <span class="bg-gray-200 text-black px-3 py-1 rounded-full text-sm">{{ . }}</span>
+                {{ end }}
                 {{ else }}
-                  <span class="bg-gray-200 text-black px-3 py-1 rounded-full text-sm">{{ .tag }}</span>
+                <span class="bg-gray-200 text-black px-3 py-1 rounded-full text-sm">{{ .tag }}</span>
                 {{ end }}
               </div>
               <div class="text-gray-700 mb-4 prose prose-sm max-w-none">
@@ -119,8 +74,11 @@
               </div>
               <div class="flex flex-wrap items-center gap-3">
                 {{ with .url }}
-                <a href="{{ .href }}" class="inline-block bg-red-800 hover:bg-red-900 text-white px-6 py-2 rounded-md text-sm transition duration-200"{{ if or .external .target }} target="_blank" rel="noopener"{{ end }}>
-                  {{ .text }} {{ if or .external .target }}<i class="fas fa-external-link-alt text-xs ml-1"></i>{{ end }}
+                <a href="{{ .href }}"
+                  class="inline-block bg-red-800 hover:bg-red-900 text-white px-6 py-2 rounded-md text-sm transition duration-200"
+                  {{ if or .external .target }} target="_blank" rel="noopener" {{ end }}>
+                  {{ .text }} {{ if or .external .target }}<i class="fas fa-external-link-alt text-xs ml-1"></i>{{ end
+                  }}
                 </a>
                 {{ end }}
               </div>
@@ -128,7 +86,7 @@
           </div>
         </div>
         {{ end }}
-        
+
         <!-- Hidden updates (shown when expanded) -->
         {{ if gt (len .Site.Data.updates.updates) 5 }}
         <div id="hidden-updates" class="hidden space-y-6">
@@ -137,25 +95,22 @@
             <div class="flex flex-col md:flex-row gap-6">
               {{ with .image }}
               <div class="md:w-2/5 flex-shrink-0">
-                <img 
-                  src="/assets/images/updates/{{ .src }}" 
-                  alt="{{ .alt }}" 
-                  class="w-full h-auto rounded-lg shadow-md object-cover hover:shadow-xl transition duration-300"
-                >
+                <img src="/assets/images/updates/{{ .src }}" alt="{{ .alt }}"
+                  class="w-full h-auto rounded-lg shadow-md object-cover hover:shadow-xl transition duration-300">
               </div>
               {{ end }}
               <div class="flex-grow">
                 <h4 class="text-xl font-bold text-gray-800 mb-1">{{ .title }}</h4>
                 <div class="flex items-center flex-wrap gap-2 mb-3">
                   <span class="text-gray-800 font-bold mr-2">{{ .date }}</span>
-                  
+
                   <!-- Handle multiple tags -->
                   {{ if reflect.IsSlice .tag }}
-                    {{ range .tag }}
-                    <span class="bg-gray-200 text-black px-3 py-1 rounded-full text-sm">{{ . }}</span>
-                    {{ end }}
+                  {{ range .tag }}
+                  <span class="bg-gray-200 text-black px-3 py-1 rounded-full text-sm">{{ . }}</span>
+                  {{ end }}
                   {{ else }}
-                    <span class="bg-gray-200 text-black px-3 py-1 rounded-full text-sm">{{ .tag }}</span>
+                  <span class="bg-gray-200 text-black px-3 py-1 rounded-full text-sm">{{ .tag }}</span>
                   {{ end }}
                 </div>
                 <div class="text-gray-700 mb-4 prose prose-sm max-w-none">
@@ -163,8 +118,11 @@
                 </div>
                 <div class="flex flex-wrap items-center gap-3">
                   {{ with .url }}
-                  <a href="{{ .href }}" class="inline-block bg-red-800 hover:bg-red-900 text-white px-6 py-2 rounded-md text-sm transition duration-200"{{ if or .external .target }} target="_blank" rel="noopener"{{ end }}>
-                    {{ .text }} {{ if or .external .target }}<i class="fas fa-external-link-alt text-xs ml-1"></i>{{ end }}
+                  <a href="{{ .href }}"
+                    class="inline-block bg-red-800 hover:bg-red-900 text-white px-6 py-2 rounded-md text-sm transition duration-200"
+                    {{ if or .external .target }} target="_blank" rel="noopener" {{ end }}>
+                    {{ .text }} {{ if or .external .target }}<i class="fas fa-external-link-alt text-xs ml-1"></i>{{ end
+                    }}
                   </a>
                   {{ end }}
                 </div>
@@ -173,21 +131,22 @@
           </div>
           {{ end }}
         </div>
-        
+
         <!-- Toggle button -->
         <div class="mt-8 text-center">
-          <button id="toggle-updates" class="inline-block bg-red-800 text-white px-6 py-2 rounded hover:bg-red-900 transition duration-300">
+          <button id="toggle-updates"
+            class="inline-block bg-red-800 text-white px-6 py-2 rounded hover:bg-red-900 transition duration-300">
             Show More Updates
           </button>
         </div>
-        
+
         <script>
-          document.addEventListener('DOMContentLoaded', function() {
+          document.addEventListener('DOMContentLoaded', function () {
             const toggleButton = document.getElementById('toggle-updates');
             const hiddenUpdates = document.getElementById('hidden-updates');
-            
+
             if (toggleButton && hiddenUpdates) {
-              toggleButton.addEventListener('click', function() {
+              toggleButton.addEventListener('click', function () {
                 if (hiddenUpdates.classList.contains('hidden')) {
                   hiddenUpdates.classList.remove('hidden');
                   toggleButton.textContent = 'Show Fewer Updates';
@@ -216,13 +175,18 @@
       </div>
       <div class="text-lg leading-relaxed text-center max-w-4xl mx-auto">
         <p class="mb-4">
-          At Red Team Village, our mission is to foster a collaborative environment where security professionals can develop and enhance their offensive security skills. We believe in the power of community-driven education and the importance of practical, hands-on learning experiences.
+          At Red Team Village, our mission is to foster a collaborative environment where security professionals can
+          develop and enhance their offensive security skills. We believe in the power of community-driven education and
+          the importance of practical, hands-on learning experiences.
         </p>
         <p class="mb-4">
-          We aim to bridge the gap between theoretical knowledge and real-world application by providing accessible training, resources, and networking opportunities. Through our events, workshops, and online platforms, we strive to build a diverse and inclusive community that advances the field of offensive security.
+          We aim to bridge the gap between theoretical knowledge and real-world application by providing accessible
+          training, resources, and networking opportunities. Through our events, workshops, and online platforms, we
+          strive to build a diverse and inclusive community that advances the field of offensive security.
         </p>
         <p>
-          By empowering individuals with the knowledge and skills needed to identify and address security vulnerabilities, we contribute to creating a more secure digital world for everyone.
+          By empowering individuals with the knowledge and skills needed to identify and address security
+          vulnerabilities, we contribute to creating a more secure digital world for everyone.
         </p>
       </div>
     </div>
@@ -234,20 +198,25 @@
   <h2 class="text-3xl font-bold text-center mb-4">Additional Resources</h2>
   <div class="max-w-6xl mx-auto">
     <div class="flex flex-col md:flex-row flex-wrap gap-8">
-      <div class="w-full md:w-1/3 md:flex-1 bg-red-800 rounded-lg shadow-lg p-8 text-white transform transition duration-300 hover:-translate-y-1 hover:shadow-xl flex flex-col">
+      <div
+        class="w-full md:w-1/3 md:flex-1 bg-red-800 rounded-lg shadow-lg p-8 text-white transform transition duration-300 hover:-translate-y-1 hover:shadow-xl flex flex-col">
         <div class="text-5xl mb-4 text-center">
           <i class="fab fa-youtube"></i>
         </div>
         <h3 class="text-2xl font-bold mb-4 text-center">Video Content</h3>
         <p class="mb-6 text-center flex-grow">
-          Watch our workshops, training sessions, and educational videos designed to enhance your offensive security skills.
+          Watch our workshops, training sessions, and educational videos designed to enhance your offensive security
+          skills.
         </p>
-        <a href="https://www.youtube.com/redteamvillage" class="bg-white text-gray-800 py-3 px-6 rounded font-semibold text-center hover:bg-gray-100 transition duration-300" target="_blank" rel="noopener">
+        <a href="https://www.youtube.com/redteamvillage"
+          class="bg-white text-gray-800 py-3 px-6 rounded font-semibold text-center hover:bg-gray-100 transition duration-300"
+          target="_blank" rel="noopener">
           Visit YouTube <i class="fas fa-external-link-alt text-xs ml-1"></i>
         </a>
       </div>
-      
-      <div class="w-full md:w-1/3 md:flex-1 bg-red-800 rounded-lg shadow-lg p-8 text-white transform transition duration-300 hover:-translate-y-1 hover:shadow-xl flex flex-col">
+
+      <div
+        class="w-full md:w-1/3 md:flex-1 bg-red-800 rounded-lg shadow-lg p-8 text-white transform transition duration-300 hover:-translate-y-1 hover:shadow-xl flex flex-col">
         <div class="text-5xl mb-4 text-center">
           <i class="fas fa-users"></i>
         </div>
@@ -255,12 +224,15 @@
         <p class="mb-6 text-center flex-grow">
           Join a community of like-minded professionals and enthusiasts passionate about offensive security.
         </p>
-        <a href="https://discord.gg/redteamvillage" class="bg-white text-black py-3 px-6 rounded font-semibold text-center hover:bg-gray-100 transition duration-300" target="_blank" rel="noopener">
+        <a href="https://discord.gg/redteamvillage"
+          class="bg-white text-black py-3 px-6 rounded font-semibold text-center hover:bg-gray-100 transition duration-300"
+          target="_blank" rel="noopener">
           Join Us <i class="fas fa-external-link-alt text-xs ml-1"></i>
         </a>
       </div>
-      
-      <div class="w-full md:w-1/3 md:flex-1 bg-red-800 rounded-lg shadow-lg p-8 text-white transform transition duration-300 hover:-translate-y-1 hover:shadow-xl flex flex-col">
+
+      <div
+        class="w-full md:w-1/3 md:flex-1 bg-red-800 rounded-lg shadow-lg p-8 text-white transform transition duration-300 hover:-translate-y-1 hover:shadow-xl flex flex-col">
         <div class="text-5xl mb-4 text-center">
           <i class="fas fa-calendar-alt"></i>
         </div>
@@ -268,7 +240,8 @@
         <p class="mb-6 text-center flex-grow">
           Participate in conferences, CTFs, and workshops both online and in-person throughout the year.
         </p>
-        <a href="{{ .Site.BaseURL }}events" class="bg-white text-black py-3 px-6 rounded font-semibold text-center hover:bg-gray-100 transition duration-300">
+        <a href="{{ .Site.BaseURL }}events"
+          class="bg-white text-black py-3 px-6 rounded font-semibold text-center hover:bg-gray-100 transition duration-300">
           View Events
         </a>
       </div>
@@ -276,5 +249,4 @@
   </div>
 </section>
 
-{{ end }} 
-
+{{ end }}
