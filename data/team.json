@@ -13,8 +13,7 @@
       "handle": "@ds1nk",
       "role": "Vice President",
       "image": "dsink-240x240.jpg",
-      "linkedin": "https://www.linkedin.com/in/dssink/",
-      "twitter": "https://x.com/ds1nk"
+      "linkedin": "https://www.linkedin.com/in/dssink/"
     },
     {
       "name": "Billy Giles",
@@ -25,20 +24,20 @@
       "twitter": "https://x.com/forktheplanet"
     },
     {
-      "name": "Bryce Zuccaro",
-      "handle": "@c4ch3c4d3",
+      "name": "James Owens",
+      "handle": "@j0wns",
       "role": "Secretary",
-      "image": "bryce-240x240.jpg",
-      "linkedin": "https://www.linkedin.com/in/brycezuccaro/",
-      "twitter": "https://x.com/c4ch3c4d3"
+      "image": "james-240x240.jpg",
+      "linkedin": "https://www.linkedin.com/in/%F0%9F%92%A1james-owens-9196b11b6/",
+      "twitter": "https://x.com/jamesowens"
     },
     {
-      "name": "Cory Wolff",
-      "handle": "@cwolff411",
+      "name": "Matthew Nickerson",
+      "handle": "@turbo",
       "role": "Director of Workshops",
-      "image": "cory-240x240.jpg",
-      "linkedin": "https://www.linkedin.com/in/corywolff/",
-      "twitter": "https://x.com/cwolff411"
+      "image": "matthew-240x240.jpg",
+      "linkedin": "https://www.linkedin.com/in/mwnickerson/",
+      "twitter": "https://x.com/turbo_sec"
     },
     {
       "name": "Krista Theodore",
@@ -57,7 +56,7 @@
       "twitter": "https://x.com/@briansak"
     },
     {
-      "name": "Filipi Peres",
+      "name": "Filipi Pires",
       "handle": "@FilipiPires",
       "role": "Director of Sponsors",
       "image": "filipi-240x240.jpg",
@@ -65,27 +64,67 @@
       "twitter": "https://x.com/@FilipiPires"
     },
     {
+      "name": "Ryen Nelsen",
+      "handle": "@Killroy7777",
+      "role": "Director of Volunteers",
+      "image": "ryen-240x240.jpg",
+      "linkedin": "https://www.linkedin.com/in/ryennelsen/",
+      "twitter": "https://x.com/Ryen_Nelsen"
+    },
+    {
+      "name": "Bryce Zuccaro",
+      "handle": "@c4ch3c4d3",
+      "role": "Multimedia Content Producer",
+      "image": "bryce-240x240.jpg",
+      "linkedin": "https://www.linkedin.com/in/brycezuccaro/",
+      "twitter": "https://x.com/c4ch3c4d3"
+    },
+    {
+      "name": "Cory Wolff",
+      "handle": "@cwolff411",
+      "role": "Workshop Coordinator",
+      "image": "cory-240x240.jpg",
+      "linkedin": "https://www.linkedin.com/in/corywolff/",
+      "twitter": "https://x.com/cwolff411"
+    },
+    {
+      "name": "Austin Cundiff",
+      "handle": "@sysdum",
+      "role": "Core Staff",
+      "image": "austin-240x240.jpg",
+      "linkedin": "https://www.linkedin.com/in/austin-cundiff-7b015811a/",
+      "twitter": "https://x.com/@sysdum"
+    },
+    {
+      "name": "Greg Oldham",
+      "handle": "@Hax4Coffee",
+      "role": "Core Staff",
+      "image": "greg-240x240.jpg",
+      "linkedin": "https://www.linkedin.com/in/greg-oldham-cfis/",
+      "twitter": "https://x.com/@hax4coffee"
+    },
+    {
+      "name": "Jason Haddix",
+      "handle": "@JHaddix",
+      "role": "Core Staff",
+      "image": "jason-240x240.png",
+      "linkedin": "https://www.linkedin.com/in/jhaddix/",
+      "twitter": "https://x.com/@JHaddix"
+    },
+    {
+      "name": "Jon Kim",
+      "handle": "@j0nk1m",
+      "role": "Core Staff",
+      "image": "jon-240x240.jpg",
+      "linkedin": "https://www.linkedin.com/in/jonathanskim/",
+      "twitter": "https://x.com/@j0nk1m"
+    },
+    {
       "name": "Michael Donley",
       "handle": "@th3d00rman",
-      "role": "Director of Volunteers",
+      "role": "Core Staff",
       "image": "michael-240x240.jpg",
       "linkedin": "https://www.linkedin.com/in/michael-donley-red-team-pentester-educator/",
-      "twitter": "https://x.com/@th3d00rman"
-    },
-    {
-      "name": "Matthew Nickerson",
-      "handle": "@turbo",
-      "role": "Workshop Coordinator",
-      "image": "matthew-240x240.jpg",
-      "linkedin": "https://www.linkedin.com/in/mwnickerson/",
-      "twitter": "https://x.com/turbo_sec"
-    },
-    {
-      "name": "Troy Fridley",
-      "handle": "",
-      "role": "Core Staff",
-      "image": "troy-240x240.jpg",
-      "linkedin": "https://www.linkedin.com/in/troy-fridley-54a9252/",
       "twitter": "https://x.com/@th3d00rman"
     },
     {
@@ -97,36 +136,11 @@
       "twitter": "https://defcon.social/@mauvehed"
     },
     {
-      "name": "Greg Oldham",
-      "handle": "@Hax4Coffee",
+      "name": "Troy Fridley",
+      "handle": "",
       "role": "Core Staff",
-      "image": "greg-240x240.jpg",
-      "linkedin": "https://www.linkedin.com/in/greg-oldham-cfis/",
-      "twitter": "https://x.com/@hax4coffee"
-    },
-    {
-      "name": "Austin Cundiff",
-      "handle": "@sysdum",
-      "role": "Core Staff",
-      "image": "austin-240x240.jpg",
-      "linkedin": "https://www.linkedin.com/in/austin-cundiff-7b015811a/",
-      "twitter": "https://x.com/@sysdum"
-    },
-    {
-      "name": "Jon Kim",
-      "handle": "@j0nk1m",
-      "role": "Core Staff",
-      "image": "jon-240x240.jpg",
-      "linkedin": "https://www.linkedin.com/in/jonathanskim/",
-      "twitter": "https://x.com/@j0nk1m"
-    },
-    {
-      "name": "Jason Haddix",
-      "handle": "@JHaddix",
-      "role": "Core Staff",
-      "image": "jason-240x240.png",
-      "linkedin": "https://www.linkedin.com/in/jhaddix/ ",
-      "twitter": "https://x.com/@JHaddix"
+      "image": "troy-240x240.jpg",
+      "linkedin": "https://www.linkedin.com/in/troy-fridley-54a9252/"
     },
     {
       "name": "Omar Santos",

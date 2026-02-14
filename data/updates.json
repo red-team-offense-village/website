@@ -1,6 +1,17 @@
 {
   "updates": [
     {
+      "title": "RTV @ BSidesNYC 25",
+      "date": "October 28, 2025",
+      "content":"Join Red Team Village at BSidesNYC for swag, a CTF to test your skills, and a live demonstration of our Hunting DLL Sideloads Tactic, where you'll learn hands-on identification and exploitation techniques that go beyond automated scanning.",
+      "tag": ["Tactics", "CTF", "BSidesNYC"],
+      "url": {
+        "href": "https://threatsims.com/user/events/904259c3-c646-4adc-85b1-91c719b52384",
+        "text": "Register for CTF",
+        "external": true
+      }
+    },
+    {
       "title": "RTV CRON 0x3",
       "date": "May 29, 2025",
       "content": "The third episode of RTV CRON is coming May 29th! We'll be providing updates on our DEF CON 33 plans and Mike Bell will be presenting 'Introduction to Ghidra and Version Tracking'.",
