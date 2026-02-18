@@ -1,11 +1,11 @@
 <footer class="bg-red-800 text-white">
     <div class="container max-w-screen-xl mx-auto px-4 py-8">
         <!-- Social Icons -->
-        <div class="flex justify-center space-x-16 mb-6">
+        <div class="flex justify-center mb-6">
             {{ range .Site.Data.navigation.footer }}
             <a href="{{ if hasPrefix .url `http` }}{{ .url }}{{ else }}/website{{ .url }}{{ end }}"
-                class="text-red hover:text-gray-400 transition duration-200 text-3xl px-3 my-2"
-                {{ with .target }}target="{{ . }}"{{ end }}>
+                class="text-red hover:text-gray-400 transition duration-200 text-xl sm:text-3xl mx-4 sm:mx-12 my-2" {{
+                with .target }}target="{{ . }}" {{ end }}>
                 {{ .name | safeHTML }}
             </a>
             {{ end }}
@@ -13,7 +13,8 @@
 
         <!-- Copyright -->
         <div class="text-center">
-            <p>&copy; {{ now.Year }} <a href="{{ .Site.BaseURL }}" class="duration-200 hover:text-gray-400">{{ .Site.Title }}</a></p>
+            <p>&copy; {{ now.Year }} <a href="{{ .Site.BaseURL }}" class="duration-200 hover:text-gray-400">{{
+                    .Site.Title }}</a></p>
         </div>
     </div>
 </footer>
