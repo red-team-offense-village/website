@@ -1,0 +1,73 @@
+{{ define "main" }}
+{{ partial "hero" . }}
+
+<div class="container mx-auto px-4 py-12 max-w-5xl">
+  <div class="mb-16 border-l-2 border-red-800 pl-6 ml-2 md:ml-4">
+    <h2 class="text-4xl font-bold text-red-800 mb-4">What is RTV Overflow?</h2>
+    <p class="text-lg text-gray-700 leading-relaxed max-w-3xl mb-4">
+      Did you miss a session at DEF CON 33 because the room was at capacity? Or maybe you were busy diving into a CTF
+      and couldn't make the talk? We've got you covered.
+    </p>
+    <p class="text-lg text-gray-700 leading-relaxed max-w-3xl">
+      RTV Overflow is our annual "second chance" streaming event. We invite some of our top-tier speakers to take the
+      stage once more. It's our official kickoff for the road to DEF CON 34, bringing the elite technical insights of
+      the Village directly to your screen, no badge required!
+    </p>
+    <div class="mt-6">
+      <p class="font-bold text-gray-900 uppercase text-sm tracking-tight mb-1">Live Stream:</p>
+      <a href="https://youtube.com/redteamvillage" target="_blank"
+        class="text-2xl font-bold text-red-800 hover:underline">
+        youtube.com/redteamvillage <i class="fas fa-external-link-alt text-base"></i>
+      </a>
+    </div>
+  </div>
+
+  <h2 class="text-3xl font-bold text-red-800 mb-10 italic">RTV Overflow Schedule</h2>
+
+  <div class="ml-2 md:ml-4 border-l-2 border-red-800/30 space-y-10 pb-10">
+
+    {{ range $.Site.Data.rtv_overflow_schedule }}
+    <div class="relative pl-8 md:pl-12">
+
+      <div class="absolute -left-[9px] top-6 w-4 h-4 rounded-full bg-red-800 border-4 border-white shadow-sm z-20">
+      </div>
+
+      <div
+        class="bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-md transition-all overflow-hidden flex flex-col md:flex-row">
+
+        {{ if .image }}
+        <div
+          class="md:w-auto flex-shrink-0 bg-gray-50 flex items-center justify-center p-6 gap-4 border-b md:border-b-0 md:border-r border-gray-100">
+
+          <img src="/assets/images/overflow/{{ .image }}" alt="{{ .presenter }}"
+            class="h-24 w-24 md:h-32 md:w-32 rounded-full object-cover border-[6px] border-gray-600 shadow-sm">
+
+          {{ if .image2 }}
+          <img src="/assets/images/overflow/{{ .image2 }}" alt="Second presenter for {{ .title }}"
+            class="h-24 w-24 md:h-32 md:w-32 rounded-full object-cover border-[6px] border-gray-600 shadow-sm">
+          {{ end }}
+
+        </div>
+        {{ end }}
+
+        <div class="p-6 flex-grow">
+          <div class="mb-2">
+            <span class="text-sm font-bold text-red-800 uppercase tracking-wide">
+              {{ .datetime }}
+            </span>
+          </div>
+
+          <h3 class="text-2xl font-bold text-gray-900 mb-1 leading-tight">{{ .title }}</h3>
+          <p class="text-red-800 font-mono font-bold mb-4">~ # {{ .presenter }}</p>
+
+          <div class="text-gray-600 text-base leading-relaxed">
+            {{ .description | markdownify }}
+          </div>
+        </div>
+      </div>
+    </div>
+    {{ end }}
+
+  </div>
+</div>
+{{ end }}
