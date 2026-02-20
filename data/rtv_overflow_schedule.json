@@ -4,7 +4,7 @@
     "datetime": "Feb. 21, 2026 10:00AM EST",
     "presenter": "Filipi Pires",
     "description": "Uncover the hidden dangers within the world's most common document format by dissecting real-world PDF exploits, from heap spray attacks to covert data exfiltration. This deep dive equips offensive security professionals with the technical knowledge to master shellcode injection and memory manipulation, staying one step ahead of sophisticated adversaries.",
-    "image": "felipi.jpg"
+    "image": "filipi.jpg"
   },
   {
     "title": "Ransomware vs EDR",
