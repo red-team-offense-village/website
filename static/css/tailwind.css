@@ -2418,6 +2418,10 @@ video {
 }
 
 @media (min-width: 640px) {
+  .sm\:mx-12 {
+    margin-left: 3rem !important;
+    margin-right: 3rem !important;
+  }
   .sm\:flex-row {
     flex-direction: row !important;
   }
@@ -2427,6 +2431,10 @@ video {
   .sm\:px-6 {
     padding-left: 1.5rem !important;
     padding-right: 1.5rem !important;
+  }
+  .sm\:text-3xl {
+    font-size: 1.875rem !important;
+    line-height: 2.25rem !important;
   }
 }
 
