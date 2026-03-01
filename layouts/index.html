@@ -3,32 +3,80 @@
 <!-- Hero Section -->
 {{ partial "hero" . }}
 
-<!-- RTV @ BSidesNYC -->
+<!-- CfP/V Announcement -->
 <section class="py-12 px-4 bg-neutral-100">
-  <div class="max-w-6xl mx-auto" id="bsidesnyc">
-
+  <div class="max-w-6xl mx-auto">
     <div class="bg-white rounded-lg shadow-lg p-8 border-2 border-red-800">
+
       <!-- Title and Description -->
       <div class="text-center mb-8">
         <div class="flex items-center justify-center gap-4 mb-6 text-red-800">
           <i class="fas fa-shield-alt text-4xl"></i>
-          <h2 class="text-4xl font-bold text-gray-800">New RTV Board Members</h2>
-        </div>
-        <!-- Image section - centered -->
-        <div class="mb-8">
-          <div class="max-w-2xl mx-auto">
-            <img src="/assets/images/updates/2026-board.png" alt="New board members for the 2026 year"
-              class="w-full h-auto rounded-lg shadow-xl hover:shadow-2xl transition duration-300">
-          </div>
+          <h2 class="text-4xl font-bold text-gray-800">Call for All</h2>
         </div>
 
-        <p class="text-xl text-gray-700 mb-2">
-          Please join us in welcoming the newest additions to the Red Team Village Board of Directors 🎉
+
+        <p class="text-xl text-gray-700 mb-8">
+          The gates are officially open for DEF CON 34. We're looking for the builders, the breakers, and the dedicated
+          volunteers who make the Red Team Village the premier destination for offensive security mastery. </p>
         </p>
-        <p class="text-xl text-gray-700">
-          These leaders are stepping in to strengthen our mission, expand our programs, and continue building hands on
-          opportunities for the community.
-        </p>
+        <div class="grid md:grid-cols-2 gap-8">
+
+          <!-- CfP box -->
+          <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 h-full flex flex-col">
+
+            <div class="flex items-center gap-2 mb-4">
+              <i class="fas fa-chalkboard-teacher text-red-800 text-2xl"></i>
+              <h3 class="text-xl font-bold text-gray-800">Call for Presentations</h3>
+            </div>
+
+            <div class="flex flex-col flex-1 items-center text-center">
+              <p class="text-gray-700 mb-4">
+                The Red Team Village is looking for researchers and operators to lead our most interactive year yet!
+                This year, we are prioritizing <b class="font-bold">Tactics</b>—hands-on, intimate learning sessions—and
+                <b class="font-bold">Workshops</b> that pair deep-dive presentations with practical application. Whether
+                you're debuting a new tool or mentoring the next generation of operators, we want your expertise on our
+                stage.
+              </p>
+              <p class="text-gray-700 mb-8">
+                Showcase your research, give back to the offensive security community, and help us make this year's
+                village a powerhouse of tactical knowledge. Submissions are now open!
+              </p>
+              <a href="https://sessionize.com/rtv-at-dc34"
+                class="mt-auto inline-block bg-red-800 hover:bg-red-900 text-white px-6 py-2 rounded-md text-sm transition duration-200"
+                target="_blank" rel="noopener">
+                Submit CfP <i class="fas fa-external-link-alt ml-2"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- CfV box -->
+          <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 h-full flex flex-col">
+
+            <div class="flex items-center gap-2 mb-4">
+              <i class="fas fa-chalkboard-teacher text-red-800 text-2xl"></i>
+              <h3 class="text-xl font-bold text-gray-800">Call for Presentations</h3>
+            </div>
+
+            <div class="flex flex-col flex-1 items-center text-center">
+              <p class="text-gray-700 mb-4">
+                The Village runs on the passion of our community. Volunteering is the best way to get behind the scenes,
+                network with industry leaders, and contribute to the offensive security ecosystem. We have roles for all
+                skill levels, from technical CTF support and workshop assistance to logistics and crowd management.
+              </p>
+              <p class="text-gray-700 mb-8">
+                All volunteers receive <b class="font-bold">exclusive RTV swag</b>, an invite to <b
+                  class="font-bold">the notorious RTV party</b>, and our sincere appreciation for helping us build
+                another legendary year!
+              </p>
+              <a href="https://forms.gle/qbVorEHHoYA9p8D38"
+                class="inline-block text-center mt-auto bg-red-800 hover:bg-red-900 text-white px-6 py-2 rounded-md text-sm transition duration-200"
+                target="_blank" rel="noopener">
+                Submit CfV <i class="fas fa-external-link-alt ml-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
