@@ -68,7 +68,7 @@ jobs:
           fetch-depth: 0
       - name: Setup Pages
         id: pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
       - name: Cache dependencies
         uses: actions/cache@v4
         with:
