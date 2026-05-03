@@ -28,6 +28,13 @@
       "name": "<i class='far fa-calendar'></i> EVENTS",
       "url": "events/",
       "weight": 4
+    },
+    {
+      "identifier": "swag",
+      "name": "<i class='fas fa-shopping-bag'></i> SWAG",
+      "url": "http://redteamvillage.promostore.com/",
+      "target": "_blank",
+      "weight": 5
     }
   ],
   "footer": [
