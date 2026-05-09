@@ -1,5 +1,18 @@
 [
   {
+    "title": "Local Large Language Models",
+    "date": "May 9, 2026",
+    "presenter": "Bryce Zuccaro",
+    "description": "Workshop Description: A medium depth overview of how to run an LLM on your own hardware. A review of the requirements, key concepts, strategies for success, and sobering pitfalls on what can and can't be done with Nvidia & Apple hardware on any budget.",
+    "tags": [
+      "AI",
+      "SelfHosted",
+      "Workshop"
+    ],
+    "watchUrl": "https://www.youtube.com/watch?v=L8bYnzq4JWo",
+    "image": "rtv-cron-0x5.png"
+  },
+  {
     "title": "C2 for Red Team: A Practical Introduction with Sliver",
     "date": "March 27, 2026",
     "presenter": "Maor Tal",
